@@ -10,27 +10,26 @@ export default function Home() {
       <section className="relative py-20 md:py-32 overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 tracking-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8 tracking-tight text-[#1A1A1A]">
               食と体験を起点に、<br />
               <span className="relative inline-block">
                 ブランドと場をつくる。
-                <span className="absolute bottom-2 left-0 w-full h-3 bg-[#00FF00]/30 -z-10 transform -rotate-1"></span>
               </span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl leading-relaxed">
+            <p className="text-lg md:text-xl text-gray-500 mb-12 max-w-2xl leading-relaxed font-light">
               pivotHoldingsは、自社ブランドを中心に、<br className="hidden md:block" />
               飲料・食品と体験を設計する会社です。
             </p>
             
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-6">
               <Link href="/business">
-                <Button className="bg-[#221F1F] hover:bg-gray-800 text-white px-8 py-6 text-lg rounded-full group">
+                <Button className="bg-[#1A1A1A] hover:bg-[#0066FF] text-white px-10 py-7 text-lg rounded-sm shadow-none transition-all duration-300 group">
                   事業内容を見る
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
               <Link href="/products">
-                <Button variant="outline" className="border-2 border-[#221F1F] text-[#221F1F] hover:bg-gray-50 px-8 py-6 text-lg rounded-full">
+                <Button variant="outline" className="border border-[#1A1A1A] text-[#1A1A1A] hover:bg-gray-50 px-10 py-7 text-lg rounded-sm shadow-none transition-all duration-300">
                   商品紹介を見る
                 </Button>
               </Link>
@@ -39,23 +38,21 @@ export default function Home() {
         </div>
         
         {/* Abstract Background Elements */}
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-b from-gray-50 to-white -z-10"></div>
-        <div className="absolute bottom-0 right-0 w-64 h-64 bg-[#00FF00]/10 rounded-full blur-3xl -z-10"></div>
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-gray-50 to-transparent -z-10"></div>
       </section>
 
       {/* Navigation Cards Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-24 bg-white border-t border-gray-100">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Business Card */}
             <Link href="/business">
-              <a className="group block bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all border border-transparent hover:border-[#00FF00] relative overflow-hidden h-full">
-                <div className="absolute top-0 left-0 w-1 h-full bg-[#00FF00] transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300"></div>
-                <h3 className="text-xl font-bold mb-3 flex items-center justify-between">
+              <a className="group block bg-gray-50 p-10 rounded-sm hover:bg-white hover:shadow-xl transition-all duration-500 border border-transparent hover:border-gray-100 h-full">
+                <h3 className="text-2xl font-bold mb-4 flex items-center justify-between text-[#1A1A1A]">
                   事業内容
-                  <ChevronRight className="text-gray-300 group-hover:text-[#00FF00] transition-colors" />
+                  <ArrowRight className="text-gray-300 group-hover:text-[#0066FF] transition-colors transform group-hover:translate-x-1 duration-300" />
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-500 text-sm leading-loose">
                   自社ブランドを起点とした商品開発と、食や体験を通じた場づくりについて。
                 </p>
               </a>
@@ -63,13 +60,12 @@ export default function Home() {
 
             {/* Products Card */}
             <Link href="/products">
-              <a className="group block bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all border border-transparent hover:border-[#00FF00] relative overflow-hidden h-full">
-                <div className="absolute top-0 left-0 w-1 h-full bg-[#00FF00] transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300"></div>
-                <h3 className="text-xl font-bold mb-3 flex items-center justify-between">
+              <a className="group block bg-gray-50 p-10 rounded-sm hover:bg-white hover:shadow-xl transition-all duration-500 border border-transparent hover:border-gray-100 h-full">
+                <h3 className="text-2xl font-bold mb-4 flex items-center justify-between text-[#1A1A1A]">
                   商品紹介
-                  <ChevronRight className="text-gray-300 group-hover:text-[#00FF00] transition-colors" />
+                  <ArrowRight className="text-gray-300 group-hover:text-[#0066FF] transition-colors transform group-hover:translate-x-1 duration-300" />
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-500 text-sm leading-loose">
                   食事や体験の時間を前提に設計された、自社ブランド「Hunter」のご紹介。
                 </p>
               </a>
@@ -77,13 +73,13 @@ export default function Home() {
 
             {/* Purchase Card (Highlighted) */}
             <Link href="/purchase">
-              <a className="group block bg-[#221F1F] p-8 rounded-xl shadow-md hover:shadow-lg transition-all relative overflow-hidden h-full text-white">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-[#00FF00]/20 rounded-full blur-2xl -mr-10 -mt-10 transition-transform group-hover:scale-150 duration-500"></div>
-                <h3 className="text-xl font-bold mb-3 flex items-center justify-between text-[#00FF00]">
+              <a className="group block bg-[#1A1A1A] p-10 rounded-sm shadow-lg hover:shadow-2xl transition-all duration-500 h-full text-white relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-[#0066FF]/10 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150 duration-700"></div>
+                <h3 className="text-2xl font-bold mb-4 flex items-center justify-between text-white">
                   購入ページ
-                  <ArrowRight className="text-[#00FF00] group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="text-[#0066FF] group-hover:translate-x-1 transition-transform duration-300" />
                 </h3>
-                <p className="text-gray-300 text-sm leading-relaxed">
+                <p className="text-gray-400 text-sm leading-loose relative z-10">
                   自社ECサイト、イベント販売、パートナー経由での購入方法はこちら。
                 </p>
               </a>
@@ -93,27 +89,29 @@ export default function Home() {
       </section>
 
       {/* News Section (Simplified) */}
-      <section className="py-20">
+      <section className="py-24">
         <div className="container mx-auto px-4">
-          <div className="flex justify-between items-end mb-10">
+          <div className="flex justify-between items-end mb-12 border-b border-gray-100 pb-6">
             <div>
-              <h2 className="text-3xl font-bold mb-2 font-english tracking-wide">NEWS</h2>
-              <p className="text-gray-500 text-sm">最新情報</p>
+              <h2 className="text-3xl font-bold mb-2 font-english tracking-wide text-[#1A1A1A]">NEWS</h2>
+              <p className="text-gray-400 text-xs tracking-widest uppercase">Latest Information</p>
             </div>
             <Link href="/news">
-              <Button variant="ghost" className="text-gray-600 hover:text-[#0066FF] hover:bg-transparent p-0">
-                一覧を見る <ChevronRight className="w-4 h-4 ml-1" />
+              <Button variant="ghost" className="text-gray-500 hover:text-[#0066FF] hover:bg-transparent p-0 font-medium">
+                VIEW ALL <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </Link>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-0">
             <Link href="/news">
               <a className="block group">
-                <div className="flex flex-col md:flex-row md:items-center gap-4 py-6 border-b border-gray-100 group-hover:bg-gray-50 transition-colors px-4 -mx-4 rounded-lg">
-                  <span className="text-sm text-gray-500 font-mono">2025.12.23</span>
-                  <span className="inline-block px-2 py-1 text-xs font-bold text-[#0066FF] bg-[#0066FF]/10 rounded">INFO</span>
-                  <h3 className="text-lg font-medium group-hover:text-[#0066FF] transition-colors">
+                <div className="flex flex-col md:flex-row md:items-center gap-6 py-8 border-b border-gray-100 group-hover:bg-gray-50 transition-colors px-6 -mx-6">
+                  <div className="flex items-center gap-4 min-w-[200px]">
+                    <span className="text-sm text-gray-400 font-mono">2025.12.23</span>
+                    <span className="inline-block px-2 py-0.5 text-[10px] font-bold text-[#0066FF] border border-[#0066FF] rounded-sm tracking-wider">INFO</span>
+                  </div>
+                  <h3 className="text-lg font-medium text-[#1A1A1A] group-hover:text-[#0066FF] transition-colors">
                     pivotHoldingsを設立し、飲料・食品領域での事業を開始しました。
                   </h3>
                 </div>
@@ -121,10 +119,12 @@ export default function Home() {
             </Link>
             <Link href="/news">
               <a className="block group">
-                <div className="flex flex-col md:flex-row md:items-center gap-4 py-6 border-b border-gray-100 group-hover:bg-gray-50 transition-colors px-4 -mx-4 rounded-lg">
-                  <span className="text-sm text-gray-500 font-mono">2025.12.23</span>
-                  <span className="inline-block px-2 py-1 text-xs font-bold text-[#0066FF] bg-[#0066FF]/10 rounded">INFO</span>
-                  <h3 className="text-lg font-medium group-hover:text-[#0066FF] transition-colors">
+                <div className="flex flex-col md:flex-row md:items-center gap-6 py-8 border-b border-gray-100 group-hover:bg-gray-50 transition-colors px-6 -mx-6">
+                  <div className="flex items-center gap-4 min-w-[200px]">
+                    <span className="text-sm text-gray-400 font-mono">2025.12.23</span>
+                    <span className="inline-block px-2 py-0.5 text-[10px] font-bold text-[#0066FF] border border-[#0066FF] rounded-sm tracking-wider">INFO</span>
+                  </div>
+                  <h3 className="text-lg font-medium text-[#1A1A1A] group-hover:text-[#0066FF] transition-colors">
                     自社ブランド商品の企画・開発を進行中です。
                   </h3>
                 </div>
@@ -135,29 +135,29 @@ export default function Home() {
       </section>
 
       {/* Contact CTA */}
-      <section className="py-20 bg-[#F5F5F5]">
+      <section className="py-32 bg-[#F9F9F9]">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">お問い合わせ</h2>
-          <p className="text-gray-600 mb-10 max-w-xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#1A1A1A]">お問い合わせ</h2>
+          <p className="text-gray-500 mb-12 max-w-xl mx-auto leading-loose">
             事業内容や商品に関するご質問、お仕事のご依頼など、<br />
             お気軽にお問い合わせください。
           </p>
           <Link href="/contact">
-            <Button className="bg-[#0066FF] hover:bg-[#0052CC] text-white px-10 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
+            <Button className="bg-[#0066FF] hover:bg-[#0052CC] text-white px-12 py-8 text-lg rounded-sm shadow-lg hover:shadow-xl transition-all duration-300">
               お問い合わせフォームへ
             </Button>
           </Link>
           
-          <div className="mt-12 pt-12 border-t border-gray-200">
-            <p className="text-sm text-gray-500 mb-4">活動の様子はInstagramでも発信しています</p>
+          <div className="mt-16 pt-16 border-t border-gray-200 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-400 mb-6 tracking-wide">FOLLOW US ON INSTAGRAM</p>
             <a 
               href="https://www.instagram.com/p/DTk72DXETGZ/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-[#E1306C] font-bold hover:underline"
+              className="inline-flex items-center gap-3 text-[#1A1A1A] font-bold hover:text-[#0066FF] transition-colors text-lg"
             >
               <InstagramIcon />
-              Official Instagram
+              @pivotholdings_official
             </a>
           </div>
         </div>

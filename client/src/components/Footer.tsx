@@ -17,59 +17,74 @@ export default function Footer() {
           </div>
 
           {/* Links */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-bold text-[#00FF00] font-english">LINKS</h4>
-            <ul className="space-y-3 text-sm text-gray-300">
+          <div className="space-y-6">
+            <h4 className="text-sm font-bold text-gray-500 font-english tracking-widest">LINKS</h4>
+            <ul className="space-y-4 text-sm text-gray-400">
               <li>
                 <Link href="/business">
-                  <a className="hover:text-[#00FF00] transition-colors">事業内容</a>
+                  <a className="hover:text-white transition-colors flex items-center gap-2 group">
+                    <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-white transition-colors"></span>
+                    事業内容
+                  </a>
                 </Link>
               </li>
               <li>
                 <Link href="/products">
-                  <a className="hover:text-[#00FF00] transition-colors">商品紹介</a>
+                  <a className="hover:text-white transition-colors flex items-center gap-2 group">
+                    <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-white transition-colors"></span>
+                    商品紹介
+                  </a>
                 </Link>
               </li>
               <li>
                 <Link href="/news">
-                  <a className="hover:text-[#00FF00] transition-colors">ニュース</a>
+                  <a className="hover:text-white transition-colors flex items-center gap-2 group">
+                    <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-white transition-colors"></span>
+                    ニュース
+                  </a>
                 </Link>
               </li>
               <li>
                 <Link href="/company">
-                  <a className="hover:text-[#00FF00] transition-colors">企業情報</a>
+                  <a className="hover:text-white transition-colors flex items-center gap-2 group">
+                    <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-white transition-colors"></span>
+                    企業情報
+                  </a>
                 </Link>
               </li>
               <li>
                 <Link href="/contact">
-                  <a className="hover:text-[#00FF00] transition-colors">お問い合わせ</a>
+                  <a className="hover:text-white transition-colors flex items-center gap-2 group">
+                    <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-white transition-colors"></span>
+                    お問い合わせ
+                  </a>
                 </Link>
               </li>
             </ul>
           </div>
 
           {/* Social & Contact */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-bold text-[#00FF00] font-english">CONTACT</h4>
+          <div className="space-y-6">
+            <h4 className="text-sm font-bold text-gray-500 font-english tracking-widest">CONTACT</h4>
             <div className="flex flex-col gap-4">
               <a 
                 href="https://www.instagram.com/p/DTk72DXETGZ/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors group"
+                className="flex items-center gap-4 text-gray-400 hover:text-white transition-colors group"
               >
-                <div className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center group-hover:bg-[#E1306C] transition-colors">
-                  <Instagram size={20} />
+                <div className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center group-hover:border-white group-hover:bg-white group-hover:text-black transition-all">
+                  <Instagram size={18} />
                 </div>
-                <span>Instagram</span>
+                <span className="text-sm">Instagram</span>
               </a>
               
               <Link href="/contact">
-                <a className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors group">
-                  <div className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center group-hover:bg-[#0066FF] transition-colors">
-                    <Mail size={20} />
+                <a className="flex items-center gap-4 text-gray-400 hover:text-white transition-colors group">
+                  <div className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center group-hover:border-[#0066FF] group-hover:bg-[#0066FF] group-hover:text-white transition-all">
+                    <Mail size={18} />
                   </div>
-                  <span>お問い合わせフォーム</span>
+                  <span className="text-sm">お問い合わせフォーム</span>
                 </a>
               </Link>
             </div>

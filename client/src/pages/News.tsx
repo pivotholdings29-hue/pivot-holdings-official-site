@@ -25,33 +25,37 @@ export default function News() {
 
   return (
     <Layout>
-      <div className="bg-gray-50 py-12 md:py-20">
+      <div className="bg-gray-50 py-20 md:py-32">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 font-english tracking-wide">NEWS</h1>
-          <p className="text-gray-500 font-bold">ニュース</p>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 font-english tracking-wide text-[#1A1A1A]">NEWS</h1>
+          <p className="text-gray-400 font-bold tracking-widest text-sm uppercase">ニュース</p>
         </div>
       </div>
 
-      <section className="py-20">
+      <section className="py-24">
         <div className="container mx-auto px-4 max-w-4xl">
-          <div className="space-y-6">
+          <div className="space-y-0 border-t border-gray-100">
             {newsItems.map((item) => (
               <div 
                 key={item.id}
-                className="group cursor-pointer bg-white p-6 rounded-xl border border-gray-100 hover:border-[#00FF00] shadow-sm hover:shadow-md transition-all"
+                className="group cursor-pointer bg-white py-10 border-b border-gray-100 hover:bg-gray-50 transition-all px-6 -mx-6 rounded-sm"
                 onClick={() => setSelectedNews(item)}
               >
-                <div className="flex flex-col md:flex-row md:items-center gap-4 mb-2">
-                  <span className="text-sm text-gray-500 font-mono">{item.date}</span>
-                  <span className={`inline-block px-2 py-1 text-xs font-bold rounded ${
-                    item.category === 'INFO' ? 'text-[#0066FF] bg-[#0066FF]/10' : 'text-[#008800] bg-[#00FF00]/10'
-                  }`}>
-                    {item.category}
-                  </span>
+                <div className="flex flex-col md:flex-row md:items-center gap-6 mb-2">
+                  <div className="flex items-center gap-4 min-w-[200px]">
+                    <span className="text-gray-400 font-mono">{item.date}</span>
+                    <span className={`inline-block px-2 py-0.5 text-[10px] font-bold border rounded-sm tracking-wider ${
+                      item.category === 'INFO' 
+                        ? 'text-[#0066FF] border-[#0066FF]' 
+                        : 'text-[#1A1A1A] border-[#1A1A1A]'
+                    }`}>
+                      {item.category}
+                    </span>
+                  </div>
+                  <h3 className="text-lg font-bold text-[#1A1A1A] group-hover:text-[#0066FF] transition-colors">
+                    {item.title}
+                  </h3>
                 </div>
-                <h3 className="text-lg font-bold group-hover:text-[#0066FF] transition-colors">
-                  {item.title}
-                </h3>
               </div>
             ))}
           </div>
@@ -59,21 +63,23 @@ export default function News() {
       </section>
 
       <Dialog open={!!selectedNews} onOpenChange={(open) => !open && setSelectedNews(null)}>
-        <DialogContent className="sm:max-w-lg">
+        <DialogContent className="sm:max-w-lg bg-white border-gray-100 p-8 rounded-sm shadow-2xl">
           <DialogHeader>
-            <div className="flex items-center gap-3 mb-2">
-              <span className="text-sm text-gray-500 font-mono">{selectedNews?.date}</span>
-              <span className={`inline-block px-2 py-1 text-xs font-bold rounded ${
-                selectedNews?.category === 'INFO' ? 'text-[#0066FF] bg-[#0066FF]/10' : 'text-[#008800] bg-[#00FF00]/10'
+            <div className="flex items-center gap-4 mb-4">
+              <span className="text-sm text-gray-400 font-mono">{selectedNews?.date}</span>
+              <span className={`inline-block px-2 py-0.5 text-[10px] font-bold border rounded-sm tracking-wider ${
+                selectedNews?.category === 'INFO' 
+                  ? 'text-[#0066FF] border-[#0066FF]' 
+                  : 'text-[#1A1A1A] border-[#1A1A1A]'
               }`}>
                 {selectedNews?.category}
               </span>
             </div>
-            <DialogTitle className="text-xl font-bold leading-relaxed pb-4 border-b border-gray-100">
+            <DialogTitle className="text-xl font-bold leading-relaxed pb-6 border-b border-gray-100 text-[#1A1A1A]">
               {selectedNews?.title}
             </DialogTitle>
           </DialogHeader>
-          <DialogDescription className="text-gray-600 leading-loose pt-4 text-base">
+          <DialogDescription className="text-gray-500 leading-loose pt-6 text-base font-light">
             {selectedNews?.content}
           </DialogDescription>
         </DialogContent>

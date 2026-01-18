@@ -43,59 +43,56 @@
 }
 
 :root {
-  /* Michikusa Tech Inspired Colors */
-  /* Neon Green: #00FF00 -> oklch(0.866 0.29 142.495) */
-  /* Blue CTA: #0066FF -> oklch(0.56 0.25 261.0) */
-  /* Dark Text: #333333 -> oklch(0.28 0 0) */
-  /* Heading Text: #221F1F -> oklch(0.20 0 0) */
+  /* Sophisticated Monochrome + Electric Blue Accent */
+  /* Electric Blue: #0066FF -> oklch(0.56 0.25 261.0) */
+  /* Dark Text: #1A1A1A -> oklch(0.20 0 0) */
+  /* Light Gray: #F5F5F5 -> oklch(0.96 0 0) */
   
-  --primary: oklch(0.56 0.25 261.0); /* Blue CTA */
+  --primary: oklch(0.56 0.25 261.0); /* Electric Blue */
   --primary-foreground: oklch(1 0 0);
-  
-  --brand-green: oklch(0.866 0.29 142.495); /* Neon Green */
   
   --sidebar-primary: oklch(0.56 0.25 261.0);
   --sidebar-primary-foreground: oklch(1 0 0);
   
-  --chart-1: oklch(0.866 0.29 142.495);
-  --chart-2: oklch(0.56 0.25 261.0);
-  --chart-3: oklch(0.4 0.2 261.0);
-  --chart-4: oklch(0.3 0.15 261.0);
-  --chart-5: oklch(0.2 0.1 261.0);
+  --chart-1: oklch(0.56 0.25 261.0);
+  --chart-2: oklch(0.4 0 0);
+  --chart-3: oklch(0.6 0 0);
+  --chart-4: oklch(0.8 0 0);
+  --chart-5: oklch(0.9 0 0);
   
-  --radius: 0.5rem;
+  --radius: 0.25rem; /* Sharper corners for sophistication */
   
   --background: oklch(1 0 0);
-  --foreground: oklch(0.28 0 0); /* #333333 */
+  --foreground: oklch(0.20 0 0); /* #1A1A1A */
   
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.28 0 0);
+  --card-foreground: oklch(0.20 0 0);
   
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.28 0 0);
+  --popover-foreground: oklch(0.20 0 0);
   
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.28 0 0);
+  --secondary: oklch(0.96 0 0);
+  --secondary-foreground: oklch(0.20 0 0);
   
-  --muted: oklch(0.97 0 0);
+  --muted: oklch(0.96 0 0);
   --muted-foreground: oklch(0.55 0 0);
   
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.28 0 0);
+  --accent: oklch(0.96 0 0);
+  --accent-foreground: oklch(0.20 0 0);
   
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
   
-  --border: oklch(0.866 0.29 142.495); /* Neon Green Border by default for cards */
+  --border: oklch(0.92 0 0); /* Subtle gray border */
   --input: oklch(0.92 0 0);
-  --ring: oklch(0.866 0.29 142.495);
+  --ring: oklch(0.56 0.25 261.0); /* Blue ring */
   
   --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.28 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.28 0 0);
+  --sidebar-foreground: oklch(0.20 0 0);
+  --sidebar-accent: oklch(0.96 0 0);
+  --sidebar-accent-foreground: oklch(0.20 0 0);
   --sidebar-border: oklch(0.92 0 0);
-  --sidebar-ring: oklch(0.866 0.29 142.495);
+  --sidebar-ring: oklch(0.56 0.25 261.0);
 }
 
 .dark {

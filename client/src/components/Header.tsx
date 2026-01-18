@@ -29,15 +29,15 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-10">
           {navItems.map((item) => (
             <Link key={item.path} href={item.path}>
               <a
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-[#00FF00] relative py-2",
+                  "text-sm font-medium transition-all relative py-2 tracking-wide",
                   location === item.path
-                    ? "text-[#221F1F] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-[#00FF00]"
-                    : "text-gray-600"
+                    ? "text-[#1A1A1A] font-bold after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-[#1A1A1A]"
+                    : "text-gray-500 hover:text-[#0066FF]"
                 )}
               >
                 {item.label}
@@ -50,7 +50,7 @@ export default function Header() {
         <div className="hidden md:flex items-center gap-4">
           <Link href="/purchase">
             <Button 
-              className="bg-[#0066FF] hover:bg-[#0052CC] text-white font-bold rounded-md px-6 shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5"
+              className="bg-[#1A1A1A] hover:bg-[#0066FF] text-white font-bold rounded-sm px-8 py-2 shadow-none hover:shadow-md transition-all duration-300"
             >
               購入
             </Button>
@@ -75,15 +75,15 @@ export default function Header() {
               <Link key={item.path} href={item.path}>
                 <a
                   className={cn(
-                    "text-lg font-bold p-4 rounded-xl transition-all flex items-center justify-between",
+                    "text-lg font-bold p-4 rounded-lg transition-all flex items-center justify-between",
                     location === item.path
-                      ? "bg-gray-50 text-[#221F1F] border-l-4 border-[#00FF00]"
-                      : "text-gray-600 hover:bg-gray-50 hover:text-[#221F1F]"
+                      ? "bg-gray-50 text-[#1A1A1A] border-l-4 border-[#1A1A1A]"
+                      : "text-gray-500 hover:bg-gray-50 hover:text-[#1A1A1A]"
                   )}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
-                  {location === item.path && <span className="w-2 h-2 rounded-full bg-[#00FF00]"></span>}
+                  {location === item.path && <span className="w-2 h-2 rounded-full bg-[#1A1A1A]"></span>}
                 </a>
               </Link>
             ))}
