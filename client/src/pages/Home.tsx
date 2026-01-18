@@ -1,46 +1,65 @@
 import { Button } from "@/components/ui/button";
-import Layout from "@/components/Layout";
+import { ArrowRight } from "lucide-react";
 import { Link } from "wouter";
-import { ArrowRight, ChevronRight } from "lucide-react";
+import Layout from "@/components/Layout";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 overflow-hidden">
+      <section className="min-h-[90vh] flex items-center justify-center relative overflow-hidden bg-[#1A1A1A]">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/images/hero-bg.jpg" 
+            alt="Background" 
+            className="w-full h-full object-cover opacity-60"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
+        </div>
+
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8 tracking-tight text-[#1A1A1A]">
+            <motion.h1 
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="text-5xl md:text-8xl font-bold leading-tight mb-8 tracking-tight text-white"
+            >
               食と体験を起点に、<br />
-              <span className="relative inline-block">
-                ブランドと場をつくる。
-              </span>
-            </h1>
-            <p className="text-lg md:text-xl text-gray-500 mb-12 max-w-2xl leading-relaxed font-light">
-              pivotHoldingsは、自社ブランドを中心に、<br className="hidden md:block" />
+              ブランドと場をつくる。
+            </motion.h1>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+              className="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed max-w-2xl font-light"
+            >
+              pivotHoldingsは、自社ブランドを中心に、<br />
               飲料・食品と体験を設計する会社です。
-            </p>
-            
-            <div className="flex flex-wrap gap-6">
+            </motion.p>
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+              className="flex flex-col sm:flex-row gap-6"
+            >
               <Link href="/business">
-                <Button className="bg-[#1A1A1A] hover:bg-[#0066FF] text-white px-10 py-7 text-lg rounded-sm shadow-none transition-all duration-300 group">
+                <Button className="bg-white text-[#1A1A1A] hover:bg-[#0066FF] hover:text-white px-10 py-7 rounded-sm text-lg transition-all duration-300 shadow-lg hover:shadow-[#0066FF]/20 group border-0">
                   事業内容を見る
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
               <Link href="/products">
-                <Button variant="outline" className="border border-[#1A1A1A] text-[#1A1A1A] hover:bg-gray-50 px-10 py-7 text-lg rounded-sm shadow-none transition-all duration-300">
+                <Button variant="outline" className="border border-white/30 text-white hover:border-[#0066FF] hover:bg-[#0066FF]/10 hover:text-white px-10 py-7 rounded-sm text-lg transition-all duration-300 bg-transparent backdrop-blur-sm">
                   商品紹介を見る
                 </Button>
               </Link>
-            </div>
+            </motion.div>
           </div>
         </div>
-        
-        {/* Abstract Background Elements */}
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-gray-50 to-transparent -z-10"></div>
       </section>
-
       {/* Navigation Cards Section */}
       <section className="py-24 bg-white border-t border-gray-100">
         <div className="container mx-auto px-4">
