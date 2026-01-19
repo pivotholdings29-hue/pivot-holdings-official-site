@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { motion } from "framer-motion";
@@ -161,15 +161,35 @@ export default function Home() {
           </Link>
           
           <div className="mt-16 pt-16 border-t border-gray-200 max-w-2xl mx-auto">
-            <p className="text-sm text-gray-400 mb-6 tracking-wide">FOLLOW US ON INSTAGRAM</p>
-            <a 
-              href="https://www.instagram.com/gibierland/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center text-sm font-bold text-[#1A1A1A] hover:text-[#0066FF] transition-colors border-b border-[#1A1A1A] hover:border-[#0066FF] pb-1"
-            >
-              Instagramを見る
-            </a>
+            <p className="text-sm text-gray-400 mb-8 tracking-wide">FOLLOW US</p>
+            
+            <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
+              {/* Instagram Link */}
+              <div className="flex flex-col items-center">
+                <a 
+                  href="https://www.instagram.com/gibierland/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-sm font-bold text-[#1A1A1A] hover:text-[#0066FF] transition-colors border-b border-[#1A1A1A] hover:border-[#0066FF] pb-1"
+                >
+                  <InstagramIcon className="w-4 h-4 mr-2" />
+                  Instagramを見る
+                </a>
+              </div>
+
+              {/* LINE Link */}
+              <div className="flex flex-col items-center">
+                <a 
+                  href="https://line.me/R/ti/p/@278bzuez" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-sm font-bold text-[#1A1A1A] hover:text-[#06C755] transition-colors border-b border-[#1A1A1A] hover:border-[#06C755] pb-1"
+                >
+                  <MessageCircle className="w-4 h-4 mr-2" />
+                  公式LINEを見る
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -177,9 +197,9 @@ export default function Home() {
   );
 }
 
-function InstagramIcon() {
+function InstagramIcon({ className }: { className?: string }) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
       <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
       <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
       <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>

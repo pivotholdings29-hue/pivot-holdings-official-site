@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Instagram, Mail } from "lucide-react";
+import { Instagram, Mail, MessageCircle } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -76,6 +76,18 @@ export default function Footer() {
                   <Instagram size={18} />
                 </div>
                 <span className="text-sm">Instagram</span>
+              </a>
+
+              <a 
+                href="https://line.me/R/ti/p/@278bzuez" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 text-gray-400 hover:text-white transition-colors group"
+              >
+                <div className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center group-hover:border-[#06C755] group-hover:bg-[#06C755] group-hover:text-white transition-all">
+                  <MessageCircle size={18} />
+                </div>
+                <span className="text-sm">公式LINE</span>
               </a>
               
               <Link href="/contact">
