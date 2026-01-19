@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, MessageCircle } from "lucide-react";
+import { ArrowRight, MessageCircle, Instagram } from "lucide-react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { motion } from "framer-motion";
@@ -172,7 +172,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-sm font-bold text-[#1A1A1A] hover:text-[#0066FF] transition-colors border-b border-[#1A1A1A] hover:border-[#0066FF] pb-1"
                 >
-                  <InstagramIcon className="w-4 h-4 mr-2" />
+                  <Instagram className="w-4 h-4 mr-2" />
                   Instagramを見る
                 </a>
               </div>
@@ -194,15 +194,5 @@ export default function Home() {
         </div>
       </section>
     </Layout>
-  );
-}
-
-function InstagramIcon({ className }: { className?: string }) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-    </svg>
   );
 }
