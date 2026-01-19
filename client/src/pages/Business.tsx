@@ -44,12 +44,22 @@ export default function Business() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="text-2xl md:text-4xl font-bold mb-20 leading-relaxed text-[#1A1A1A] text-center"
+              className="text-2xl md:text-3xl font-bold mb-12 leading-relaxed text-[#1A1A1A] text-left md:text-center"
             >
-              pivotHoldingsは、<br />
-              自社ブランドを起点に、<br />
-              <span className="border-b-4 border-[#0066FF]/20 pb-1">商品と体験の企画・設計</span>を行っています。
+              pivotHoldingsは、「整える」という視点から、<br className="hidden md:block" />
+              飲料・食品を中心とした商品と体験の企画・開発を行っています。
             </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-lg text-gray-500 mb-20 leading-loose max-w-3xl mx-auto text-left md:text-center font-light"
+            >
+              極端に振れるのではなく、状況や場に応じて最適なバランスを設計すること。<br className="hidden md:block" />
+              私たちはその考え方を、プロダクト、イベント、情報発信に落とし込み、<br className="hidden md:block" />
+              日常や体験の質を高める取り組みを行っています。
+            </motion.p>
 
             <div className="space-y-12">
               <motion.div 

@@ -16,7 +16,10 @@ export default function Home() {
             alt="Background" 
             className="w-full h-full object-cover opacity-60"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/30"></div>
+          {/* pH Balance Line Decoration */}
+          <div className="absolute top-1/2 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#0066FF]/50 to-transparent transform -translate-y-1/2 z-0"></div>
+          <div className="absolute top-0 left-1/2 w-[1px] h-full bg-gradient-to-b from-transparent via-[#0066FF]/30 to-transparent transform -translate-x-1/2 z-0"></div>
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
@@ -25,19 +28,19 @@ export default function Home() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="text-5xl md:text-8xl font-bold leading-tight mb-8 tracking-tight text-white"
+              className="text-5xl md:text-7xl font-bold leading-tight mb-8 tracking-tight text-white relative z-10"
             >
-              食と体験を起点に、<br />
-              ブランドと場をつくる。
+              人生と体験を、<br />
+              ちょうどいい<span className="text-[#0066FF]">pH</span>に。
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-              className="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed max-w-2xl font-light"
+              className="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed max-w-3xl font-light"
             >
-              pivotHoldingsは、自社ブランドを中心に、<br />
-              飲料・食品と体験を設計する会社です。
+              pivotHoldingsは、飲料・食品と体験を通じて、<br />
+              人と場のコンディションを整えるブランドカンパニーです。
             </motion.p>
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
@@ -66,13 +69,13 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Business Card */}
             <Link href="/business" className="group block bg-gray-50 p-10 rounded-sm hover:bg-white hover:shadow-xl transition-all duration-500 border border-transparent hover:border-gray-100 h-full cursor-pointer">
-              <h3 className="text-2xl font-bold mb-4 flex items-center justify-between text-[#1A1A1A]">
-                事業内容
-                <ArrowRight className="text-gray-300 group-hover:text-[#0066FF] transition-colors transform group-hover:translate-x-1 duration-300" />
-              </h3>
-              <p className="text-gray-500 text-sm leading-loose">
-                自社ブランドを起点とした商品開発と、食や体験を通じた場づくりについて。
-              </p>
+                <h3 className="text-2xl font-bold mb-4 flex items-center justify-between text-[#1A1A1A]">
+                  事業内容
+                  <ArrowRight className="text-gray-300 group-hover:text-[#0066FF] transition-colors transform group-hover:translate-x-1 duration-300" />
+                </h3>
+                <p className="text-gray-500 text-sm leading-loose">
+                  「整える」という視点から、飲料・食品を中心とした商品と体験の企画・開発を行っています。
+                </p>
             </Link>
 
             {/* Products Card */}

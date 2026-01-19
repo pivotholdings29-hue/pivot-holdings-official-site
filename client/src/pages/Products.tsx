@@ -40,7 +40,7 @@ export default function Products() {
               className="bg-gray-100 rounded-sm aspect-square flex items-center justify-center relative overflow-hidden group border border-gray-200"
             >
               <img 
-                src="/images/product-hunter.jpg" 
+                src="/images/hunter-product.jpg" 
                 alt="Hunter Product" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -65,12 +65,11 @@ export default function Products() {
 
               <div className="space-y-8 text-gray-500 leading-loose mb-16 font-light">
                 <p>
-                  Hunterは、食事や体験の時間を前提に設計された、自社ブランドのドリンクです。
+                  「肉を否定せず、肉と共に整える」をコンセプトにした、プレミアムクラフトシロップ。
                 </p>
                 <p>
-                  単なる飲料ではなく、「どんな場で、誰と、どう楽しむか」まで含めて企画しています。
-                  日常のひとときを、より豊かで記憶に残るものにするためのパートナーとして、
-                  私たちはHunterをお届けします。
+                  厳選されたスパイスとフルーツの調和が、食事の時間をより豊かに演出します。
+                  ソーダ割りやお湯割りなど、気分やシーンに合わせて自由にお楽しみいただけます。
                 </p>
               </div>
 
