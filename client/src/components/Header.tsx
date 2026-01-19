@@ -46,16 +46,7 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* CTA Button */}
-        <div className="hidden md:flex items-center gap-4">
-          <Link href="/purchase">
-            <Button 
-              className="bg-[#1A1A1A] hover:bg-[#0066FF] text-white font-bold rounded-sm px-8 py-2 shadow-none hover:shadow-md transition-all duration-300"
-            >
-              購入
-            </Button>
-          </Link>
-        </div>
+        {/* CTA Button Removed */}
 
         {/* Mobile Menu Button */}
         <button
@@ -87,16 +78,7 @@ export default function Header() {
                 </a>
               </Link>
             ))}
-            <div className="pt-6 border-t border-gray-100 mt-2">
-              <Link href="/purchase">
-                <Button 
-                  className="w-full bg-[#0066FF] hover:bg-[#0052CC] text-white font-bold py-6 text-lg rounded-xl shadow-lg"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  購入ページへ
-                </Button>
-              </Link>
-            </div>
+
           </nav>
         </div>
       )}

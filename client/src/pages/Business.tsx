@@ -90,12 +90,23 @@ export default function Business() {
                 <div className="absolute top-0 left-0 w-1 h-full bg-[#1A1A1A] group-hover:bg-[#0066FF] transition-colors duration-500"></div>
                 <h3 className="text-2xl font-bold mb-6 flex items-center gap-4 text-[#1A1A1A]">
                   <span className="text-gray-200 font-english text-4xl font-bold group-hover:text-[#0066FF]/20 transition-colors">02</span>
-                  場づくり・体験設計
+                  Gibierland（ジビエランド）
                 </h3>
-                <p className="text-gray-500 leading-loose pl-14 font-light">
-                  商品単体の提供にとどまらず、イベントの企画・運営や情報発信を通じて、食や体験を軸とした場づくりにも取り組んでいます。
-                  人と人がつながる瞬間や、新しい発見が生まれる空間をプロデュースします。
-                </p>
+                <div className="pl-14">
+                  <p className="text-gray-500 leading-loose font-light mb-6">
+                    「ジビエの美味しさをもっと知ってほしい！」という想いから、
+                    BBQイベントの開催や、ジビエに合うドリンク（Hunter）の製造を行っています。
+                    ハンターさんや飲食店さん、イベントに参加したい方との繋がりを大切にするコミュニティです。
+                  </p>
+                  <a 
+                    href="https://www.instagram.com/gibierland/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-sm font-bold text-[#1A1A1A] hover:text-[#0066FF] transition-colors border-b border-[#1A1A1A] hover:border-[#0066FF] pb-1"
+                  >
+                    Instagramを見る
+                  </a>
+                </div>
               </motion.div>
             </div>
 

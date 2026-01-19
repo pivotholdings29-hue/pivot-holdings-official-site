@@ -42,7 +42,7 @@ export default function Products() {
               <img 
                 src="/images/hunter-product.jpg" 
                 alt="Hunter Product" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                className="w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-105"
               />
               
               {/* Decorative elements */}
@@ -64,28 +64,40 @@ export default function Products() {
               <p className="text-lg text-gray-400 mb-12 font-light tracking-wide">ハンター</p>
 
               <div className="space-y-8 text-gray-500 leading-loose mb-16 font-light">
-                <p>
-                  「肉を否定せず、肉と共に整える」をコンセプトにした、プレミアムクラフトシロップ。
+                <p className="font-bold text-[#1A1A1A]">
+                  「肉食革命」を引き起こし、人類を進化させる。
                 </p>
                 <p>
-                  厳選されたスパイスとフルーツの調和が、食事の時間をより豊かに演出します。
-                  ソーダ割りやお湯割りなど、気分やシーンに合わせて自由にお楽しみいただけます。
+                  Hunterは、現代社会で凝り固まった常識や「他人の正解」に疑問を投げかけ、
+                  自らの人生を自ら狩り獲るためのエネルギーを提供します。
                 </p>
+                <p>
+                  消化を促進し、身体のコンディションを整えることで生まれた「余白」を、
+                  新たな挑戦や創造的な活動へ。
+                  脂の多い肉料理や、お酒を伴う食事シーンに最適な設計で、
+                  あなたのパフォーマンスを最大限に引き出します。
+                </p>
+                <ul className="list-disc pl-5 space-y-2 text-sm pt-4">
+                  <li>肉料理と向き合うためのコンディションサポート</li>
+                  <li>食事の時間をより豊かにするフレーバー</li>
+                  <li>翌日のパフォーマンスを考えた成分設計</li>
+                </ul>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-6">
-                <Button className="bg-gray-100 text-gray-400 px-10 py-7 rounded-sm cursor-not-allowed shadow-none border border-gray-200" disabled>
-                  Hunter公式サイトへ
-                  <ExternalLink className="ml-2 w-4 h-4" />
-                </Button>
+                <a href="https://line.me/R/ti/p/@278bzuez" target="_blank" rel="noopener noreferrer">
+                  <Button className="bg-[#06C755] hover:bg-[#05b34c] text-white px-10 py-7 rounded-sm transition-all duration-300 shadow-none group w-full sm:w-auto">
+                    公式LINEで詳細を見る
+                    <ExternalLink className="ml-2 w-4 h-4" />
+                  </Button>
+                </a>
                 <Link href="/purchase">
-                  <Button className="bg-[#1A1A1A] hover:bg-[#0066FF] text-white px-10 py-7 rounded-sm transition-all duration-300 shadow-none group">
+                  <Button className="bg-[#1A1A1A] hover:bg-[#0066FF] text-white px-10 py-7 rounded-sm transition-all duration-300 shadow-none group w-full sm:w-auto">
                     購入方法を見る
                     <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
               </div>
-              <p className="mt-4 text-xs text-gray-400 tracking-wide">※公式サイトは現在準備中です</p>
             </motion.div>
           </div>
         </div>

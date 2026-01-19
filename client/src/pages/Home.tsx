@@ -163,13 +163,12 @@ export default function Home() {
           <div className="mt-16 pt-16 border-t border-gray-200 max-w-2xl mx-auto">
             <p className="text-sm text-gray-400 mb-6 tracking-wide">FOLLOW US ON INSTAGRAM</p>
             <a 
-              href="https://www.instagram.com/p/DTk72DXETGZ/" 
+              href="https://www.instagram.com/gibierland/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 text-[#1A1A1A] font-bold hover:text-[#0066FF] transition-colors text-lg"
+              className="inline-flex items-center text-sm font-bold text-[#1A1A1A] hover:text-[#0066FF] transition-colors border-b border-[#1A1A1A] hover:border-[#0066FF] pb-1"
             >
-              <InstagramIcon />
-              @pivotholdings_official
+              Instagramを見る
             </a>
           </div>
         </div>

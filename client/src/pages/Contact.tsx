@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
-import { Mail } from "lucide-react";
+import { Mail, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Contact() {
   return (
@@ -25,30 +26,21 @@ export default function Contact() {
               </p>
             </div>
 
-            {/* Google Form Placeholder */}
-            <div className="bg-gray-50 rounded-sm p-12 text-center border border-dashed border-gray-200">
-              <p className="text-gray-500 mb-6 font-bold">Googleフォーム埋め込みエリア</p>
-              <p className="text-sm text-gray-400 mb-10 leading-relaxed">
-                ※実際の運用時はここにGoogleフォームのiframeタグを埋め込みます。<br />
-                送信先: pivotholdings29@gmail.com
+            <div className="text-center">
+              <a 
+                href="https://docs.google.com/forms/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block"
+              >
+                <Button className="bg-[#1A1A1A] hover:bg-[#0066FF] text-white px-12 py-8 rounded-sm shadow-lg hover:shadow-xl transition-all duration-300 group text-lg font-bold">
+                  お問い合わせフォームを開く
+                  <ExternalLink className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </a>
+              <p className="text-xs text-gray-400 mt-8">
+                ※Googleフォームへ移動します
               </p>
-              
-              {/* Simulation of form fields */}
-              <div className="max-w-md mx-auto space-y-6 text-left opacity-40 pointer-events-none select-none grayscale">
-                <div>
-                  <label className="block text-xs font-bold text-gray-500 mb-2 uppercase tracking-wider">Name</label>
-                  <div className="h-12 bg-white border border-gray-200 rounded-sm w-full"></div>
-                </div>
-                <div>
-                  <label className="block text-xs font-bold text-gray-500 mb-2 uppercase tracking-wider">Email</label>
-                  <div className="h-12 bg-white border border-gray-200 rounded-sm w-full"></div>
-                </div>
-                <div>
-                  <label className="block text-xs font-bold text-gray-500 mb-2 uppercase tracking-wider">Message</label>
-                  <div className="h-40 bg-white border border-gray-200 rounded-sm w-full"></div>
-                </div>
-                <div className="h-12 bg-[#0066FF] rounded-sm w-full"></div>
-              </div>
             </div>
           </div>
         </div>

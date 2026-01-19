@@ -12,7 +12,6 @@ export default function Footer() {
             <div className="text-gray-400 text-sm space-y-2">
               <p>〒153-0061</p>
               <p>東京都目黒区中目黒1丁目1-72-504</p>
-              <p>法人番号：3011001174688</p>
             </div>
           </div>
 
@@ -68,7 +67,7 @@ export default function Footer() {
             <h4 className="text-sm font-bold text-gray-500 font-english tracking-widest">CONTACT</h4>
             <div className="flex flex-col gap-4">
               <a 
-                href="https://www.instagram.com/p/DTk72DXETGZ/" 
+                href="https://www.instagram.com/gibierland/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 text-gray-400 hover:text-white transition-colors group"

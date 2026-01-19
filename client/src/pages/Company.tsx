@@ -34,10 +34,7 @@ export default function Company() {
                 <dd className="md:col-span-2 text-gray-600">2025年12月23日</dd>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">
-                <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Corporate Number</dt>
-                <dd className="md:col-span-2 font-mono text-gray-600">3011001174688</dd>
-              </div>
+
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">
                 <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Location</dt>
