@@ -16,7 +16,7 @@ export default function Company() {
             <dl className="space-y-10">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">
                 <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Company Name</dt>
-                <dd className="md:col-span-2 font-bold text-xl text-[#1A1A1A]">pivotHoldings株式会社</dd>
+                <dd className="md:col-span-2 font-bold text-xl text-[#1A1A1A]">pH株式会社</dd>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">

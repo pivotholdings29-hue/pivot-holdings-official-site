@@ -19,7 +19,7 @@ export default function Purchase() {
               商品は公式LINEよりご購入いただけます
             </h2>
             <p className="text-gray-500 mb-16 leading-loose text-lg">
-              pivotHoldingsの商品（Hunterなど）は、<br className="hidden md:block" />
+              pHの商品（Hunterなど）は、<br className="hidden md:block" />
               現在、公式LINEアカウントを通じて販売を行っております。<br />
               友だち追加の上、メニューよりご購入手続きをお願いいたします。
             </p>

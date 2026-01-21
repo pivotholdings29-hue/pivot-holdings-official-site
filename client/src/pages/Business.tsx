@@ -46,7 +46,7 @@ export default function Business() {
               transition={{ duration: 0.8 }}
               className="text-2xl md:text-3xl font-bold mb-12 leading-relaxed text-[#1A1A1A] text-left md:text-center"
             >
-              pivotHoldingsは、「整える」という視点から、<br className="hidden md:block" />
+              pHは、「整える」という視点から、<br className="hidden md:block" />
               飲料・食品を中心とした商品と体験の企画・開発を行っています。
             </motion.h2>
             <motion.p

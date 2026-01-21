@@ -39,7 +39,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
               className="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed max-w-3xl font-light"
             >
-              pivotHoldingsは、飲料・食品と体験を通じて、<br />
+              pHは、飲料・食品と体験を通じて、<br />
               人と場のコンディションを整えるブランドカンパニーです。
             </motion.p>
             <motion.div 
@@ -127,7 +127,7 @@ export default function Home() {
                   <span className="inline-block px-2 py-0.5 text-[10px] font-bold text-[#0066FF] border border-[#0066FF] rounded-sm tracking-wider">INFO</span>
                 </div>
                 <h3 className="text-lg font-medium text-[#1A1A1A] group-hover:text-[#0066FF] transition-colors">
-                  pivotHoldingsを設立し、飲料・食品領域での事業を開始しました。
+                  pHを設立し、飲料・食品領域での事業を開始しました。
                 </h3>
               </div>
             </Link>
