@@ -11,6 +11,8 @@ import Purchase from "./pages/Purchase";
 import News from "./pages/News";
 import Company from "./pages/Company";
 import Contact from "./pages/Contact";
+import Legal from "./pages/Legal";
+import Privacy from "./pages/Privacy";
 
 function Router() {
   return (
@@ -22,6 +24,8 @@ function Router() {
       <Route path="/news" component={News} />
       <Route path="/company" component={Company} />
       <Route path="/contact" component={Contact} />
+      <Route path="/legal" component={Legal} />
+      <Route path="/privacy" component={Privacy} />
       <Route component={NotFound} />
     </Switch>
   );

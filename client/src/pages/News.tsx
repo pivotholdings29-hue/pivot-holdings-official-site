@@ -21,8 +21,36 @@ const newsItems = [
   }
 ];
 
-// Empty event items for now
-const eventItems: any[] = [];
+// Event items
+const eventItems = [
+  {
+    id: 101,
+    date: "2026.02.10",
+    category: "EVENT",
+    title: "ジビエBBQ経営者交流会",
+    content: "経営者様向けのジビエBBQ交流会を開催いたします。美味しいジビエ料理を囲みながら、ビジネスやビジョンについて語り合いましょう。",
+    location: "都内某所（参加者のみにお知らせします）",
+    time: "18:00〜21:00"
+  },
+  {
+    id: 102,
+    date: "2026.02.19",
+    category: "EVENT",
+    title: "ジビエBBQ戦略共有",
+    content: "今後のジビエBBQの展開や戦略について共有する会を開催します。興味のある方はぜひご参加ください。",
+    location: "都内某所（参加者のみにお知らせします）",
+    time: "20:00開場"
+  },
+  {
+    id: 103,
+    date: "2026.02.27",
+    category: "EVENT",
+    title: "通常BBQ",
+    content: "定期開催のジビエBBQです。初めての方も大歓迎です。ジビエの美味しさと楽しさを体験してください。",
+    location: "都内某所（参加者のみにお知らせします）",
+    time: "20:00開場"
+  }
+];
 
 export default function News() {
   const [selectedItem, setSelectedItem] = useState<any | null>(null);
