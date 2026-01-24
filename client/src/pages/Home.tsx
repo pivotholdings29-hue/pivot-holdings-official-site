@@ -74,7 +74,7 @@ export default function Home() {
                   <ArrowRight className="text-gray-300 group-hover:text-[#0066FF] transition-colors transform group-hover:translate-x-1 duration-300" />
                 </h3>
                 <p className="text-gray-500 text-sm leading-loose">
-                  「整える」という視点から、飲料・食品を中心とした商品と体験の企画・開発を行っています。
+                  飲料・食品を中心とした商品と体験の企画・開発を行っています。
                 </p>
             </Link>
 
@@ -97,7 +97,7 @@ export default function Home() {
                 <ArrowRight className="text-[#0066FF] group-hover:translate-x-1 transition-transform duration-300" />
               </h3>
               <p className="text-gray-400 text-sm leading-loose relative z-10">
-                自社ECサイト、イベント販売、パートナー経由での購入方法はこちら。
+                LINE-EC、イベント販売、パートナー経由での購入方法はこちら。
               </p>
             </Link>
           </div>
@@ -127,7 +127,7 @@ export default function Home() {
                   <span className="inline-block px-2 py-0.5 text-[10px] font-bold text-[#0066FF] border border-[#0066FF] rounded-sm tracking-wider">INFO</span>
                 </div>
                 <h3 className="text-lg font-medium text-[#1A1A1A] group-hover:text-[#0066FF] transition-colors">
-                  pHを設立し、飲料・食品領域での事業を開始しました。
+                  pH株式会社を設立し、清涼飲料水領域での事業を開始しました。
                 </h3>
               </div>
             </Link>

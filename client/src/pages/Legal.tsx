@@ -18,7 +18,7 @@ export default function Legal() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">
                 <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Distributor</dt>
                 <dd className="md:col-span-2">
-                  <p className="font-bold text-lg text-[#1A1A1A] mb-2">販売業者</p>
+                  <p className="font-bold text-lg text-[#1A1A1A] mb-2">販売業者（社名）</p>
                   <p className="text-gray-600">pH株式会社</p>
                 </dd>
               </div>
@@ -26,7 +26,7 @@ export default function Legal() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">
                 <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Representative</dt>
                 <dd className="md:col-span-2">
-                  <p className="font-bold text-lg text-[#1A1A1A] mb-2">運営統括責任者</p>
+                  <p className="font-bold text-lg text-[#1A1A1A] mb-2">代表責任者名</p>
                   <p className="text-gray-600">代表取締役　椛島 将太</p>
                 </dd>
               </div>
@@ -45,15 +45,18 @@ export default function Legal() {
                   <div>
                     <p className="font-bold text-lg text-[#1A1A1A] mb-2">電話番号</p>
                     <p className="text-gray-600">050-XXXX-XXXX（現在準備中）</p>
-                    <p className="text-xs text-gray-400 mt-1">※お問い合わせはメールまたはフォームよりお願いいたします。</p>
+                  </div>
+                  <div>
+                    <p className="font-bold text-lg text-[#1A1A1A] mb-2">問い合わせ受付時間</p>
+                    <p className="text-gray-600">平日 10:00〜17:00（土日祝除く）</p>
                   </div>
                   <div>
                     <p className="font-bold text-lg text-[#1A1A1A] mb-2">メールアドレス</p>
                     <p className="text-gray-600">pivotholdings29@gmail.com</p>
                   </div>
                   <div>
-                    <p className="font-bold text-lg text-[#1A1A1A] mb-2">受付時間</p>
-                    <p className="text-gray-600">平日 10:00〜17:00（土日祝除く）</p>
+                    <p className="font-bold text-lg text-[#1A1A1A] mb-2">ホームページURL</p>
+                    <p className="text-gray-600">https://pivotholdings.co.jp</p>
                   </div>
                 </dd>
               </div>
@@ -64,7 +67,14 @@ export default function Legal() {
                 <dd className="md:col-span-2">
                   <p className="font-bold text-lg text-[#1A1A1A] mb-2">販売価格</p>
                   <p className="text-gray-600">各商品ページに記載（表示価格は消費税込み）</p>
-                  <p className="text-gray-600 mt-2">参考価格：Hunter（単品） 1,800円（税込）</p>
+                </dd>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">
+                <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Period</dt>
+                <dd className="md:col-span-2">
+                  <p className="font-bold text-lg text-[#1A1A1A] mb-2">提供期間</p>
+                  <p className="text-gray-600">ご注文確認後、通常5営業日以内に発送いたします。</p>
                 </dd>
               </div>
 
@@ -80,20 +90,18 @@ export default function Legal() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">
-                <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Payment</dt>
+                <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Delivery</dt>
                 <dd className="md:col-span-2">
-                  <p className="font-bold text-lg text-[#1A1A1A] mb-2">お支払い方法</p>
-                  <ul className="list-disc pl-5 text-gray-600 space-y-2">
-                    <li>クレジットカード決済</li>
-                    <li>銀行振込</li>
-                  </ul>
+                  <p className="font-bold text-lg text-[#1A1A1A] mb-2">引渡時期/提供時期</p>
+                  <p className="text-gray-600">決済完了後（銀行振込の場合は入金確認後）、5営業日以内に発送いたします。</p>
+                  <p className="text-xs text-gray-400 mt-2">※予約商品や在庫切れの場合は別途ご連絡いたします。</p>
                 </dd>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">
-                <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Timing</dt>
+                <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Payment Timing</dt>
                 <dd className="md:col-span-2">
-                  <p className="font-bold text-lg text-[#1A1A1A] mb-2">お支払い時期</p>
+                  <p className="font-bold text-lg text-[#1A1A1A] mb-2">支払い時期</p>
                   <ul className="list-disc pl-5 text-gray-600 space-y-2">
                     <li>クレジットカード：ご注文時にお支払いが確定します。</li>
                     <li>銀行振込：ご注文後5日以内にお振込みください。</li>
@@ -102,27 +110,44 @@ export default function Legal() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">
-                <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Delivery</dt>
+                <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Payment Method</dt>
                 <dd className="md:col-span-2">
-                  <p className="font-bold text-lg text-[#1A1A1A] mb-2">商品の引渡時期</p>
-                  <p className="text-gray-600">決済完了後（銀行振込の場合は入金確認後）、5営業日以内に発送いたします。</p>
-                  <p className="text-xs text-gray-400 mt-2">※予約商品や在庫切れの場合は別途ご連絡いたします。</p>
+                  <p className="font-bold text-lg text-[#1A1A1A] mb-2">支払い方法</p>
+                  <ul className="list-disc pl-5 text-gray-600 space-y-2">
+                    <li>クレジットカード決済</li>
+                    <li>銀行振込</li>
+                  </ul>
                 </dd>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">
+                <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Expiration</dt>
+                <dd className="md:col-span-2">
+                  <p className="font-bold text-lg text-[#1A1A1A] mb-2">お申し込有効期限</p>
+                  <p className="text-gray-600">ご注文から7日以内に入金が確認できない場合、ご注文をキャンセルとさせていただきます。</p>
+                </dd>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">
                 <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Returns</dt>
                 <dd className="md:col-span-2">
-                  <p className="font-bold text-lg text-[#1A1A1A] mb-2">返品・交換・キャンセル</p>
+                  <p className="font-bold text-lg text-[#1A1A1A] mb-2">返品・交換・キャンセル等</p>
                   <div className="space-y-4 text-gray-600">
                     <p>
                       お客様都合による返品・交換・キャンセルはお受けしておりません。<br />
                       ただし、商品に欠陥がある場合や誤配送の場合は、商品到着後5日以内にご連絡いただければ、送料当社負担にて交換対応いたします。
                     </p>
-                    <p className="text-sm">
-                      ※通信販売のため、クーリング・オフ制度は適用されません。
-                    </p>
                   </div>
+                </dd>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Cooling Off</dt>
+                <dd className="md:col-span-2">
+                  <p className="font-bold text-lg text-[#1A1A1A] mb-2">クーリング・オフ</p>
+                  <p className="text-gray-600">
+                    通信販売にはクーリング・オフ制度の適用はございません。あらかじめご了承ください。
+                  </p>
                 </dd>
               </div>
             </dl>

@@ -24,7 +24,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/">
           <a className="text-2xl font-bold tracking-tight text-[#221F1F] hover:opacity-80 transition-opacity">
-            pH
+            pH株式会社
           </a>
         </Link>
 
