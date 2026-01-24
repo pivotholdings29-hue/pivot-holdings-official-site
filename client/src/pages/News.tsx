@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import PageHeader from "@/components/PageHeader";
 
 // Mock Data
 const newsItems = [
@@ -57,12 +58,11 @@ export default function News() {
 
   return (
     <Layout>
-      <div className="bg-[#1A1A1A] text-white py-20 md:py-32">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 font-english tracking-wide text-white">NEWS & EVENTS</h1>
-          <p className="text-gray-400 font-bold tracking-widest text-sm uppercase">ニュース・イベント情報</p>
-        </div>
-      </div>
+      <PageHeader 
+        title="NEWS & EVENTS" 
+        subtitle="ニュース・イベント情報" 
+        imageSrc="/images/news-events.jpg"
+      />
 
       <section className="py-24">
         <div className="container mx-auto px-4 max-w-4xl">

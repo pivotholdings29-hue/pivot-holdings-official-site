@@ -1,16 +1,16 @@
 import Layout from "@/components/Layout";
 import { ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import PageHeader from "@/components/PageHeader";
 
 export default function Purchase() {
   return (
     <Layout>
-      <div className="bg-[#1A1A1A] text-white py-20 md:py-32">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 font-english tracking-wide text-white">PURCHASE</h1>
-          <p className="text-gray-400 font-bold tracking-widest text-sm uppercase">購入方法</p>
-        </div>
-      </div>
+      <PageHeader 
+        title="PURCHASE" 
+        subtitle="購入方法" 
+        imageSrc="/images/purchase-bg.jpg"
+      />
 
       <section className="py-24">
         <div className="container mx-auto px-4">

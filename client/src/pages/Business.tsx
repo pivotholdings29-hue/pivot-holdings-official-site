@@ -3,38 +3,16 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import PageHeader from "@/components/PageHeader";
 
 export default function Business() {
   return (
     <Layout>
-      <div className="relative bg-[#1A1A1A] text-white py-20 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="/images/business-dining.jpg" 
-            alt="Business Background" 
-            className="w-full h-full object-cover opacity-40"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/90 to-black/60"></div>
-        </div>
-        <div className="container mx-auto px-4 relative z-10">
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-4xl md:text-6xl font-bold mb-6 font-english tracking-wide text-white"
-          >
-            BUSINESS
-          </motion.h1>
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-gray-400 font-bold tracking-widest text-sm uppercase"
-          >
-            事業内容
-          </motion.p>
-        </div>
-      </div>
+      <PageHeader 
+        title="BUSINESS" 
+        subtitle="事業内容" 
+        imageSrc="/images/business-dining.jpg"
+      />
 
       <section className="py-24">
         <div className="container mx-auto px-4">

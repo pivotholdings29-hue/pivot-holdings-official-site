@@ -3,30 +3,16 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
+import PageHeader from "@/components/PageHeader";
 
 export default function Products() {
   return (
     <Layout>
-      <div className="bg-[#1A1A1A] text-white py-20 md:py-32">
-        <div className="container mx-auto px-4">
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-4xl md:text-6xl font-bold mb-6 font-english tracking-wide text-white"
-          >
-            PRODUCTS
-          </motion.h1>
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-gray-400 font-bold tracking-widest text-sm uppercase"
-          >
-            商品紹介
-          </motion.p>
-        </div>
-      </div>
+      <PageHeader 
+        title="PRODUCTS" 
+        subtitle="商品紹介" 
+        imageSrc="/images/hunter-product.jpg"
+      />
 
       <section className="py-24">
         <div className="container mx-auto px-4">
@@ -72,7 +58,7 @@ export default function Products() {
                   自らの人生を自ら狩り獲るためのエネルギーを提供します。
                 </p>
                 <p>
-                  消化を促進し、身体のコンディションを整えることで生まれた「余白」を、
+                  身体のコンディションを整えることで生まれた「余白」を、
                   新たな挑戦や創造的な活動へ。
                   脂の多い肉料理や、お酒を伴う食事シーンに最適な設計で、
                   あなたのパフォーマンスを最大限に引き出します。
@@ -147,17 +133,17 @@ export default function Products() {
                 <div>
                   <h3 className="text-xl font-bold mb-6 text-[#1A1A1A] flex items-center gap-3">
                     <span className="w-8 h-[1px] bg-[#0066FF]"></span>
-                    「消化」をテーマにしたエナジードリンク
+                    「肉食」を楽しむためのエナジードリンク
                   </h3>
                   <p className="mb-6">
-                    ジビエを広げるために、流通の中間で利益を取るビジネスではなく、周辺ビジネスを作ろうと考えました。その一つが、今回開発したドリンク「Hunter」です。
+                    ジビエ業界を盛り上げるために、単にジビエの流通事業をするのではなく、ジビエ業界を盛り上げる周辺事業で貢献したいと考えました。その一つが、今回開発したドリンク「Hunter」です。
                   </p>
                   <p className="mb-6">
-                    私自身、日本人をもっと肉食にしたいと思っています。肉をしっかり食べて、もっとワイルドになってほしい。ただ、日本人の体質的に、肉は重く感じやすく、消化が得意ではありません。
-                    そこで、「肉を食べるときの消化を助け、元気になる」という、これまでにあまりなかったコンセプトのエナジードリンクを作りました。
+                    私自身、日本人をもっと肉食にしたいと思っています。肉をしっかり食べて、もっとワイルドになってほしい。ただ、日本人の体質的に、肉料理が重く感じられることもあります。
+                    そこで、「肉料理を美味しく楽しみ、元気になる」というコンセプトのエナジードリンクを作りました。
                   </p>
                   <p>
-                    せっかく作るなら、原価は一切気にせず、今考えうる中で最高のものを作ろうと決めました。お酒を飲むときの対策成分なども、世の中にあるものとは比較にならないレベルで入れています。
+                    せっかく作るなら、原価は一切気にせず、今考えうる中で最高のものを作ろうと決めました。食事の時間をより豊かにし、翌日もすっきりと活動できるような成分設計にこだわっています。
                   </p>
                 </div>
 
@@ -165,13 +151,8 @@ export default function Products() {
                 <div className="bg-gray-50 p-10 rounded-sm border border-gray-100">
                   <h3 className="text-xl font-bold mb-6 text-[#1A1A1A] flex items-center gap-3">
                     <span className="w-8 h-[1px] bg-[#0066FF]"></span>
-                    人類の進化と「Hunter」コミュニティ
+                    「Hunter」コミュニティ
                   </h3>
-                  <p className="mb-6">
-                    私は、「消化」というテーマで、人類にもう一度進化が起きるのではないかと考えています。
-                    かつて人類は、火を使って消化を効率化したことで活動時間を増やし、文明を発展させました。
-                    今、AIによって脳の役割が変わり、時間的・精神的な余白が増えていく中で、身体のほうももう一段階進化できる余地があるのではないか。その鍵が「消化」だと考えています。
-                  </p>
                   <p className="mb-6">
                     これからは、「どう楽しむか」「どう味わうか」という価値観が重要になっていきます。
                     そうした価値観や生き方について、みんなで話し合える場を作りたい。それが「Hunter」というコミュニティです。
