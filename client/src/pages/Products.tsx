@@ -157,7 +157,7 @@ export default function Products() {
                     そこで、「肉を食べるときの消化を助け、元気になる」という、これまでにあまりなかったコンセプトのエナジードリンクを作りました。
                   </p>
                   <p>
-                    せっかく作るなら、原価は一切気にせず、今考えうる中で最高のものを作ろうと決めました。お酒を飲むときの対策成分なども、世の中にあるものとは比較にならないレベルで入れています。
+                    今考えうる中で最高のものを作ろうと決めました。お酒を飲むときの対策成分なども、世の中にあるものとは比較にならないレベルで入れています。
                   </p>
                 </div>
 
@@ -165,7 +165,7 @@ export default function Products() {
                 <div className="bg-gray-50 p-10 rounded-sm border border-gray-100">
                   <h3 className="text-xl font-bold mb-6 text-[#1A1A1A] flex items-center gap-3">
                     <span className="w-8 h-[1px] bg-[#0066FF]"></span>
-                    人類の進化と「Hunter」コミュニティ
+                    人類の進化
                   </h3>
                   <p className="mb-6">
                     私は、「消化」というテーマで、人類にもう一度進化が起きるのではないかと考えています。
@@ -174,11 +174,9 @@ export default function Products() {
                   </p>
                   <p className="mb-6">
                     これからは、「どう楽しむか」「どう味わうか」という価値観が重要になっていきます。
-                    そうした価値観や生き方について、みんなで話し合える場を作りたい。それが「Hunter」というコミュニティです。
                   </p>
                   <p className="font-bold text-[#1A1A1A]">
                     ジビエやこのドリンクは、その世界に入るための入り口であり、ツールです。
-                    最終的には、ジビエそのものが目的ではありません。その先にある価値観や、面白さ、幸せを、みんなで作っていくことが目的です。
                   </p>
                 </div>
               </div>
