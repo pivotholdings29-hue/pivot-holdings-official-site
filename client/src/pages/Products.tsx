@@ -61,7 +61,15 @@ export default function Products() {
                 Original Brand
               </div>
               <h2 className="text-5xl md:text-7xl font-bold mb-4 font-english text-[#1A1A1A]">Hunter</h2>
-              <p className="text-lg text-gray-400 mb-12 font-light tracking-wide">ハンター</p>
+              <p className="text-lg text-gray-400 mb-8 font-light tracking-wide">ハンター</p>
+
+              <div className="mb-12">
+                <p className="text-2xl font-bold text-[#1A1A1A]">
+                  <span className="text-sm font-normal text-gray-500 mr-2">メーカー小売希望価格</span>
+                  ¥1,800
+                  <span className="text-sm font-normal text-gray-500 ml-1">（税込）</span>
+                </p>
+              </div>
 
               <div className="space-y-8 text-gray-500 leading-loose mb-16 font-light">
                 <p className="font-bold text-[#1A1A1A]">
