@@ -23,9 +23,7 @@ export default function Company() {
                 <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Reading</dt>
                 <dd className="md:col-span-2 text-gray-600">
                   ピボットホールディングス<br />
-                  <span className="text-sm text-gray-400 mt-2 block">
-                    ※pHは「Pivot Holdings」の略で、“転換点をつくるホールディングカンパニー”という意味を込めています
-                  </span>
+                  
                 </dd>
               </div>
 
