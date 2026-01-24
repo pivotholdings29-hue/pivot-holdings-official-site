@@ -46,8 +46,7 @@ export default function Business() {
               transition={{ duration: 0.8 }}
               className="text-2xl md:text-3xl font-bold mb-12 leading-relaxed text-[#1A1A1A] text-left md:text-center"
             >
-              pHは、「整える」という視点から、<br className="hidden md:block" />
-              飲料・食品を中心とした商品と体験の企画・開発を行っています。
+              pH株式会社は清涼飲料水を中心とした商品と体験の企画・開発を行っています。
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -75,7 +74,7 @@ export default function Business() {
                   商品企画・開発・販売
                 </h3>
                 <p className="text-gray-500 leading-loose pl-14 font-light">
-                  飲料および食品関連商品の企画・開発・販売を主軸とし、ECサイトやイベントを通じて展開しています。
+                  清涼飲料水の企画・開発・販売を主軸とし、ECサイトやイベントを通じて展開しています。
                   単なるモノの提供ではなく、その先にある「時間」や「体験」を豊かにする商品を開発しています。
                 </p>
               </motion.div>
@@ -95,7 +94,7 @@ export default function Business() {
                 <div className="pl-14">
                   <p className="text-gray-500 leading-loose font-light mb-6">
                     「ジビエの美味しさをもっと知ってほしい！」という想いから、
-                    BBQイベントの開催や、ジビエに合うドリンク（Hunter）の製造を行っています。
+                    BBQイベントを開催しています。
                     ハンターさんや飲食店さん、イベントに参加したい方との繋がりを大切にするコミュニティです。
                   </p>
                   <a 
