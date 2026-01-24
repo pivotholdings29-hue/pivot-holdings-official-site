@@ -1,6 +1,4 @@
 import Layout from "@/components/Layout";
-import { ShoppingCart } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 export default function Purchase() {
   return (
@@ -20,36 +18,22 @@ export default function Purchase() {
             </h2>
             <p className="text-gray-500 mb-16 leading-loose text-lg">
               pHの商品（Hunterなど）のご注文は、<br className="hidden md:block" />
-              現在、下記のご注文フォームより承っております。<br />
+              下記のご注文フォームより承っております。<br />
               必要事項をご入力の上、送信してください。
             </p>
 
             <div className="bg-white p-4 md:p-8 rounded-sm border border-gray-100 shadow-xl">
-              {/* Google Form Embed Placeholder */}
-              <div className="w-full aspect-[3/4] md:aspect-[4/5] bg-gray-50 flex flex-col items-center justify-center border-2 border-dashed border-gray-200 rounded-sm">
-                <ShoppingCart className="w-16 h-16 text-gray-300 mb-4" />
-                <p className="text-gray-500 font-bold mb-2">Googleフォーム埋め込みエリア</p>
-                <p className="text-sm text-gray-400 max-w-md mx-auto leading-relaxed px-4">
-                  ここにGoogleフォームの埋め込みコード（iframe）を貼り付けてください。<br />
-                  Googleフォームの「送信」ボタン → 「&lt; &gt;」タブからHTMLコードを取得できます。
-                </p>
-                {/* 
-                  実際の運用時は、上記のプレースホルダーを削除し、
-                  以下のようにiframeタグを配置してください。
-                  width="100%" height="1000" などの調整が必要です。
-                  
-                  <iframe 
-                    src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" 
-                    width="100%" 
-                    height="1200" 
-                    frameBorder="0" 
-                    marginHeight={0} 
-                    marginWidth={0}
-                  >
-                    読み込んでいます…
-                  </iframe>
-                */}
-              </div>
+              <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLSeC8Kup7d66TaJqN3wPKqBv-RyQ5CVUPD5szXDEGWHMoa44Zw/viewform?embedded=true" 
+                width="100%" 
+                height="1800" 
+                frameBorder="0" 
+                marginHeight={0} 
+                marginWidth={0}
+                title="Hunter注文フォーム"
+              >
+                読み込んでいます…
+              </iframe>
             </div>
             
             <div className="mt-12 text-left max-w-2xl mx-auto bg-gray-50 p-8 rounded-sm">
