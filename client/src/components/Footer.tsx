@@ -105,8 +105,12 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
           <p>&copy; {new Date().getFullYear()} pH Inc. All rights reserved.</p>
           <div className="flex gap-6">
-            <span className="hover:text-gray-300 cursor-pointer">プライバシーポリシー</span>
-            <span className="hover:text-gray-300 cursor-pointer">特定商取引法に基づく表記</span>
+            <Link href="/privacy">
+              <a className="hover:text-gray-300 cursor-pointer">プライバシーポリシー</a>
+            </Link>
+            <Link href="/legal">
+              <a className="hover:text-gray-300 cursor-pointer">特定商取引法に基づく表記</a>
+            </Link>
           </div>
         </div>
       </div>

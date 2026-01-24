@@ -40,7 +40,7 @@ export default function Home() {
               className="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed max-w-3xl font-light"
             >
               pHは、飲料・食品と体験を通じて、<br />
-              人と場のコンディションを整えるブランドカンパニーです。
+              “転換点をつくるホールディングカンパニー”です。
             </motion.p>
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
