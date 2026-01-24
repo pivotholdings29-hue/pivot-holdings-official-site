@@ -1,14 +1,14 @@
 import Layout from "@/components/Layout";
-import PageHeader from "@/components/PageHeader";
 
 export default function Legal() {
   return (
     <Layout>
-      <PageHeader 
-        title="LEGAL" 
-        subtitle="特定商取引法に基づく表記" 
-        imageSrc="/images/legal-bg.jpg"
-      />
+      <div className="bg-gray-50 py-20 md:py-32">
+        <div className="container mx-auto px-4">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 font-english tracking-wide text-[#1A1A1A]">LEGAL</h1>
+          <p className="text-gray-400 font-bold tracking-widest text-sm uppercase">特定商取引法に基づく表記</p>
+        </div>
+      </div>
 
       <section className="py-24">
         <div className="container mx-auto px-4 max-w-4xl">

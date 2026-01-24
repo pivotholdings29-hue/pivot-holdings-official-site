@@ -1,16 +1,16 @@
 import Layout from "@/components/Layout";
 import { Mail, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import PageHeader from "@/components/PageHeader";
 
 export default function Contact() {
   return (
     <Layout>
-      <PageHeader 
-        title="CONTACT" 
-        subtitle="お問い合わせ" 
-        imageSrc="/images/contact-bg.jpg"
-      />
+      <div className="bg-gray-50 py-20 md:py-32">
+        <div className="container mx-auto px-4">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 font-english tracking-wide text-[#1A1A1A]">CONTACT</h1>
+          <p className="text-gray-400 font-bold tracking-widest text-sm uppercase">お問い合わせ</p>
+        </div>
+      </div>
 
       <section className="py-24">
         <div className="container mx-auto px-4 max-w-3xl">
