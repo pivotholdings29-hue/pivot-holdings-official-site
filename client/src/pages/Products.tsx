@@ -90,6 +90,41 @@ export default function Products() {
                 </ul>
               </div>
 
+              {/* Product Specs Table */}
+              <div className="mb-16 border-t border-gray-200 pt-8">
+                <h3 className="text-lg font-bold text-[#1A1A1A] mb-6 font-english tracking-wide">SPECIFICATIONS</h3>
+                <div className="grid grid-cols-1 gap-y-4 text-sm">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 border-b border-gray-100 pb-4">
+                    <div className="font-bold text-gray-900">商品名</div>
+                    <div className="sm:col-span-2 text-gray-600">Hunter ドリンク</div>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 border-b border-gray-100 pb-4">
+                    <div className="font-bold text-gray-900">内容量</div>
+                    <div className="sm:col-span-2 text-gray-600">
+                      100ml（果汁6％）<br />
+                      1箱14本入り
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 border-b border-gray-100 pb-4">
+                    <div className="font-bold text-gray-900">賞味期限</div>
+                    <div className="sm:col-span-2 text-gray-600">製造後12か月</div>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 border-b border-gray-100 pb-4">
+                    <div className="font-bold text-gray-900">保存方法</div>
+                    <div className="sm:col-span-2 text-gray-600">
+                      直射日光・高温多湿を避け、常温で保存してください。<br />
+                      <span className="text-xs text-gray-400">※過熱や冷凍はしないでください。</span>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 border-b border-gray-100 pb-4">
+                    <div className="font-bold text-gray-900">原材料名</div>
+                    <div className="sm:col-span-2 text-gray-600 leading-relaxed">
+                      レモン果汁（国産）、甜菜糖、水（甜菜糖由来の発酵原料を含む）、L-カルニチン、イヌリン、食物繊維、ビタミンプレミックス（ビタミンA（レチノール）、ビタミンB1、ビタミンB2、ナイアシン、ビタミンB6、葉酸、ビタミンB12、ビタミンC、ビタミンD、ビタミンE）、カフェイン、クエン酸（pH調整用）、米糠・大豆エキス培養酵素物加工食品
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div className="flex flex-col sm:flex-row gap-6">
                 <a href="https://line.me/R/ti/p/@278bzuez" target="_blank" rel="noopener noreferrer">
                   <Button className="bg-[#06C755] hover:bg-[#05b34c] text-white px-10 py-7 rounded-sm transition-all duration-300 shadow-none group w-full sm:w-auto">
