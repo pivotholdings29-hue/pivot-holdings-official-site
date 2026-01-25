@@ -90,13 +90,7 @@ export default function Products() {
                       ¥1,800
                       <span className="text-sm font-normal text-gray-500 ml-1">（税込）</span>
                     </p>
-                    <div className="mt-2">
-                      <Link href="/shipping">
-                        <a className="text-sm text-[#0066FF] hover:underline flex items-center gap-1">
-                          送料はこちら <ArrowRight className="w-3 h-3" />
-                        </a>
-                      </Link>
-                    </div>
+                    
                   </div>
 
                   <div className="space-y-8 text-gray-500 leading-loose mb-16 font-light">
@@ -160,6 +154,13 @@ export default function Products() {
                       <li>14本までは60サイズ、15本以上は80サイズでの発送となります。</li>
                       <li>決済方法はクレジットカード決済、銀行振込のいずれかです。</li>
                     </ul>
+                    <div className="mt-4">
+                      <Link href="/shipping">
+                        <a className="text-sm text-[#0066FF] hover:underline flex items-center gap-1">
+                          ※送料一覧はこちら <ArrowRight className="w-3 h-3" />
+                        </a>
+                      </Link>
+                    </div>
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-6">
@@ -419,35 +420,35 @@ export default function Products() {
                   <div className="w-full md:w-1/2">
                     <div className="bg-gray-800 p-8 rounded-2xl relative overflow-hidden border border-gray-700">
                       <ShieldCheck className="w-32 h-32 text-[#0066FF]/20 absolute -bottom-4 -right-4" />
-                      <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+                      <h3 className="text-2xl font-bold mb-6 flex items-center gap-3 text-white">
                         <Lock className="w-6 h-6 text-[#0066FF]" />
                         安心のセキュリティ対策
                       </h3>
-                      <p className="font-bold mb-4 text-gray-200">
+                      <p className="font-bold mb-4 text-white">
                         AIを安全に使う「守りの鉄則」
                       </p>
-                      <p className="text-gray-400 leading-relaxed">
+                      <p className="text-gray-300 leading-relaxed">
                         「AIは嘘をつく」「情報は漏れる」を前提とした運用ルールを徹底指導します。
                       </p>
                     </div>
                   </div>
                   <div className="w-full md:w-1/2">
-                    <h3 className="text-2xl font-bold mb-6">
+                    <h3 className="text-2xl font-bold mb-6 text-white">
                       会社を守るためのリスク管理も万全
                     </h3>
-                    <p className="text-gray-400 leading-loose mb-6">
+                    <p className="text-gray-300 leading-loose mb-6">
                       中小企業が最も懸念する「情報漏洩」や「著作権侵害」のリスクに対し、私たちはツールを使うだけでなく「守るための鉄則」もセットで提供します。
                     </p>
                     <ul className="space-y-3">
-                      <li className="flex items-center gap-3 text-gray-300">
+                      <li className="flex items-center gap-3 text-gray-200">
                         <CheckCircle2 className="w-5 h-5 text-[#0066FF]" />
                         機密情報を入力しないためのマスキング技術
                       </li>
-                      <li className="flex items-center gap-3 text-gray-300">
+                      <li className="flex items-center gap-3 text-gray-200">
                         <CheckCircle2 className="w-5 h-5 text-[#0066FF]" />
                         AIの嘘（ハルシネーション）を見抜くチェック体制
                       </li>
-                      <li className="flex items-center gap-3 text-gray-300">
+                      <li className="flex items-center gap-3 text-gray-200">
                         <CheckCircle2 className="w-5 h-5 text-[#0066FF]" />
                         安全な運用ルールの策定支援
                       </li>
