@@ -1,4 +1,6 @@
 import Layout from "@/components/Layout";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Building2, User } from "lucide-react";
 
 export default function Purchase() {
   return (
@@ -12,31 +14,76 @@ export default function Purchase() {
 
       <section className="py-24">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-12 text-[#1A1A1A]">
-              ご注文フォーム
-            </h2>
-            <p className="text-gray-500 mb-16 leading-loose text-lg">
-              pHの商品（Hunterなど）のご注文は、<br className="hidden md:block" />
-              下記のご注文フォームより承っております。<br />
-              必要事項をご入力の上、送信してください。
-            </p>
-
-            <div className="bg-white p-4 md:p-8 rounded-sm border border-gray-100 shadow-xl">
-              <iframe 
-                src="https://docs.google.com/forms/d/e/1FAIpQLSeC8Kup7d66TaJqN3wPKqBv-RyQ5CVUPD5szXDEGWHMoa44Zw/viewform?embedded=true" 
-                width="100%" 
-                height="1800" 
-                frameBorder="0" 
-                marginHeight={0} 
-                marginWidth={0}
-                title="Hunter注文フォーム"
-              >
-                読み込んでいます…
-              </iframe>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl font-bold mb-6 text-[#1A1A1A]">
+                ご注文フォーム
+              </h2>
+              <p className="text-gray-500 leading-loose text-lg">
+                お客様の区分に合わせて、下記よりフォームを選択してください。
+              </p>
             </div>
+
+            <Tabs defaultValue="toc" className="w-full">
+              <TabsList className="grid w-full grid-cols-2 mb-12 h-auto p-1 bg-gray-100 rounded-lg">
+                <TabsTrigger 
+                  value="toc" 
+                  className="py-4 text-lg font-bold data-[state=active]:bg-white data-[state=active]:text-[#0066FF] data-[state=active]:shadow-sm transition-all rounded-md flex items-center justify-center gap-2"
+                >
+                  <User className="w-5 h-5" />
+                  一般のお客様 (ToC)
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="tob" 
+                  className="py-4 text-lg font-bold data-[state=active]:bg-white data-[state=active]:text-[#0066FF] data-[state=active]:shadow-sm transition-all rounded-md flex items-center justify-center gap-2"
+                >
+                  <Building2 className="w-5 h-5" />
+                  法人・パートナー様 (ToB)
+                </TabsTrigger>
+              </TabsList>
+
+              <TabsContent value="toc" className="mt-0">
+                <div className="bg-white p-4 md:p-8 rounded-sm border border-gray-100 shadow-xl">
+                  <div className="mb-8 text-center">
+                    <h3 className="text-xl font-bold text-[#1A1A1A] mb-2">一般のお客様向け ご注文フォーム</h3>
+                    <p className="text-sm text-gray-500">個人でのご購入はこちらからお願いいたします。</p>
+                  </div>
+                  <iframe 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSeC8Kup7d66TaJqN3wPKqBv-RyQ5CVUPD5szXDEGWHMoa44Zw/viewform?embedded=true" 
+                    width="100%" 
+                    height="1800" 
+                    frameBorder="0" 
+                    marginHeight={0} 
+                    marginWidth={0}
+                    title="Hunter注文フォーム（一般）"
+                  >
+                    読み込んでいます…
+                  </iframe>
+                </div>
+              </TabsContent>
+
+              <TabsContent value="tob" className="mt-0">
+                <div className="bg-white p-4 md:p-8 rounded-sm border border-gray-100 shadow-xl">
+                  <div className="mb-8 text-center">
+                    <h3 className="text-xl font-bold text-[#1A1A1A] mb-2">営業代理店・パートナー様向け ご注文フォーム</h3>
+                    <p className="text-sm text-gray-500">お取り扱いをご希望の法人様・パートナー様はこちらからお願いいたします。</p>
+                  </div>
+                  <iframe 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLScJO2Fgps5KgJ8F2HFyVkLeVw6nONl2LrMMeczqZXIvmbO2NQ/viewform?embedded=true" 
+                    width="100%" 
+                    height="1800" 
+                    frameBorder="0" 
+                    marginHeight={0} 
+                    marginWidth={0}
+                    title="Hunter注文フォーム（法人）"
+                  >
+                    読み込んでいます…
+                  </iframe>
+                </div>
+              </TabsContent>
+            </Tabs>
             
-            <div className="mt-12 text-left max-w-2xl mx-auto bg-gray-50 p-8 rounded-sm">
+            <div className="mt-16 text-left max-w-2xl mx-auto bg-gray-50 p-8 rounded-sm">
               <h3 className="font-bold text-[#1A1A1A] mb-4">ご注文後の流れ</h3>
               <ol className="list-decimal pl-5 space-y-3 text-gray-600 text-sm leading-relaxed">
                 <li>フォームよりご注文内容を送信してください。</li>
