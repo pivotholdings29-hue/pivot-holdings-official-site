@@ -31,7 +31,7 @@ export default function Home() {
               className="text-5xl md:text-7xl font-bold leading-tight mb-8 tracking-tight text-white relative z-10"
             >
               人生と体験を、<br />
-              ちょうどいい<span className="text-[#0066FF]">pH株式会社</span>に。
+              ちょうどいい<span className="text-[#0066FF]">pH</span>に。
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
