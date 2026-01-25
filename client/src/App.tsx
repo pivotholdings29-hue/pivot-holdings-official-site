@@ -16,7 +16,7 @@ import Legal from "./pages/Legal";
 import Privacy from "./pages/Privacy";
 import Shipping from "./pages/Shipping";
 import Thanks from "./pages/Thanks";
-import ChocoAI from "./pages/ChocoAI";
+
 
 function Router() {
   return (
@@ -32,7 +32,7 @@ function Router() {
       <Route path="/privacy" component={Privacy} />
       <Route path="/shipping" component={Shipping} />
       <Route path="/thanks" component={Thanks} />
-      <Route path="/choco-ai" component={ChocoAI} />
+      
       <Route component={NotFound} />
     </Switch>
   );

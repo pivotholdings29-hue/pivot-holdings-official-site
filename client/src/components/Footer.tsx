@@ -31,15 +31,7 @@ export default function Footer() {
                 <Link href="/products">
                   <a className="hover:text-white transition-colors flex items-center gap-2 group">
                     <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-white transition-colors"></span>
-                    商品紹介
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/choco-ai">
-                  <a className="hover:text-white transition-colors flex items-center gap-2 group">
-                    <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-white transition-colors"></span>
-                    ちょこAI。
+                    商品・サービス
                   </a>
                 </Link>
               </li>

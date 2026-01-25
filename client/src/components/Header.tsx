@@ -11,8 +11,7 @@ export default function Header() {
   const navItems = [
     { label: "TOP", path: "/" },
     { label: "事業内容", path: "/business" },
-    { label: "商品紹介", path: "/products" },
-    { label: "ちょこAI。", path: "/choco-ai" },
+    { label: "商品・サービス", path: "/products" },
     { label: "ニュース", path: "/news" },
     { label: "企業情報", path: "/company" },
     { label: "購入する", path: "/purchase" },

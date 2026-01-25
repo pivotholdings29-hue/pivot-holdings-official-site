@@ -78,26 +78,19 @@ export default function Home() {
                 </p>
             </Link>
 
-            {/* Products Card */}
-            <Link href="/products" className="group block bg-gray-50 p-10 rounded-sm hover:bg-white hover:shadow-xl transition-all duration-500 border border-transparent hover:border-gray-100 h-full cursor-pointer">
+            {/* Products & Service Card */}
+            <Link href="/products" className="group block bg-gray-50 p-10 rounded-sm hover:bg-white hover:shadow-xl transition-all duration-500 border border-transparent hover:border-gray-100 h-full cursor-pointer md:col-span-2">
               <h3 className="text-2xl font-bold mb-4 flex items-center justify-between text-[#1A1A1A]">
-                商品紹介
+                商品・サービス
                 <ArrowRight className="text-gray-300 group-hover:text-[#0066FF] transition-colors transform group-hover:translate-x-1 duration-300" />
               </h3>
-              <p className="text-gray-500 text-sm leading-loose">
-                食事や体験の時間を前提に設計された、自社ブランド「Hunter」のご紹介。
+              <p className="text-gray-500 text-sm leading-loose mb-4">
+                自社ブランド「Hunter」と、AI実装支援サービス「ちょこAI。」のご紹介。
               </p>
-            </Link>
-
-            {/* Choco AI Card */}
-            <Link href="/choco-ai" className="group block bg-blue-50 p-10 rounded-sm hover:bg-white hover:shadow-xl transition-all duration-500 border border-transparent hover:border-blue-100 h-full cursor-pointer">
-              <h3 className="text-2xl font-bold mb-4 flex items-center justify-between text-[#0066FF]">
-                ちょこAI。
-                <ArrowRight className="text-blue-300 group-hover:text-[#0066FF] transition-colors transform group-hover:translate-x-1 duration-300" />
-              </h3>
-              <p className="text-gray-500 text-sm leading-loose">
-                AIを諦めたくない経営者のための、中小企業向けAI実装支援サービス。
-              </p>
+              <div className="flex gap-2">
+                <span className="inline-block px-2 py-1 bg-gray-200 text-xs text-gray-600 rounded-sm">Hunter</span>
+                <span className="inline-block px-2 py-1 bg-blue-100 text-xs text-[#0066FF] rounded-sm">ちょこAI。</span>
+              </div>
             </Link>
 
             {/* Purchase Card (Highlighted) */}
