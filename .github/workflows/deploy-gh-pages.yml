@@ -25,61 +25,17 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "pnpm" # 速度改善（任意だが入れて損なし）
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v3
         with:
           version: 9
 
-      # 追加：環境・ディレクトリ状況をログに出す（原因切り分けが速くなる）
-      - name: Preflight (show working dir and key paths)
-        run: |
-          echo "==== pwd ===="
-          pwd
-          echo "==== repo root files ===="
-          ls -la
-          echo "==== client dir ===="
-          ls -la client || true
-          echo "==== vite config ===="
-          ls -la vite.config.* || true
-
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
 
       - name: Build
         run: pnpm run build
-
-      # 追加：成果物の実体を確認（dist が本当に生成されているか）
-      - name: Verify dist exists and list contents
-        run: |
-          echo "==== dist root ===="
-          ls -la dist
-          echo "==== dist size summary ===="
-          du -sh dist || true
-
-      # 追加：CNAME が dist にあることを確認し、中身も表示
-      # 方針A：無ければ即失敗（原因を早く特定できるのでおすすめ）
-      - name: Assert CNAME exists in dist (fail if missing)
-        run: |
-          if [ ! -f dist/CNAME ]; then
-            echo "ERROR: dist/CNAME not found."
-            echo "Hint: check Vite publicDir copy and build output."
-            exit 1
-          fi
-          echo "OK: dist/CNAME exists."
-          echo "==== dist/CNAME content ===="
-          cat dist/CNAME
-
-      # 方針B：運用優先の保険（Aの代わりに使う。Aと同時には入れない）
-      # - name: Ensure CNAME in dist (fallback copy)
-      #   run: |
-      #     if [ ! -f dist/CNAME ]; then
-      #       echo "dist/CNAME missing. Copying from client/public/CNAME..."
-      #       cp -v client/public/CNAME dist/CNAME
-      #     fi
-      #     echo "==== dist/CNAME content ===="
-      #     cat dist/CNAME
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
