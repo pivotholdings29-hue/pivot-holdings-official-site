@@ -107,6 +107,25 @@ export default function Business() {
                   </a>
                 </div>
               </motion.div>
+
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="bg-white p-10 md:p-12 rounded-sm border border-gray-100 hover:border-[#0066FF]/30 hover:shadow-xl transition-all duration-500 relative overflow-hidden group"
+              >
+                <div className="absolute top-0 left-0 w-1 h-full bg-[#1A1A1A] group-hover:bg-[#0066FF] transition-colors duration-500"></div>
+                <h3 className="text-2xl font-bold mb-6 flex items-center gap-4 text-[#1A1A1A]">
+                  <span className="text-gray-200 font-english text-4xl font-bold group-hover:text-[#0066FF]/20 transition-colors">03</span>
+                  AI実装支援事業（ちょこAI。）
+                </h3>
+                <p className="text-gray-500 leading-loose pl-14 font-light">
+                  「AIを諦めたくない経営者のための最後の砦」として、中小企業向けのAI導入・定着支援を行っています。
+                  高度なスキル教育ではなく、「明日から実務で使える」ことに特化した実践的なサポートを提供し、
+                  企業の生産性向上とリスク管理を両立させます。
+                </p>
+              </motion.div>
             </div>
 
             <motion.div 
