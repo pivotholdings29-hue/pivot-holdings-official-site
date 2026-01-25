@@ -136,7 +136,7 @@ export default function Products() {
                 <h4 className="font-bold text-[#1A1A1A] mb-4">ご購入について</h4>
                 <ul className="list-disc pl-5 space-y-2 text-sm text-gray-600">
                   <li>1箱14本で準備していますが、1本単位から購入できます。</li>
-                  <li>送料は購入数によるため、別途送料を確認ください。</li>
+                  <li>14本までは60サイズ、15本以上は80サイズでの発送となります。</li>
                   <li>決済方法はクレジットカード決済、銀行振込のいずれかです。</li>
                 </ul>
               </div>
