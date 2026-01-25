@@ -14,6 +14,7 @@ import Company from "./pages/Company";
 import Contact from "./pages/Contact";
 import Legal from "./pages/Legal";
 import Privacy from "./pages/Privacy";
+import Shipping from "./pages/Shipping";
 
 function Router() {
   return (
@@ -27,6 +28,7 @@ function Router() {
       <Route path="/contact" component={Contact} />
       <Route path="/legal" component={Legal} />
       <Route path="/privacy" component={Privacy} />
+      <Route path="/shipping" component={Shipping} />
       <Route component={NotFound} />
     </Switch>
   );

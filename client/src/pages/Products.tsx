@@ -69,6 +69,13 @@ export default function Products() {
                   ¥1,800
                   <span className="text-sm font-normal text-gray-500 ml-1">（税込）</span>
                 </p>
+                <div className="mt-2">
+                  <Link href="/shipping">
+                    <a className="text-sm text-[#0066FF] hover:underline flex items-center gap-1">
+                      送料はこちら <ArrowRight className="w-3 h-3" />
+                    </a>
+                  </Link>
+                </div>
               </div>
 
               <div className="space-y-8 text-gray-500 leading-loose mb-16 font-light">
@@ -123,6 +130,15 @@ export default function Products() {
                     </div>
                   </div>
                 </div>
+              </div>
+
+              <div className="mb-8 bg-gray-50 p-6 rounded-sm border border-gray-100">
+                <h4 className="font-bold text-[#1A1A1A] mb-4">ご購入について</h4>
+                <ul className="list-disc pl-5 space-y-2 text-sm text-gray-600">
+                  <li>1箱14本で準備していますが、1本単位から購入できます。</li>
+                  <li>送料は購入数によるため、別途送料を確認ください。</li>
+                  <li>決済方法はクレジットカード決済、銀行振込のいずれかです。</li>
+                </ul>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-6">

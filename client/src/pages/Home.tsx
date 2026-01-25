@@ -31,7 +31,7 @@ export default function Home() {
               className="text-5xl md:text-7xl font-bold leading-tight mb-8 tracking-tight text-white relative z-10"
             >
               人生と体験を、<br />
-              ちょうどいい<span className="text-[#0066FF]">pH</span>に。
+              ちょうどいい<span className="text-[#0066FF]">pH株式会社</span>に。
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
@@ -39,7 +39,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
               className="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed max-w-3xl font-light"
             >
-              pHは、飲料・食品と体験を通じて、<br />
+              pH株式会社は、飲料・食品と体験を通じて、<br />
               “転換点をつくるホールディングカンパニー”です。
             </motion.p>
             <motion.div 
