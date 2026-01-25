@@ -292,12 +292,12 @@ export default function Products() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.2 }}
                   >
-                    <Link href="/contact">
-                      <Button className="bg-[#0066FF] hover:bg-[#0052CC] text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
-                        まずは相談してみる
-                        <ArrowRight className="ml-2 w-5 h-5" />
+                    <a href="https://lin.ee/iCvHuie" target="_blank" rel="noopener noreferrer">
+                      <Button className="bg-[#06C755] hover:bg-[#05b34c] text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
+                        LINEで相談してみる
+                        <ExternalLink className="ml-2 w-5 h-5" />
                       </Button>
-                    </Link>
+                    </a>
                   </motion.div>
                 </div>
                 
@@ -458,11 +458,12 @@ export default function Products() {
               </div>
 
               <div className="mt-24 text-center">
-                <Link href="/contact">
-                  <Button className="bg-[#0066FF] hover:bg-[#0052CC] text-white px-12 py-8 text-lg rounded-sm shadow-lg hover:shadow-xl transition-all duration-300">
-                    お問い合わせフォームへ
+                <a href="https://lin.ee/iCvHuie" target="_blank" rel="noopener noreferrer">
+                  <Button className="bg-[#06C755] hover:bg-[#05b34c] text-white px-12 py-8 text-lg rounded-sm shadow-lg hover:shadow-xl transition-all duration-300">
+                    LINEでお問い合わせ
+                    <ExternalLink className="ml-2 w-5 h-5" />
                   </Button>
-                </Link>
+                </a>
               </div>
             </TabsContent>
           </Tabs>
