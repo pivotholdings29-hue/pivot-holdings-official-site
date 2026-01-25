@@ -52,6 +52,14 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/purchase">
+                  <a className="hover:text-white transition-colors flex items-center gap-2 group">
+                    <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-white transition-colors"></span>
+                    購入方法
+                  </a>
+                </Link>
+              </li>
+              <li>
                 <Link href="/contact">
                   <a className="hover:text-white transition-colors flex items-center gap-2 group">
                     <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-white transition-colors"></span>

@@ -14,6 +14,7 @@ export default function Header() {
     { label: "商品紹介", path: "/products" },
     { label: "ニュース", path: "/news" },
     { label: "企業情報", path: "/company" },
+    { label: "購入する", path: "/purchase" },
   ];
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -46,7 +47,14 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* CTA Button Removed */}
+        {/* CTA Button */}
+        <div className="hidden md:block">
+          <Link href="/purchase">
+            <a className="bg-[#1A1A1A] text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-[#0066FF] transition-colors duration-300 flex items-center gap-2">
+              購入する
+            </a>
+          </Link>
+        </div>
 
         {/* Mobile Menu Button */}
         <button
