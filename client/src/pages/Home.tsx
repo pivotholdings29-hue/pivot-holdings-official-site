@@ -66,7 +66,7 @@ export default function Home() {
       {/* Navigation Cards Section */}
       <section className="py-24 bg-white border-t border-gray-100">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Business Card */}
             <Link href="/business" className="group block bg-gray-50 p-10 rounded-sm hover:bg-white hover:shadow-xl transition-all duration-500 border border-transparent hover:border-gray-100 h-full cursor-pointer">
                 <h3 className="text-2xl font-bold mb-4 flex items-center justify-between text-[#1A1A1A]">
@@ -86,6 +86,17 @@ export default function Home() {
               </h3>
               <p className="text-gray-500 text-sm leading-loose">
                 食事や体験の時間を前提に設計された、自社ブランド「Hunter」のご紹介。
+              </p>
+            </Link>
+
+            {/* Choco AI Card */}
+            <Link href="/choco-ai" className="group block bg-blue-50 p-10 rounded-sm hover:bg-white hover:shadow-xl transition-all duration-500 border border-transparent hover:border-blue-100 h-full cursor-pointer">
+              <h3 className="text-2xl font-bold mb-4 flex items-center justify-between text-[#0066FF]">
+                ちょこAI。
+                <ArrowRight className="text-blue-300 group-hover:text-[#0066FF] transition-colors transform group-hover:translate-x-1 duration-300" />
+              </h3>
+              <p className="text-gray-500 text-sm leading-loose">
+                AIを諦めたくない経営者のための、中小企業向けAI実装支援サービス。
               </p>
             </Link>
 
