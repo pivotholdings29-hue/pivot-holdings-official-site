@@ -14,7 +14,6 @@ export default function Header() {
     { label: "商品・サービス", path: "/products" },
     { label: "ニュース", path: "/news" },
     { label: "企業情報", path: "/company" },
-    { label: "購入する", path: "/purchase" },
   ];
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
