@@ -44,7 +44,7 @@ export default function Legal() {
                 <dd className="md:col-span-2 space-y-4">
                   <div>
                     <p className="font-bold text-lg text-[#1A1A1A] mb-2">電話番号</p>
-                    <p className="text-gray-600">050-XXXX-XXXX（現在準備中）</p>
+                    <p className="text-gray-600">080-5426-6537</p>
                   </div>
                   <div>
                     <p className="font-bold text-lg text-[#1A1A1A] mb-2">問い合わせ受付時間</p>
