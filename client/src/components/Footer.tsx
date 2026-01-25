@@ -36,6 +36,14 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/choco-ai">
+                  <a className="hover:text-white transition-colors flex items-center gap-2 group">
+                    <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-white transition-colors"></span>
+                    ちょこAI。
+                  </a>
+                </Link>
+              </li>
+              <li>
                 <Link href="/news">
                   <a className="hover:text-white transition-colors flex items-center gap-2 group">
                     <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-white transition-colors"></span>
