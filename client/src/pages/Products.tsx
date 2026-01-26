@@ -86,9 +86,8 @@ export default function Products() {
 
                   <div className="mb-12">
                     <p className="text-2xl font-bold text-[#1A1A1A]">
-                      <span className="text-sm font-normal text-gray-500 mr-2">メーカー小売希望価格</span>
-                      ¥1,800
-                      <span className="text-sm font-normal text-gray-500 ml-1">（税込）</span>
+                      ¥1,667
+                      <span className="text-sm font-normal text-gray-500 ml-1">（税抜）</span>
                     </p>
                     
                   </div>
