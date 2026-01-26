@@ -86,7 +86,7 @@ export default function Products() {
 
                   <div className="mb-12">
                     <p className="text-2xl font-bold text-[#1A1A1A]">
-                      ¥1,667
+                      ¥1,800
                       <span className="text-sm font-normal text-gray-500 ml-1">（税抜）</span>
                     </p>
                     
