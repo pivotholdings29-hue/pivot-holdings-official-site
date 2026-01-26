@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Building2, User } from "lucide-react";
+import { Building2, User, Utensils } from "lucide-react";
 
 export default function Purchase() {
   return (
@@ -25,20 +25,30 @@ export default function Purchase() {
             </div>
 
             <Tabs defaultValue="toc" className="w-full">
-              <TabsList className="grid w-full grid-cols-2 mb-12 h-auto p-1 bg-gray-100 rounded-lg">
+              <TabsList className="grid w-full grid-cols-3 mb-12 h-auto p-1 bg-gray-100 rounded-lg">
                 <TabsTrigger 
                   value="toc" 
-                  className="py-4 text-lg font-bold data-[state=active]:bg-white data-[state=active]:text-[#0066FF] data-[state=active]:shadow-sm transition-all rounded-md flex items-center justify-center gap-2"
+                  className="py-4 text-sm md:text-lg font-bold data-[state=active]:bg-white data-[state=active]:text-[#0066FF] data-[state=active]:shadow-sm transition-all rounded-md flex items-center justify-center gap-2"
                 >
-                  <User className="w-5 h-5" />
-                  一般のお客様 (ToC)
+                  <User className="w-4 h-4 md:w-5 md:h-5" />
+                  <span className="hidden md:inline">一般のお客様</span>
+                  <span className="md:hidden">一般</span>
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="restaurant" 
+                  className="py-4 text-sm md:text-lg font-bold data-[state=active]:bg-white data-[state=active]:text-[#0066FF] data-[state=active]:shadow-sm transition-all rounded-md flex items-center justify-center gap-2"
+                >
+                  <Utensils className="w-4 h-4 md:w-5 md:h-5" />
+                  <span className="hidden md:inline">飲食店様</span>
+                  <span className="md:hidden">飲食店</span>
                 </TabsTrigger>
                 <TabsTrigger 
                   value="tob" 
-                  className="py-4 text-lg font-bold data-[state=active]:bg-white data-[state=active]:text-[#0066FF] data-[state=active]:shadow-sm transition-all rounded-md flex items-center justify-center gap-2"
+                  className="py-4 text-sm md:text-lg font-bold data-[state=active]:bg-white data-[state=active]:text-[#0066FF] data-[state=active]:shadow-sm transition-all rounded-md flex items-center justify-center gap-2"
                 >
-                  <Building2 className="w-5 h-5" />
-                  法人・パートナー様 (ToB)
+                  <Building2 className="w-4 h-4 md:w-5 md:h-5" />
+                  <span className="hidden md:inline">販売代理店様</span>
+                  <span className="md:hidden">代理店</span>
                 </TabsTrigger>
               </TabsList>
 
@@ -62,11 +72,31 @@ export default function Purchase() {
                 </div>
               </TabsContent>
 
+              <TabsContent value="restaurant" className="mt-0">
+                <div className="bg-white p-4 md:p-8 rounded-sm border border-gray-100 shadow-xl">
+                  <div className="mb-8 text-center">
+                    <h3 className="text-xl font-bold text-[#1A1A1A] mb-2">飲食店様向け ご注文フォーム</h3>
+                    <p className="text-sm text-gray-500">飲食店様での導入・ご購入はこちらからお願いいたします。</p>
+                  </div>
+                  <iframe 
+                    src="https://docs.google.com/forms/d/1sjaDvYmuZYgdrVbi33c9c5a5ERA9mL1PrR9eYRzMJ4c/viewform?embedded=true" 
+                    width="100%" 
+                    height="1800" 
+                    frameBorder="0" 
+                    marginHeight={0} 
+                    marginWidth={0}
+                    title="Hunter注文フォーム（飲食店）"
+                  >
+                    読み込んでいます…
+                  </iframe>
+                </div>
+              </TabsContent>
+
               <TabsContent value="tob" className="mt-0">
                 <div className="bg-white p-4 md:p-8 rounded-sm border border-gray-100 shadow-xl">
                   <div className="mb-8 text-center">
-                    <h3 className="text-xl font-bold text-[#1A1A1A] mb-2">営業代理店・パートナー様向け ご注文フォーム</h3>
-                    <p className="text-sm text-gray-500">お取り扱いをご希望の法人様・パートナー様はこちらからお願いいたします。</p>
+                    <h3 className="text-xl font-bold text-[#1A1A1A] mb-2">販売代理店様向け ご注文フォーム</h3>
+                    <p className="text-sm text-gray-500">お取り扱いをご希望の販売代理店様はこちらからお願いいたします。</p>
                   </div>
                   <iframe 
                     src="https://docs.google.com/forms/d/e/1FAIpQLScJO2Fgps5KgJ8F2HFyVkLeVw6nONl2LrMMeczqZXIvmbO2NQ/viewform?embedded=true" 
@@ -75,7 +105,7 @@ export default function Purchase() {
                     frameBorder="0" 
                     marginHeight={0} 
                     marginWidth={0}
-                    title="Hunter注文フォーム（法人）"
+                    title="Hunter注文フォーム（代理店）"
                   >
                     読み込んでいます…
                   </iframe>
