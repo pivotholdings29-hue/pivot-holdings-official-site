@@ -33,7 +33,7 @@ export default function Company() {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">
                 <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Phone</dt>
-                <dd className="md:col-span-2 text-gray-600">03-6820-0586</dd>
+                <dd className="md:col-span-2 text-gray-600">080-5426-6537</dd>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">
