@@ -79,7 +79,7 @@ export default function Purchase() {
                     <p className="text-sm text-gray-500">飲食店様での導入・ご購入はこちらからお願いいたします。</p>
                   </div>
                   <iframe 
-                    src="https://docs.google.com/forms/d/1sjaDvYmuZYgdrVbi33c9c5a5ERA9mL1PrR9eYRzMJ4c/viewform?embedded=true" 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSf9T8qshRv-0Mm6lnSfKUMZiU6EGFyXSaQocDE3p0dJJDTzlg/viewform?embedded=true" 
                     width="100%" 
                     height="1800" 
                     frameBorder="0" 
