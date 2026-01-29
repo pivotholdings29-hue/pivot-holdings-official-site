@@ -44,6 +44,12 @@ function Router() {
 // - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
 
 function App() {
+  // Handle redirect from 404 page (e.g. /?/purchase -> /purchase)
+  if (window.location.search && window.location.search.startsWith("?/")) {
+    const path = window.location.search.substring(2);
+    window.history.replaceState(null, "", path);
+  }
+
   return (
     <ErrorBoundary>
       <ThemeProvider
