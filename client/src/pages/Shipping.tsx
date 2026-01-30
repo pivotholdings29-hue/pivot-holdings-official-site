@@ -114,7 +114,7 @@ export default function Shipping() {
                   <p className="text-4xl font-bold text-[#0066FF]">
                     {calculateShipping() || "---"}
                   </p>
-                  {calculateShipping() && <p className="text-xs text-gray-400 mt-2">※税込</p>}
+                  {calculateShipping() && <p className="text-xs text-gray-400 mt-2">※税抜</p>}
                 </div>
               </div>
             </div>
