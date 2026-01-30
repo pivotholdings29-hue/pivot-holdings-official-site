@@ -1,7 +1,20 @@
 import Layout from "@/components/Layout";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { useState } from "react";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Label } from "@/components/ui/label";
 
 export default function Shipping() {
+  const [selectedRegion, setSelectedRegion] = useState<string>("");
+  const [selectedSize, setSelectedSize] = useState<string>("");
+
+  const calculateShipping = () => {
+    if (!selectedRegion || !selectedSize) return null;
+    const rate = shippingRates.find(r => r.region === selectedRegion);
+    if (!rate) return null;
+    return selectedSize === "60" ? rate.size60 : rate.size80;
+  };
   const shippingRates = [
     { region: "北海道", prefectures: "北海道", size60: "850円", size80: "1,050円" },
     { region: "東北", prefectures: "青森・岩手・宮城・秋田・山形・福島", size60: "620円", size80: "820円" },
@@ -57,6 +70,53 @@ export default function Shipping() {
             <div className="mt-8 text-sm text-gray-500 space-y-2">
               <p>※ 離島・一部地域は追加送料がかかる場合があります。</p>
               <p>※ 商品の組み合わせや数量により、サイズが変更になる場合があります。</p>
+            </div>
+          </div>
+
+          {/* Shipping Calculator */}
+          <div className="mt-12 bg-white p-6 md:p-12 rounded-sm border border-gray-100 shadow-sm">
+            <h2 className="text-2xl font-bold mb-8 text-[#1A1A1A]">送料シミュレーター</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="space-y-6">
+                <div className="space-y-2">
+                  <Label>地域を選択</Label>
+                  <Select onValueChange={setSelectedRegion}>
+                    <SelectTrigger>
+                      <SelectValue placeholder="地域を選択してください" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {shippingRates.map((rate) => (
+                        <SelectItem key={rate.region} value={rate.region}>
+                          {rate.region} ({rate.prefectures.split('・')[0]}など)
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
+
+                <div className="space-y-2">
+                  <Label>サイズを選択</Label>
+                  <Select onValueChange={setSelectedSize}>
+                    <SelectTrigger>
+                      <SelectValue placeholder="サイズを選択してください" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="60">60サイズ</SelectItem>
+                      <SelectItem value="80">80サイズ</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+              </div>
+
+              <div className="flex items-center justify-center bg-gray-50 rounded-sm p-8">
+                <div className="text-center">
+                  <p className="text-sm text-gray-500 mb-2">送料目安</p>
+                  <p className="text-4xl font-bold text-[#0066FF]">
+                    {calculateShipping() || "---"}
+                  </p>
+                  {calculateShipping() && <p className="text-xs text-gray-400 mt-2">※税込</p>}
+                </div>
+              </div>
             </div>
           </div>
         </div>

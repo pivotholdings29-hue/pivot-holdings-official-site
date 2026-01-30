@@ -24,6 +24,16 @@ export default function Purchase() {
               </p>
             </div>
 
+            <div className="mb-16 text-left max-w-2xl mx-auto bg-gray-50 p-8 rounded-sm">
+              <h3 className="font-bold text-[#1A1A1A] mb-4">ご注文後の流れ</h3>
+              <ol className="list-decimal pl-5 space-y-3 text-gray-600 text-sm leading-relaxed">
+                <li>フォームよりご注文内容を送信してください。</li>
+                <li>当社より、ご注文確認メールと振込先口座（または決済URL）をご案内いたします。</li>
+                <li>代金のお支払いをお願いいたします。</li>
+                <li>ご入金確認後、7営業日以内に商品を発送いたします。</li>
+              </ol>
+            </div>
+
             <Tabs defaultValue="toc" className="w-full">
               <TabsList className="grid w-full grid-cols-3 mb-12 h-auto p-1 bg-gray-100 rounded-lg">
                 <TabsTrigger 
@@ -113,15 +123,7 @@ export default function Purchase() {
               </TabsContent>
             </Tabs>
             
-            <div className="mt-16 text-left max-w-2xl mx-auto bg-gray-50 p-8 rounded-sm">
-              <h3 className="font-bold text-[#1A1A1A] mb-4">ご注文後の流れ</h3>
-              <ol className="list-decimal pl-5 space-y-3 text-gray-600 text-sm leading-relaxed">
-                <li>フォームよりご注文内容を送信してください。</li>
-                <li>当社より、ご注文確認メールと振込先口座（または決済URL）をご案内いたします。</li>
-                <li>代金のお支払いをお願いいたします。</li>
-                <li>ご入金確認後、5営業日以内に商品を発送いたします。</li>
-              </ol>
-            </div>
+
           </div>
         </div>
       </section>
