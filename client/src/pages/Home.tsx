@@ -68,39 +68,39 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Business Card */}
-            <Link href="/business" className="group block bg-gray-50 p-10 rounded-sm hover:bg-white hover:shadow-xl transition-all duration-500 border border-transparent hover:border-gray-100 h-full cursor-pointer">
+            <Link href="/business" className="group flex flex-col bg-gray-50 p-10 rounded-sm hover:bg-white hover:shadow-xl transition-all duration-500 border border-transparent hover:border-gray-100 h-full cursor-pointer">
                 <h3 className="text-2xl font-bold mb-4 flex items-center justify-between text-[#1A1A1A]">
                   事業内容
                   <ArrowRight className="text-gray-300 group-hover:text-[#0066FF] transition-colors transform group-hover:translate-x-1 duration-300" />
                 </h3>
-                <p className="text-gray-500 text-sm leading-loose">
+                <p className="text-gray-500 text-sm leading-loose flex-grow">
                   飲料・食品を中心とした商品と体験の企画・開発を行っています。
                 </p>
             </Link>
 
             {/* Products & Service Card */}
-            <Link href="/products" className="group block bg-gray-50 p-10 rounded-sm hover:bg-white hover:shadow-xl transition-all duration-500 border border-transparent hover:border-gray-100 h-full cursor-pointer md:col-span-2">
+            <Link href="/products" className="group flex flex-col bg-gray-50 p-10 rounded-sm hover:bg-white hover:shadow-xl transition-all duration-500 border border-transparent hover:border-gray-100 h-full cursor-pointer md:col-span-2">
               <h3 className="text-2xl font-bold mb-4 flex items-center justify-between text-[#1A1A1A]">
                 商品・サービス
                 <ArrowRight className="text-gray-300 group-hover:text-[#0066FF] transition-colors transform group-hover:translate-x-1 duration-300" />
               </h3>
-              <p className="text-gray-500 text-sm leading-loose mb-4">
+              <p className="text-gray-500 text-sm leading-loose mb-4 flex-grow">
                 自社ブランド「Hunter」と、AI実装支援サービス「ちょこAI。」のご紹介。
               </p>
-              <div className="flex gap-2">
+              <div className="flex gap-2 mt-auto">
                 <span className="inline-block px-2 py-1 bg-gray-200 text-xs text-gray-600 rounded-sm">Hunter</span>
                 <span className="inline-block px-2 py-1 bg-blue-100 text-xs text-[#0066FF] rounded-sm">ちょこAI。</span>
               </div>
             </Link>
 
             {/* Purchase Card (Highlighted) */}
-            <Link href="/purchase" className="group block bg-[#1A1A1A] p-10 rounded-sm shadow-lg hover:shadow-2xl transition-all duration-500 h-full text-white relative overflow-hidden cursor-pointer">
+            <Link href="/purchase" className="group flex flex-col bg-[#1A1A1A] p-10 rounded-sm shadow-lg hover:shadow-2xl transition-all duration-500 h-full text-white relative overflow-hidden cursor-pointer">
               <div className="absolute top-0 right-0 w-64 h-64 bg-[#0066FF]/10 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150 duration-700"></div>
               <h3 className="text-2xl font-bold mb-4 flex items-center justify-between text-white">
                 購入ページ
                 <ArrowRight className="text-[#0066FF] group-hover:translate-x-1 transition-transform duration-300" />
               </h3>
-              <p className="text-gray-400 text-sm leading-loose relative z-10">
+              <p className="text-gray-400 text-sm leading-loose relative z-10 flex-grow">
                 LINE-EC、イベント販売、パートナー経由での購入方法はこちら。
               </p>
             </Link>
@@ -124,6 +124,17 @@ export default function Home() {
           </div>
 
           <div className="space-y-0">
+            <a href="https://prtimes.jp/main/html/rd/p/000000002.000176348.html" target="_blank" rel="noopener noreferrer" className="block group cursor-pointer">
+              <div className="flex flex-col md:flex-row md:items-center gap-6 py-8 border-b border-gray-100 group-hover:bg-gray-50 transition-colors px-6 -mx-6">
+                <div className="flex items-center gap-4 min-w-[200px]">
+                  <span className="text-sm text-gray-400 font-mono">2026.01.29</span>
+                  <span className="inline-block px-2 py-0.5 text-[10px] font-bold text-[#0066FF] border border-[#0066FF] rounded-sm tracking-wider">PRESS</span>
+                </div>
+                <h3 className="text-lg font-medium text-[#1A1A1A] group-hover:text-[#0066FF] transition-colors">
+                  肉好きの常識が変わる！？次世代飲料Hunter（ハンタードリンク）誕生。エナジードリンクの力で胃もたれや消化が気になる食事をサポートし、翌朝のコンディションを維持
+                </h3>
+              </div>
+            </a>
             <Link href="/news" className="block group cursor-pointer">
               <div className="flex flex-col md:flex-row md:items-center gap-6 py-8 border-b border-gray-100 group-hover:bg-gray-50 transition-colors px-6 -mx-6">
                 <div className="flex items-center gap-4 min-w-[200px]">
