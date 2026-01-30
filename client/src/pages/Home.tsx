@@ -3,6 +3,7 @@ import { ArrowRight, MessageCircle, Instagram } from "lucide-react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { motion } from "framer-motion";
+import { allItems } from "@/data/newsData";
 
 export default function Home() {
   return (
@@ -66,7 +67,7 @@ export default function Home() {
       {/* Navigation Cards Section */}
       <section className="py-24 bg-white border-t border-gray-100">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Business Card */}
             <Link href="/business" className="group flex flex-col bg-gray-50 p-10 rounded-sm hover:bg-white hover:shadow-xl transition-all duration-500 border border-transparent hover:border-gray-100 h-full cursor-pointer">
                 <h3 className="text-2xl font-bold mb-4 flex items-center justify-between text-[#1A1A1A]">
@@ -79,7 +80,7 @@ export default function Home() {
             </Link>
 
             {/* Products & Service Card */}
-            <Link href="/products" className="group flex flex-col bg-gray-50 p-10 rounded-sm hover:bg-white hover:shadow-xl transition-all duration-500 border border-transparent hover:border-gray-100 h-full cursor-pointer md:col-span-2">
+            <Link href="/products" className="group flex flex-col bg-gray-50 p-10 rounded-sm hover:bg-white hover:shadow-xl transition-all duration-500 border border-transparent hover:border-gray-100 h-full cursor-pointer">
               <h3 className="text-2xl font-bold mb-4 flex items-center justify-between text-[#1A1A1A]">
                 商品・サービス
                 <ArrowRight className="text-gray-300 group-hover:text-[#0066FF] transition-colors transform group-hover:translate-x-1 duration-300" />
@@ -124,39 +125,37 @@ export default function Home() {
           </div>
 
           <div className="space-y-0">
-            <a href="https://prtimes.jp/main/html/rd/p/000000002.000176348.html" target="_blank" rel="noopener noreferrer" className="block group cursor-pointer">
-              <div className="flex flex-col md:flex-row md:items-center gap-6 py-8 border-b border-gray-100 group-hover:bg-gray-50 transition-colors px-6 -mx-6">
-                <div className="flex items-center gap-4 min-w-[200px]">
-                  <span className="text-sm text-gray-400 font-mono">2026.01.29</span>
-                  <span className="inline-block px-2 py-0.5 text-[10px] font-bold text-[#0066FF] border border-[#0066FF] rounded-sm tracking-wider">PRESS</span>
-                </div>
-                <h3 className="text-lg font-medium text-[#1A1A1A] group-hover:text-[#0066FF] transition-colors">
-                  肉好きの常識が変わる！？次世代飲料Hunter（ハンタードリンク）誕生。エナジードリンクの力で胃もたれや消化が気になる食事をサポートし、翌朝のコンディションを維持
-                </h3>
-              </div>
-            </a>
-            <Link href="/news" className="block group cursor-pointer">
-              <div className="flex flex-col md:flex-row md:items-center gap-6 py-8 border-b border-gray-100 group-hover:bg-gray-50 transition-colors px-6 -mx-6">
-                <div className="flex items-center gap-4 min-w-[200px]">
-                  <span className="text-sm text-gray-400 font-mono">2025.12.23</span>
-                  <span className="inline-block px-2 py-0.5 text-[10px] font-bold text-[#0066FF] border border-[#0066FF] rounded-sm tracking-wider">INFO</span>
-                </div>
-                <h3 className="text-lg font-medium text-[#1A1A1A] group-hover:text-[#0066FF] transition-colors">
-                  pH株式会社を設立し、清涼飲料水領域での事業を開始しました。
-                </h3>
-              </div>
-            </Link>
-            <Link href="/news" className="block group cursor-pointer">
-              <div className="flex flex-col md:flex-row md:items-center gap-6 py-8 border-b border-gray-100 group-hover:bg-gray-50 transition-colors px-6 -mx-6">
-                <div className="flex items-center gap-4 min-w-[200px]">
-                  <span className="text-sm text-gray-400 font-mono">2025.12.23</span>
-                  <span className="inline-block px-2 py-0.5 text-[10px] font-bold text-[#0066FF] border border-[#0066FF] rounded-sm tracking-wider">INFO</span>
-                </div>
-                <h3 className="text-lg font-medium text-[#1A1A1A] group-hover:text-[#0066FF] transition-colors">
-                  自社ブランド商品の企画・開発を進行中です。
-                </h3>
-              </div>
-            </Link>
+            {allItems.slice(0, 3).map((item) => {
+              const Wrapper = item.link ? 'a' : Link;
+              const props = item.link 
+                ? { href: item.link, target: "_blank", rel: "noopener noreferrer" } 
+                : { href: "/news" };
+
+              return (
+                <Wrapper 
+                  key={item.id}
+                  className="block group cursor-pointer"
+                  {...props}
+                >
+                  <div className="flex flex-col md:flex-row md:items-center gap-6 py-8 border-b border-gray-100 group-hover:bg-gray-50 transition-colors px-6 -mx-6">
+                    <div className="flex items-center gap-4 min-w-[200px]">
+                      <span className="text-sm text-gray-400 font-mono">{item.date}</span>
+                      <span className={`inline-block px-2 py-0.5 text-[10px] font-bold border rounded-sm tracking-wider ${
+                        item.category === 'INFO' ? 'text-[#0066FF] border-[#0066FF]' :
+                        item.category === 'EVENT' ? 'text-[#FF6B00] border-[#FF6B00]' :
+                        item.category === 'PRESS' ? 'text-[#0066FF] border-[#0066FF]' :
+                        'text-[#1A1A1A] border-[#1A1A1A]'
+                      }`}>
+                        {item.category}
+                      </span>
+                    </div>
+                    <h3 className="text-lg font-medium text-[#1A1A1A] group-hover:text-[#0066FF] transition-colors">
+                      {item.title}
+                    </h3>
+                  </div>
+                </Wrapper>
+              );
+            })}
           </div>
         </div>
       </section>

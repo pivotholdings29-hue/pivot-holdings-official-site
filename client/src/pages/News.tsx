@@ -3,54 +3,7 @@ import { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-// Mock Data
-const newsItems = [
-  {
-    id: 1,
-    date: "2025.12.23",
-    category: "INFO",
-    title: "pHを設立し、飲料・食品領域での事業を開始しました。",
-    content: "2025年12月23日、pH株式会社を設立いたしました。私たちは「食と体験を起点に、ブランドと場をつくる」をミッションに掲げ、飲料・食品領域での事業を展開してまいります。今後の活動にご期待ください。"
-  },
-  {
-    id: 2,
-    date: "2025.12.23",
-    category: "PRODUCT",
-    title: "自社ブランド商品の企画・開発を進行中です。",
-    content: "現在、第一弾となる自社ブランド商品の企画・開発を鋭意進行中です。詳細が決まり次第、本サイトおよび公式SNSにて発表させていただきます。"
-  }
-];
-
-// Event items
-const eventItems = [
-  {
-    id: 101,
-    date: "2026.02.10",
-    category: "EVENT",
-    title: "ジビエBBQ経営者交流会",
-    content: "経営者様向けのジビエBBQ交流会を開催いたします。美味しいジビエ料理を囲みながら、ビジネスやビジョンについて語り合いましょう。",
-    location: "都内某所（参加者のみにお知らせします）",
-    time: "18:00〜21:00"
-  },
-  {
-    id: 102,
-    date: "2026.02.19",
-    category: "EVENT",
-    title: "ジビエBBQ戦略共有",
-    content: "今後のジビエBBQの展開や戦略について共有する会を開催します。興味のある方はぜひご参加ください。",
-    location: "都内某所（参加者のみにお知らせします）",
-    time: "20:00開場"
-  },
-  {
-    id: 103,
-    date: "2026.02.27",
-    category: "EVENT",
-    title: "通常BBQ",
-    content: "定期開催のジビエBBQです。初めての方も大歓迎です。ジビエの美味しさと楽しさを体験してください。",
-    location: "都内某所（参加者のみにお知らせします）",
-    time: "20:00開場"
-  }
-];
+import { newsItems, eventItems, allItems } from "@/data/newsData";
 
 export default function News() {
   const [selectedItem, setSelectedItem] = useState<any | null>(null);
@@ -91,7 +44,7 @@ export default function News() {
             </div>
 
             <TabsContent value="all" className="mt-0">
-              <NewsList items={[...newsItems, ...eventItems].sort((a, b) => b.date.localeCompare(a.date))} onSelect={setSelectedItem} />
+              <NewsList items={allItems} onSelect={setSelectedItem} />
             </TabsContent>
             <TabsContent value="news" className="mt-0">
               <NewsList items={newsItems} onSelect={setSelectedItem} />
@@ -111,6 +64,7 @@ export default function News() {
               <span className={`inline-block px-2 py-0.5 text-[10px] font-bold border rounded-sm tracking-wider ${
                 selectedItem?.category === 'INFO' ? 'text-[#0066FF] border-[#0066FF]' :
                 selectedItem?.category === 'EVENT' ? 'text-[#FF6B00] border-[#FF6B00]' :
+                selectedItem?.category === 'PRESS' ? 'text-[#0066FF] border-[#0066FF]' :
                 'text-[#1A1A1A] border-[#1A1A1A]'
               }`}>
                 {selectedItem?.category}
@@ -152,29 +106,37 @@ function NewsList({ items, onSelect, emptyMessage }: { items: any[], onSelect: (
 
   return (
     <div className="space-y-0 border-t border-gray-100">
-      {items.map((item) => (
-        <div 
-          key={item.id}
-          className="group cursor-pointer bg-white py-10 border-b border-gray-100 hover:bg-gray-50 transition-all px-6 -mx-6 rounded-sm"
-          onClick={() => onSelect(item)}
-        >
-          <div className="flex flex-col md:flex-row md:items-center gap-6 mb-2">
-            <div className="flex items-center gap-4 min-w-[200px]">
-              <span className="text-gray-400 font-mono">{item.date}</span>
-              <span className={`inline-block px-2 py-0.5 text-[10px] font-bold border rounded-sm tracking-wider ${
-                item.category === 'INFO' ? 'text-[#0066FF] border-[#0066FF]' :
-                item.category === 'EVENT' ? 'text-[#FF6B00] border-[#FF6B00]' :
-                'text-[#1A1A1A] border-[#1A1A1A]'
-              }`}>
-                {item.category}
-              </span>
+      {items.map((item) => {
+        const Wrapper = item.link ? 'a' : 'div';
+        const props = item.link 
+          ? { href: item.link, target: "_blank", rel: "noopener noreferrer" } 
+          : { onClick: () => onSelect(item) };
+
+        return (
+          <Wrapper 
+            key={item.id}
+            className="block group cursor-pointer bg-white py-10 border-b border-gray-100 hover:bg-gray-50 transition-all px-6 -mx-6 rounded-sm"
+            {...props}
+          >
+            <div className="flex flex-col md:flex-row md:items-center gap-6 mb-2">
+              <div className="flex items-center gap-4 min-w-[200px]">
+                <span className="text-gray-400 font-mono">{item.date}</span>
+                <span className={`inline-block px-2 py-0.5 text-[10px] font-bold border rounded-sm tracking-wider ${
+                  item.category === 'INFO' ? 'text-[#0066FF] border-[#0066FF]' :
+                  item.category === 'EVENT' ? 'text-[#FF6B00] border-[#FF6B00]' :
+                  item.category === 'PRESS' ? 'text-[#0066FF] border-[#0066FF]' :
+                  'text-[#1A1A1A] border-[#1A1A1A]'
+                }`}>
+                  {item.category}
+                </span>
+              </div>
+              <h3 className="text-lg font-bold text-[#1A1A1A] group-hover:text-[#0066FF] transition-colors">
+                {item.title}
+              </h3>
             </div>
-            <h3 className="text-lg font-bold text-[#1A1A1A] group-hover:text-[#0066FF] transition-colors">
-              {item.title}
-            </h3>
-          </div>
-        </div>
-      ))}
+          </Wrapper>
+        );
+      })}
     </div>
   );
 }
