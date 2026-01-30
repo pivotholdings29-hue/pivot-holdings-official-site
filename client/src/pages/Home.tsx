@@ -125,7 +125,7 @@ export default function Home() {
           </div>
 
           <div className="space-y-0">
-            {allItems.slice(0, 3).map((item) => {
+            {allItems.slice(0, 5).map((item) => {
               const Wrapper = item.link ? 'a' : Link;
               const props = item.link 
                 ? { href: item.link, target: "_blank", rel: "noopener noreferrer" } 
