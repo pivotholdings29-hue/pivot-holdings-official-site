@@ -28,8 +28,7 @@ export default function Shipping() {
           <div className="bg-white p-6 md:p-12 rounded-sm border border-gray-100 shadow-sm">
             <h2 className="text-2xl font-bold mb-8 text-[#1A1A1A]">配送料金一覧</h2>
             <p className="text-gray-600 mb-8">
-              配送地域とサイズに応じた送料は以下の通りです。<br />
-              <span className="text-sm text-gray-400">※全て税込価格です。</span>
+              配送地域とサイズに応じた送料は以下の通りです。
             </p>
 
             <div className="overflow-x-auto">
