@@ -24,7 +24,7 @@ export default function Purchase() {
               </p>
               <p className="text-sm text-gray-500">
                 販売代理店契約、または卸でのお取引をご希望の飲食店様は、
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7J7J7J7J7J7J7J7J7J7J7J7J7J7J7J7J7J7J7J7J7J7J7/viewform" target="_blank" rel="noopener noreferrer" className="text-[#0066FF] underline hover:text-[#0052cc]">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScF40i3yQ3HR9U-cYLYBiPo7YyXwL1-GKVcox1IdaRLY7xUYQ/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" className="text-[#0066FF] underline hover:text-[#0052cc]">
                   お問い合わせフォーム
                 </a>
                 からご連絡ください。
