@@ -19,8 +19,15 @@ export default function Purchase() {
               <h2 className="text-3xl font-bold mb-6 text-[#1A1A1A]">
                 ご注文フォーム
               </h2>
-              <p className="text-gray-500 leading-loose text-lg">
+              <p className="text-gray-500 leading-loose text-lg mb-4">
                 お客様の区分に合わせて、下記よりフォームを選択してください。
+              </p>
+              <p className="text-sm text-gray-500">
+                販売代理店契約、または卸でのお取引をご希望の飲食店様は、
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7J7J7J7J7J7J7J7J7J7J7J7J7J7J7J7J7J7J7J7J7J7J7/viewform" target="_blank" rel="noopener noreferrer" className="text-[#0066FF] underline hover:text-[#0052cc]">
+                  お問い合わせフォーム
+                </a>
+                からご連絡ください。
               </p>
             </div>
 
