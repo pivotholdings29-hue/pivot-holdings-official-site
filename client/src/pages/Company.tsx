@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import { useState } from "react";
 
 export default function Company() {
   return (
@@ -10,8 +11,49 @@ export default function Company() {
         </div>
       </div>
 
-      <section className="py-24">
+      {/* TEAM Section */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="mb-16 text-center">
+            <h2 className="text-3xl font-bold mb-4 font-english tracking-wide text-[#1A1A1A]">TEAM</h2>
+            <p className="text-gray-400 font-bold tracking-widest text-xs uppercase">チーム紹介</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+            {/* Representative Card */}
+            <div className="group">
+              <div className="relative overflow-hidden rounded-sm mb-6 aspect-[3/4]">
+                <img 
+                  src="/images/representative.jpg" 
+                  alt="代表取締役 椛島 将太" 
+                  className="w-full h-full object-cover transition-opacity duration-500 absolute inset-0 z-10 group-hover:opacity-0"
+                />
+                <img 
+                  src="/images/representative-nature.jpg" 
+                  alt="代表取締役 椛島 将太 (Nature)" 
+                  className="w-full h-full object-cover absolute inset-0 z-0"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="text-xl font-bold text-[#1A1A1A] mb-1">椛島 将太</h3>
+                <p className="text-sm text-gray-400 font-english mb-3">Shota Kabashima</p>
+                <p className="text-sm font-bold text-gray-600">代表取締役</p>
+              </div>
+            </div>
+
+            {/* Future members can be added here as similar blocks */}
+          </div>
+        </div>
+      </section>
+
+      {/* Company Info Section */}
+      <section className="py-24 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
+          <div className="mb-16 text-center">
+            <h2 className="text-3xl font-bold mb-4 font-english tracking-wide text-[#1A1A1A]">OVERVIEW</h2>
+            <p className="text-gray-400 font-bold tracking-widest text-xs uppercase">会社概要</p>
+          </div>
+
           <div className="bg-white p-10 md:p-16 rounded-sm border border-gray-100 shadow-sm">
             <dl className="space-y-10">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">
@@ -28,19 +70,7 @@ export default function Company() {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">
                 <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Representative</dt>
-                <dd className="md:col-span-2 text-gray-600">
-                  <div className="flex flex-col md:flex-row gap-6 items-start">
-                    <img 
-                      src="/images/representative.jpg" 
-                      alt="代表取締役 椛島 将太" 
-                      className="w-32 h-32 object-cover rounded-full border border-gray-100 shadow-sm"
-                    />
-                    <div className="pt-2">
-                      <p className="text-lg font-bold text-[#1A1A1A] mb-1">代表取締役　椛島 将太</p>
-                      <p className="text-sm text-gray-500">Shota Kabashima</p>
-                    </div>
-                  </div>
-                </dd>
+                <dd className="md:col-span-2 text-gray-600">代表取締役　椛島 将太</dd>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">
@@ -52,8 +82,6 @@ export default function Company() {
                 <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Established</dt>
                 <dd className="md:col-span-2 text-gray-600">2025年12月23日</dd>
               </div>
-
-
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">
                 <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Location</dt>
