@@ -28,7 +28,19 @@ export default function Company() {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">
                 <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Representative</dt>
-                <dd className="md:col-span-2 text-gray-600">代表取締役　椛島 将太</dd>
+                <dd className="md:col-span-2 text-gray-600">
+                  <div className="flex flex-col md:flex-row gap-6 items-start">
+                    <img 
+                      src="/images/representative.jpg" 
+                      alt="代表取締役 椛島 将太" 
+                      className="w-32 h-32 object-cover rounded-full border border-gray-100 shadow-sm"
+                    />
+                    <div className="pt-2">
+                      <p className="text-lg font-bold text-[#1A1A1A] mb-1">代表取締役　椛島 将太</p>
+                      <p className="text-sm text-gray-500">Shota Kabashima</p>
+                    </div>
+                  </div>
+                </dd>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">
