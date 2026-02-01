@@ -95,6 +95,23 @@ export default function Purchase() {
                     <h3 className="text-xl font-bold text-[#1A1A1A] mb-2">飲食店様向け ご注文フォーム</h3>
                     <p className="text-sm text-gray-500">飲食店様での導入・ご購入はこちらからお願いいたします。</p>
                   </div>
+                  
+                  <div className="mb-8 p-4 bg-blue-50 border border-blue-100 rounded-md text-left">
+                    <p className="text-sm text-gray-700 mb-2 font-bold">【2回目以降のご注文について】</p>
+                    <p className="text-sm text-gray-600 mb-3">
+                      2回目以降のご注文は、専用の発注フォームをご利用ください。
+                    </p>
+                    <a 
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSeBqEJjqgu0TKfRus00n16G8RSz_tHCp6duiAXsLNYCGeP_Sg/viewform?usp=dialog" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-sm font-bold text-white bg-[#0066FF] hover:bg-[#0052cc] px-4 py-2 rounded-md transition-colors"
+                    >
+                      2回目以降の発注フォームはこちら
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </a>
+                  </div>
+
                   <iframe 
                     src="https://docs.google.com/forms/d/e/1FAIpQLSf9T8qshRv-0Mm6lnSfKUMZiU6EGFyXSaQocDE3p0dJJDTzlg/viewform?embedded=true" 
                     width="100%" 
