@@ -52,7 +52,7 @@ export default function Legal() {
                   </div>
                   <div>
                     <p className="font-bold text-lg text-[#1A1A1A] mb-2">メールアドレス</p>
-                    <p className="text-gray-600">pivotholdings29@gmail.com</p>
+                    <p className="text-gray-600">info@pivotholdings.co.jp</p>
                   </div>
                   <div>
                     <p className="font-bold text-lg text-[#1A1A1A] mb-2">ホームページURL</p>
@@ -74,7 +74,7 @@ export default function Legal() {
                 <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Period</dt>
                 <dd className="md:col-span-2">
                   <p className="font-bold text-lg text-[#1A1A1A] mb-2">提供期間</p>
-                  <p className="text-gray-600">ご注文確認後、通常5営業日以内に発送いたします。</p>
+                  <p className="text-gray-600">ご注文確認後、通常10営業日以内に発送いたします。</p>
                 </dd>
               </div>
 
@@ -93,7 +93,7 @@ export default function Legal() {
                 <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Delivery</dt>
                 <dd className="md:col-span-2">
                   <p className="font-bold text-lg text-[#1A1A1A] mb-2">引渡時期/提供時期</p>
-                  <p className="text-gray-600">決済完了後（銀行振込の場合は入金確認後）、5営業日以内に発送いたします。</p>
+                  <p className="text-gray-600">決済完了後（銀行振込の場合は入金確認後）、10営業日以内に発送いたします。</p>
                   <p className="text-xs text-gray-400 mt-2">※予約商品や在庫切れの場合は別途ご連絡いたします。</p>
                 </dd>
               </div>
