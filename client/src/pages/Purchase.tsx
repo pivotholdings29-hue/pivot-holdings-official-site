@@ -35,9 +35,8 @@ export default function Purchase() {
               <h3 className="font-bold text-[#1A1A1A] mb-4">ご注文後の流れ</h3>
               <ol className="list-decimal pl-5 space-y-3 text-gray-600 text-sm leading-relaxed">
                 <li>フォームよりご注文内容を送信してください。</li>
-                <li>当社より、ご注文確認メールと振込先口座（または決済URL）をご案内いたします。</li>
                 <li>代金のお支払いをお願いいたします。</li>
-                <li>ご入金確認後、7営業日以内に商品を発送いたします。</li>
+                <li>ご入金確認後、10営業日以内に商品を発送いたします。</li>
               </ol>
             </div>
 
