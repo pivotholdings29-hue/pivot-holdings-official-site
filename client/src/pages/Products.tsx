@@ -61,9 +61,9 @@ export default function Products() {
                   className="bg-gray-100 rounded-sm aspect-square flex items-center justify-center relative overflow-hidden group border border-gray-200"
                 >
                   <img 
-                    src="/images/hunter-product.jpg" 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663030557844/dYSYUcPisvvOmdyV.png" 
                     alt="Hunter Product" 
-                    className="w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full object-contain p-4 transition-transform duration-700 group-hover:scale-105"
                   />
                   
                   {/* Decorative elements */}
@@ -122,8 +122,7 @@ export default function Products() {
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 border-b border-gray-100 pb-4">
                         <div className="font-bold text-gray-900">内容量</div>
                         <div className="sm:col-span-2 text-gray-600">
-                          100ml（果汁6％）<br />
-                          1箱14本入り
+                          100ml<br />
                         </div>
                       </div>
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 border-b border-gray-100 pb-4">
@@ -149,7 +148,7 @@ export default function Products() {
                   <div className="mb-8 bg-gray-50 p-6 rounded-sm border border-gray-100">
                     <h4 className="font-bold text-[#1A1A1A] mb-4">ご購入について</h4>
                     <ul className="list-disc pl-5 space-y-2 text-sm text-gray-600">
-                      <li>1箱14本で準備していますが、1本単位から購入できます。</li>
+                      <li>1箱14本で準備していますが、一般のお客様は1本単位から購入できます。</li>
                       <li>14本までは60サイズ、15本以上は80サイズでの発送となります。</li>
                       <li>決済方法はクレジットカード決済、銀行振込のいずれかです。</li>
                     </ul>
@@ -308,7 +307,7 @@ export default function Products() {
                   transition={{ duration: 0.8 }}
                 >
                   <img 
-                    src="/images/choco-ai.png" 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663030557844/QovbuwVFORocZMPR.png" 
                     alt="ちょこAI。キャラクター" 
                     className="w-full max-w-md drop-shadow-2xl rounded-2xl"
                   />

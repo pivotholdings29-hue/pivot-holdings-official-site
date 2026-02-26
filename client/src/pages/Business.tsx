@@ -10,7 +10,7 @@ export default function Business() {
       <div className="relative bg-[#1A1A1A] text-white py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/business-dining.jpg" 
+            src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663030557844/ESYZXJbjZfQfsCkH.jpg" 
             alt="Business Background" 
             className="w-full h-full object-cover opacity-40"
           />
