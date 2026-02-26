@@ -140,7 +140,7 @@ export default function Products() {
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 border-b border-gray-100 pb-4">
                         <div className="font-bold text-gray-900">原材料名</div>
                         <div className="sm:col-span-2 text-gray-600 leading-relaxed">
-                          レモン果汁（国産）、甜菜糖、L-カルニチン、イヌリン、食物繊維、米糠・大豆エキス培養酵素物加工食品、/ ビタミンプレミックス（ビタミンA（レチノール）、ビタミンB1、ビタミンB2、ナイアシン、ビタミンB6、葉酸、ビタミンB12、ビタミンC、ビタミンD、ビタミンE）、カフェイン
+                          甜菜糖（国内製造）、レモン果汁、L-カルニチンフマル酸塩、イヌリン、ポリデキストロース、米糠・大豆エキス納豆菌発酵物加工食品 / ビタミンC、カフェイン、抽出 ビタミンE、ナイアシン、パントテン酸 Ca、ビタミンB1、ビタミンB6、ビタミンB2、ビタミンA、葉酸、ビタミンD、ビタミンB12
                         </div>
                       </div>
                     </div>
