@@ -51,7 +51,7 @@ export default function Products() {
 
             {/* Hunter Tab Content */}
             <TabsContent value="hunter" className="animate-in fade-in-50 duration-500">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-32">
                 {/* Product Image */}
                 <motion.div 
                   initial={{ opacity: 0, scale: 0.95 }}
@@ -91,7 +91,7 @@ export default function Products() {
                     <h3 className="text-xl md:text-2xl font-bold text-[#1A1A1A] mb-2 bg-gradient-to-r from-yellow-600 to-yellow-800 bg-clip-text text-transparent inline-block border-b-2 border-yellow-400 pb-1">
                       お肉を食べる時はこれ1本！
                     </h3>
-                    <p className="text-lg text-gray-400 font-light tracking-wide mt-2">ハンター</p>
+                    
                   </div>
 
                   <div className="mb-12">
