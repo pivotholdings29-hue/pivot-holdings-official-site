@@ -61,9 +61,9 @@ export default function Products() {
                   className="bg-gray-100 rounded-sm aspect-square flex items-center justify-center relative overflow-hidden group border border-gray-200"
                 >
                   <img 
-                    src="/images/hunter-product.jpg" 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663030557844/dYSYUcPisvvOmdyV.png" 
                     alt="Hunter Product" 
-                    className="w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full object-contain p-4 transition-transform duration-700 group-hover:scale-105"
                   />
                   
                   {/* Decorative elements */}
