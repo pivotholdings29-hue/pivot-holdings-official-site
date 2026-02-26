@@ -78,10 +78,13 @@ export default function Products() {
                   transition={{ duration: 0.8, delay: 0.2 }}
                   className="pl-0 lg:pl-10"
                 >
-                  <div className="inline-block px-3 py-1 border border-[#1A1A1A] text-[#1A1A1A] font-bold text-xs tracking-widest mb-8 uppercase">
-                    Original Brand
+                  <div className="mb-8">
+                    <img 
+                      src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663030557844/YIKJEmfQwwjGjshS.png" 
+                      alt="Hunter" 
+                      className="h-16 md:h-24 object-contain"
+                    />
                   </div>
-                  <h2 className="text-5xl md:text-7xl font-bold mb-4 font-english text-[#1A1A1A]">Hunter</h2>
                   <p className="text-lg text-gray-400 mb-8 font-light tracking-wide">ハンター</p>
 
                   <div className="mb-12">
@@ -150,6 +153,7 @@ export default function Products() {
                     <h4 className="font-bold text-[#1A1A1A] mb-4">ご購入について</h4>
                     <ul className="list-disc pl-5 space-y-2 text-sm text-gray-600">
                       <li>1箱14本で準備していますが、一般のお客様は1本単位から購入できます。</li>
+                      <li>14本までは60サイズ、15本以上は80サイズでの発送となります。</li>
                       <li>決済方法はクレジットカード決済、銀行振込のいずれかです。</li>
                     </ul>
                     <div className="mt-4">
@@ -210,48 +214,24 @@ export default function Products() {
                         正解のない「仮説」を楽しむ
                       </h3>
                       <p className="mb-6">
-                        ジビエは、まだ科学的な裏付けが十分に整っていない分野だと感じています。個人的には、今のジビエの立ち位置は、サウナブームの初期にとても近いと思っています。
-                        「何がいいのか」「どう入るのが正解か」など、誰もはっきり分かっていない中で、それぞれが自分の感覚や好みを堂々と語り合っていた時代です。
+                        私たちは、最初から「正解」を求めていません。むしろ、「こうしたら面白いんじゃないか？」「これとこれを組み合わせたら新しい価値が生まれるんじゃないか？」という仮説を立て、それを実際に試してみるプロセスそのものを楽しんでいます。
                       </p>
-                      <p className="mb-6">
-                        ジビエも今まさにその初期段階にあります。「これが正解」と決まっていないからこそ、仮説を自由に出し合うこと自体が楽しいのです。
-                        例えば、「ジビエを食べると創造性が上がる気がする」といった感覚的な話も、ここでは大歓迎です。
-                        鹿やイノシシが持つ、生き延びるための研ぎ澄まされたエネルギーを取り込んでいるのではないか——そんな検証できない仮説を自由に語り合えるのが、今のジビエの面白さです。
+                      <p>
+                        失敗することもありますが、それもまた一つのデータであり、次の挑戦への糧となります。この「仮説検証」のサイクルを高速で回し続けることこそが、私たちの強みであり、面白さでもあります。
                       </p>
                     </div>
 
-                    {/* Part 3: Drink Development */}
+                    {/* Part 3: Vision */}
                     <div>
                       <h3 className="text-xl font-bold mb-6 text-[#1A1A1A] flex items-center gap-3">
                         <span className="w-8 h-[1px] bg-[#0066FF]"></span>
-                        「消化」をテーマにしたエナジードリンク
+                        「ちょうどいいpH」を見つける
                       </h3>
                       <p className="mb-6">
-                        ジビエを広げるために、流通の中間で利益を取るビジネスではなく、周辺ビジネスを作ろうと考えました。その一つが、今回開発したドリンク「Hunter」です。
+                        社名の「pH（ピーエイチ）」には、酸性とアルカリ性のバランスを示す指標のように、物事の「ちょうどいいバランス」を見つけたいという想いが込められています。
                       </p>
-                      <p className="mb-6">
-                        私自身、日本人をもっと肉食にしたいと思っています。肉をしっかり食べて、もっとワイルドになってほしい。ただ、日本人の体質的に、肉は重く感じやすく、消化が得意ではありません。
-                        そこで、「肉を食べるときの消化を助け、元気になる」という、これまでにあまりなかったコンセプトのエナジードリンクを作りました。
-                      </p>
-
-                    </div>
-
-                    {/* Part 4: Evolution */}
-                    <div className="bg-gray-50 p-10 rounded-sm border border-gray-100">
-                      <h3 className="text-xl font-bold mb-6 text-[#1A1A1A] flex items-center gap-3">
-                        <span className="w-8 h-[1px] bg-[#0066FF]"></span>
-                        人類の進化
-                      </h3>
-                      <p className="mb-6">
-                        私は、「消化」というテーマで、人類にもう一度進化が起きるのではないかと考えています。
-                        かつて人類は、火を使って消化を効率化したことで活動時間を増やし、文明を発展させました。
-                        今、AIによって脳の役割が変わり、時間的・精神的な余白が増えていく中で、身体のほうももう一段階進化できる余地があるのではないか。その鍵が「消化」だと考えています。
-                      </p>
-                      <p className="mb-6">
-                        これからは、「どう楽しむか」「どう味わうか」という価値観が重要になっていきます。
-                      </p>
-                      <p className="font-bold text-[#1A1A1A]">
-                        ジビエやこのドリンクは、その世界に入るための入り口であり、ツールです。
+                      <p>
+                        極端に振れるのではなく、状況や場に応じて最適なバランスを設計すること。私たちはその考え方を、プロダクト、イベント、情報発信に落とし込み、日常や体験の質を高める取り組みを行っています。
                       </p>
                     </div>
                   </div>
@@ -261,207 +241,92 @@ export default function Products() {
 
             {/* Choco AI Tab Content */}
             <TabsContent value="choco-ai" className="animate-in fade-in-50 duration-500">
-              <div className="flex flex-col md:flex-row items-center gap-12 mb-24">
-                <div className="w-full md:w-1/2 space-y-8">
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6 }}
-                  >
-                    <span className="inline-block px-4 py-1 bg-[#0066FF] text-white text-sm font-bold rounded-full mb-4">
-                      中小企業向けAI実装支援サービス
-                    </span>
-                    <h1 className="text-4xl md:text-6xl font-bold text-[#1A1A1A] leading-tight mb-6">
-                      <span className="text-[#0066FF]">ちょこAI。</span>
-                    </h1>
-                    <p className="text-xl md:text-2xl font-bold text-[#1A1A1A] mb-4">
-                      AIを諦めたくない経営者のための<br />「最後の砦」
-                    </p>
-                    <p className="text-gray-600 leading-relaxed text-lg">
-                      「AIなんて自分には無理だ」と諦める前に、最後にここだけ試してください。<br />
-                      人を増やさず、労働力を2倍にする「思考の右腕」を手に入れませんか？
-                    </p>
-                  </motion.div>
-                  
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.2 }}
-                  >
-                    <a href="https://lin.ee/iCvHuie" target="_blank" rel="noopener noreferrer">
-                      <Button className="bg-[#06C755] hover:bg-[#05b34c] text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
-                        LINEで相談してみる
-                        <ExternalLink className="ml-2 w-5 h-5" />
-                      </Button>
-                    </a>
-                  </motion.div>
-                </div>
-                
-                <motion.div 
-                  className="w-full md:w-1/2 flex justify-center"
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8 }}
-                >
-                  <img 
-                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663030557844/QovbuwVFORocZMPR.png" 
-                    alt="ちょこAI。キャラクター" 
-                    className="w-full max-w-md drop-shadow-2xl rounded-2xl"
-                  />
-                </motion.div>
-              </div>
-
-              {/* Problem & Solution Section */}
-              <div className="bg-gray-50 p-8 md:p-12 rounded-2xl mb-24">
-                <div className="max-w-4xl mx-auto text-center mb-12">
-                  <h2 className="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-6">
-                    2026年、AI格差は「生存の差」になる
-                  </h2>
-                  <p className="text-gray-600 leading-loose">
-                    大企業と中小企業の生産性格差は、AI導入の有無によって5倍以上に広がろうとしています。<br />
-                    AIを使える企業とそうでない企業の差は、単なる「利益の差」ではなく、<br />
-                    市場からの退場を意味する「生存の差」になります。
-                  </p>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-12 items-center">
-                  <div>
-                    <h3 className="text-xl font-bold text-[#1A1A1A] mb-6">
-                      こんなお悩みありませんか？
-                    </h3>
-                    <ul className="space-y-4">
-                      {[
-                        "AIツールを使ってみたが、結局使いこなせなかった",
-                        "ITに苦手意識があり、何から始めればいいかわからない",
-                        "人手不足だが、採用コストや教育コストはかけられない",
-                        "事務作業や検討業務に時間を取られ、経営に集中できない"
-                      ].map((item, index) => (
-                        <li key={index} className="flex items-start gap-3">
-                          <CheckCircle2 className="w-6 h-6 text-gray-400 flex-shrink-0 mt-1" />
-                          <span className="text-gray-700">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-                    <h3 className="text-xl font-bold text-[#0066FF] mb-4">
-                      「ちょこAI。」が解決します
-                    </h3>
-                    <p className="text-gray-600 mb-6 leading-relaxed">
-                      本サービスは、高度なITスキルや専門知識を教えるスクールではありません。<br />
-                      過去にAIツールで挫折した方や、ITに苦手意識を持つ経営者が、<br />
-                      <strong className="text-[#1A1A1A] bg-yellow-100 px-1">「明日から実務で使える」</strong>ようになるための、<br />
-                      ハードルの低いAI導入・定着支援プログラムです。
-                    </p>
-                    <div className="flex items-center gap-4 p-4 bg-blue-50 rounded-lg">
-                      <div className="bg-[#0066FF] text-white p-3 rounded-full">
-                        <Users className="w-6 h-6" />
-                      </div>
-                      <div>
-                        <p className="font-bold text-[#1A1A1A]">採用・教育コスト0円</p>
-                        <p className="text-sm text-gray-600">IQ140超の「専属秘書」が24時間365日働きます</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Service Features */}
-              <div className="mb-24">
+              <div className="max-w-5xl mx-auto">
                 <div className="text-center mb-16">
-                  <span className="text-[#0066FF] font-bold tracking-wider uppercase text-sm">Service</span>
-                  <h2 className="text-3xl md:text-4xl font-bold mt-2 text-[#1A1A1A]">3つの「挫折させない」仕組み</h2>
+                  <div className="inline-block px-3 py-1 border border-[#0066FF] text-[#0066FF] font-bold text-xs tracking-widest mb-6 uppercase">
+                    AI Implementation Support
+                  </div>
+                  <h2 className="text-4xl md:text-6xl font-bold mb-6 text-[#1A1A1A]">ちょこAI。</h2>
+                  <p className="text-xl text-gray-500 font-light">AIを諦めたくない経営者のための最後の砦</p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-8">
-                  {/* Feature 1 */}
-                  <div className="bg-white p-8 rounded-xl border border-gray-200 hover:border-[#0066FF] transition-colors duration-300 shadow-sm">
-                    <div className="w-14 h-14 bg-[#0066FF]/10 text-[#0066FF] rounded-lg flex items-center justify-center mb-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24">
+                  <motion.div 
+                    initial={{ opacity: 0, x: -30 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                  >
+                    <img 
+                      src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663030557844/QovbuwVFORocZMPR.png" 
+                      alt="ちょこAI。キャラクター" 
+                      className="w-full max-w-md drop-shadow-2xl rounded-2xl"
+                    />
+                  </motion.div>
+                  <motion.div 
+                    initial={{ opacity: 0, x: 30 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    className="space-y-8"
+                  >
+                    <h3 className="text-2xl font-bold text-[#1A1A1A] leading-relaxed">
+                      「AI導入、何から始めればいいかわからない」<br />
+                      そんな悩みを解決します。
+                    </h3>
+                    <p className="text-gray-600 leading-loose">
+                      世の中には高度なAIツールや難解なセミナーが溢れていますが、
+                      中小企業の現場で本当に必要なのは「明日から使える」実践的なサポートです。
+                    </p>
+                    <p className="text-gray-600 leading-loose">
+                      「ちょこAI。」は、難しい専門用語を使わず、
+                      御社の業務に合わせた具体的な活用方法をご提案。
+                      リスク管理から実務への定着まで、伴走型でサポートします。
+                    </p>
+                    
+                    <div className="pt-4">
+                      <a href="https://choco-ai.jp" target="_blank" rel="noopener noreferrer">
+                        <Button className="bg-[#0066FF] hover:bg-[#0052cc] text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group text-lg">
+                          サービスサイトを見る
+                          <ExternalLink className="ml-2 w-5 h-5" />
+                        </Button>
+                      </a>
+                    </div>
+                  </motion.div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
+                  <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-center hover:shadow-md transition-shadow">
+                    <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6 text-[#0066FF]">
                       <Video className="w-8 h-8" />
                     </div>
-                    <h3 className="text-xl font-bold mb-4 text-[#1A1A1A]">① 「習う」より「慣れる」<br />実務直結型・動画ライブラリ</h3>
-                    <p className="text-gray-600 leading-relaxed">
-                      難しい理論やプログラミングは一切教えません。「クレーム対応メールの作成」「議事録の要約」「求人票の作成」など、中小企業の現場で「今すぐ使える」具体的な手順だけを、短い動画で提供します。
+                    <h4 className="text-lg font-bold mb-4 text-[#1A1A1A]">動画研修・ワークショップ</h4>
+                    <p className="text-sm text-gray-500 leading-relaxed">
+                      全社員向けの基礎研修から、部署別の実践ワークショップまで。
+                      「触って覚える」を重視したカリキュラムを提供します。
                     </p>
                   </div>
-
-                  {/* Feature 2 */}
-                  <div className="bg-white p-8 rounded-xl border border-gray-200 hover:border-[#0066FF] transition-colors duration-300 shadow-sm">
-                    <div className="w-14 h-14 bg-[#0066FF]/10 text-[#0066FF] rounded-lg flex items-center justify-center mb-6">
-                      <FileText className="w-8 h-8" />
+                  <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-center hover:shadow-md transition-shadow">
+                    <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6 text-[#0066FF]">
+                      <ShieldCheck className="w-8 h-8" />
                     </div>
-                    <h3 className="text-xl font-bold mb-4 text-[#1A1A1A]">② コピペで終わる<br />「時短テンプレート」</h3>
-                    <p className="text-gray-600 leading-relaxed">
-                      AIへの指示出し（プロンプト）に悩む時間は無駄です。穴埋めするだけで高精度な回答が得られる「テンプレート」や、業務の棚卸しに特化した「専用AIツール」なども提供し、AI導入へのハードルを下げます。
+                    <h4 className="text-lg font-bold mb-4 text-[#1A1A1A]">ガイドライン策定</h4>
+                    <p className="text-sm text-gray-500 leading-relaxed">
+                      AI利用におけるリスクを洗い出し、会社ごとの実情に合わせた
+                      利用ガイドラインの策定を支援します。
                     </p>
                   </div>
-
-                  {/* Feature 3 */}
-                  <div className="bg-white p-8 rounded-xl border border-gray-200 hover:border-[#0066FF] transition-colors duration-300 shadow-sm">
-                    <div className="w-14 h-14 bg-[#0066FF]/10 text-[#0066FF] rounded-lg flex items-center justify-center mb-6">
+                  <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-center hover:shadow-md transition-shadow">
+                    <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6 text-[#0066FF]">
                       <Users className="w-8 h-8" />
                     </div>
-                    <h3 className="text-xl font-bold mb-4 text-[#1A1A1A]">③ 孤独にさせない<br />「伴走型グループコンサル」</h3>
-                    <p className="text-gray-600 leading-relaxed">
-                      週に1回、オンラインでの相談会を開催。「こんな初歩的なこと聞いていいの？」という疑問から、自社業務への具体的な応用まで、講師が画面共有しながらその場で解決します。一人で悩んで挫折する時間をゼロにします。
+                    <h4 className="text-lg font-bold mb-4 text-[#1A1A1A]">伴走型サポート</h4>
+                    <p className="text-sm text-gray-500 leading-relaxed">
+                      導入後の「困った」をチャットや定例会で解決。
+                      社内推進リーダーの育成も行い、自走できる組織を作ります。
                     </p>
                   </div>
                 </div>
-              </div>
-
-              {/* Security Section */}
-              <div className="bg-[#1A1A1A] text-white p-8 md:p-16 rounded-2xl">
-                <div className="flex flex-col md:flex-row items-center gap-12 max-w-5xl mx-auto">
-                  <div className="w-full md:w-1/2">
-                    <div className="bg-gray-800 p-8 rounded-2xl relative overflow-hidden border border-gray-700">
-                      <ShieldCheck className="w-32 h-32 text-[#0066FF]/20 absolute -bottom-4 -right-4" />
-                      <h3 className="text-2xl font-bold mb-6 flex items-center gap-3 text-white">
-                        <Lock className="w-6 h-6 text-[#0066FF]" />
-                        安心のセキュリティ対策
-                      </h3>
-                      <p className="font-bold mb-4 text-white">
-                        AIを安全に使う「守りの鉄則」
-                      </p>
-                      <p className="text-gray-300 leading-relaxed">
-                        「AIは嘘をつく」「情報は漏れる」を前提とした運用ルールを徹底指導します。
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-1/2">
-                    <h3 className="text-2xl font-bold mb-6 text-white">
-                      会社を守るためのリスク管理も万全
-                    </h3>
-                    <p className="text-gray-300 leading-loose mb-6">
-                      中小企業が最も懸念する「情報漏洩」や「著作権侵害」のリスクに対し、私たちはツールを使うだけでなく「守るための鉄則」もセットで提供します。
-                    </p>
-                    <ul className="space-y-3">
-                      <li className="flex items-center gap-3 text-gray-200">
-                        <CheckCircle2 className="w-5 h-5 text-[#0066FF]" />
-                        機密情報を入力しないためのマスキング技術
-                      </li>
-                      <li className="flex items-center gap-3 text-gray-200">
-                        <CheckCircle2 className="w-5 h-5 text-[#0066FF]" />
-                        AIの嘘（ハルシネーション）を見抜くチェック体制
-                      </li>
-                      <li className="flex items-center gap-3 text-gray-200">
-                        <CheckCircle2 className="w-5 h-5 text-[#0066FF]" />
-                        安全な運用ルールの策定支援
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-24 text-center">
-                <a href="https://lin.ee/iCvHuie" target="_blank" rel="noopener noreferrer">
-                  <Button className="bg-[#06C755] hover:bg-[#05b34c] text-white px-12 py-8 text-lg rounded-sm shadow-lg hover:shadow-xl transition-all duration-300">
-                    LINEでお問い合わせ
-                    <ExternalLink className="ml-2 w-5 h-5" />
-                  </Button>
-                </a>
               </div>
             </TabsContent>
           </Tabs>
