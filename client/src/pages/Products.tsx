@@ -78,14 +78,21 @@ export default function Products() {
                   transition={{ duration: 0.8, delay: 0.2 }}
                   className="pl-0 lg:pl-10"
                 >
-                  <div className="mb-8">
+                  <div className="mb-10 relative">
+                    <div className="absolute -left-6 -top-6 w-20 h-20 bg-yellow-400/10 rounded-full blur-xl"></div>
                     <img 
                       src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663030557844/YIKJEmfQwwjGjshS.png" 
                       alt="Hunter" 
-                      className="h-16 md:h-24 object-contain"
+                      className="h-24 md:h-36 object-contain relative z-10 drop-shadow-lg"
                     />
                   </div>
-                  <p className="text-lg text-gray-400 mb-8 font-light tracking-wide">ハンター</p>
+                  
+                  <div className="mb-10">
+                    <h3 className="text-xl md:text-2xl font-bold text-[#1A1A1A] mb-2 bg-gradient-to-r from-yellow-600 to-yellow-800 bg-clip-text text-transparent inline-block border-b-2 border-yellow-400 pb-1">
+                      お肉を食べる時はこれ1本！
+                    </h3>
+                    <p className="text-lg text-gray-400 font-light tracking-wide mt-2">ハンター</p>
+                  </div>
 
                   <div className="mb-12">
                     <p className="text-2xl font-bold text-[#1A1A1A]">
