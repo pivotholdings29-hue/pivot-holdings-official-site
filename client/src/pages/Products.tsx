@@ -79,7 +79,7 @@ export default function Products() {
                   className="pl-0 lg:pl-10"
                 >
                   <div className="mb-10 relative">
-                    <div className="absolute -left-6 -top-6 w-20 h-20 bg-yellow-400/10 rounded-full blur-xl"></div>
+                    
                     <img 
                       src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663030557844/YIKJEmfQwwjGjshS.png" 
                       alt="Hunter" 
