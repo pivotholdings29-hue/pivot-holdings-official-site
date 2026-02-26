@@ -13,7 +13,7 @@ export default function Home() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/hero-bg.jpg" 
+            src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663030557844/prMoBWciVcALkmjc.jpg" 
             alt="Background" 
             className="w-full h-full object-cover opacity-60"
           />

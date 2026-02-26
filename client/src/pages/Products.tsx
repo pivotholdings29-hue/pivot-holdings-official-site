@@ -307,7 +307,7 @@ export default function Products() {
                   transition={{ duration: 0.8 }}
                 >
                   <img 
-                    src="/images/choco-ai.png" 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663030557844/QovbuwVFORocZMPR.png" 
                     alt="ちょこAI。キャラクター" 
                     className="w-full max-w-md drop-shadow-2xl rounded-2xl"
                   />
