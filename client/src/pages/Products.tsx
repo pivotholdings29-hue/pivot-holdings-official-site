@@ -105,9 +105,10 @@ export default function Products() {
                       あなたのパフォーマンスを最大限に引き出します。
                     </p>
                     <ul className="list-disc pl-5 space-y-2 text-sm pt-4">
+                      <li>脂の多い肉料理に</li>                      
                       <li>肉料理と向き合うためのコンディションサポート</li>
-                      <li>食事の時間をより豊かにするフレーバー</li>
-                      <li>翌日のパフォーマンスを考えた成分設計</li>
+                      <li>お酒や食事シーンに</li>
+                      <li>忙しい毎日のサポートに</li>
                     </ul>
                   </div>
 
@@ -139,7 +140,7 @@ export default function Products() {
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 border-b border-gray-100 pb-4">
                         <div className="font-bold text-gray-900">原材料名</div>
                         <div className="sm:col-span-2 text-gray-600 leading-relaxed">
-                          レモン果汁（国産）、甜菜糖、水（甜菜糖由来の発酵原料を含む）、L-カルニチン、イヌリン、食物繊維、ビタミンプレミックス（ビタミンA（レチノール）、ビタミンB1、ビタミンB2、ナイアシン、ビタミンB6、葉酸、ビタミンB12、ビタミンC、ビタミンD、ビタミンE）、カフェイン、クエン酸（pH調整用）、米糠・大豆エキス培養酵素物加工食品
+                          レモン果汁（国産）、甜菜糖、L-カルニチン、イヌリン、食物繊維、米糠・大豆エキス培養酵素物加工食品、/ ビタミンプレミックス（ビタミンA（レチノール）、ビタミンB1、ビタミンB2、ナイアシン、ビタミンB6、葉酸、ビタミンB12、ビタミンC、ビタミンD、ビタミンE）、カフェイン
                         </div>
                       </div>
                     </div>
@@ -149,7 +150,6 @@ export default function Products() {
                     <h4 className="font-bold text-[#1A1A1A] mb-4">ご購入について</h4>
                     <ul className="list-disc pl-5 space-y-2 text-sm text-gray-600">
                       <li>1箱14本で準備していますが、一般のお客様は1本単位から購入できます。</li>
-                      <li>14本までは60サイズ、15本以上は80サイズでの発送となります。</li>
                       <li>決済方法はクレジットカード決済、銀行振込のいずれかです。</li>
                     </ul>
                     <div className="mt-4">
