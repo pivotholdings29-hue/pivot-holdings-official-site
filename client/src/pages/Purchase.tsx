@@ -23,7 +23,7 @@ export default function Purchase() {
                 お客様の区分に合わせて、下記よりフォームを選択してください。
               </p>
               <p className="text-sm text-gray-500">
-                販売代理店契約、または卸でのお取引をご希望の飲食店様は、
+                販売代理店契約、または卸でのお取引をご希望の業者様は、
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScF40i3yQ3HR9U-cYLYBiPo7YyXwL1-GKVcox1IdaRLY7xUYQ/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" className="text-[#0066FF] underline hover:text-[#0052cc]">
                   お問い合わせフォーム
                 </a>
@@ -55,8 +55,8 @@ export default function Purchase() {
                   className="py-4 text-sm md:text-lg font-bold data-[state=active]:bg-white data-[state=active]:text-[#0066FF] data-[state=active]:shadow-sm transition-all rounded-md flex items-center justify-center gap-2"
                 >
                   <Utensils className="w-4 h-4 md:w-5 md:h-5" />
-                  <span className="hidden md:inline">飲食店様</span>
-                  <span className="md:hidden">飲食店</span>
+                  <span className="hidden md:inline">業者様</span>
+                  <span className="md:hidden">業者</span>
                 </TabsTrigger>
                 <TabsTrigger 
                   value="tob" 
@@ -91,8 +91,8 @@ export default function Purchase() {
               <TabsContent value="restaurant" className="mt-0">
                 <div className="bg-white p-4 md:p-8 rounded-sm border border-gray-100 shadow-xl">
                   <div className="mb-8 text-center">
-                    <h3 className="text-xl font-bold text-[#1A1A1A] mb-2">飲食店様向け ご注文フォーム</h3>
-                    <p className="text-sm text-gray-500">飲食店様での導入・ご購入はこちらからお願いいたします。</p>
+                    <h3 className="text-xl font-bold text-[#1A1A1A] mb-2">業者様向け ご注文フォーム</h3>
+                    <p className="text-sm text-gray-500">業者様での導入・ご購入はこちらからお願いいたします。</p>
                   </div>
                   
                   <div className="mb-8 p-4 bg-blue-50 border border-blue-100 rounded-md text-left">
@@ -118,7 +118,7 @@ export default function Purchase() {
                     frameBorder="0" 
                     marginHeight={0} 
                     marginWidth={0}
-                    title="Hunter注文フォーム（飲食店）"
+                    title="Hunter注文フォーム（業者）"
                   >
                     読み込んでいます…
                   </iframe>

@@ -95,7 +95,7 @@ export default function Business() {
                   <p className="text-gray-500 leading-loose font-light mb-6">
                     「ジビエの美味しさをもっと知ってほしい！」という想いから、
                     BBQイベントを開催しています。
-                    ハンターさんや飲食店さん、イベントに参加したい方との繋がりを大切にするコミュニティです。
+                    ハンターさんや業者さん、イベントに参加したい方との繋がりを大切にするコミュニティです。
                   </p>
                   <a 
                     href="https://www.instagram.com/gibierland/" 
