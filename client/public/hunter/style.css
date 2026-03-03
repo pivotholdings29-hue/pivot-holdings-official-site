@@ -1607,9 +1607,13 @@ body {
   .ingredient-card { padding: 24px 20px; }
 
   /* How to */
-  .howto-arrow { transform: rotate(90deg); }
-  .howto-steps { flex-direction: column; align-items: center; }
-  .howto-step { max-width: 100%; width: 100%; }
+  .howto { padding: 60px 0; }
+  .howto-steps { flex-direction: row; flex-wrap: nowrap; gap: 8px; align-items: stretch; overflow-x: auto; padding-bottom: 8px; }
+  .howto-step { min-width: 0; flex: 1; padding: 20px 12px; }
+  .howto-step-icon { font-size: 2rem; margin-bottom: 10px; }
+  .howto-step-num { font-size: 10px; margin-bottom: 10px; }
+  .howto-step p { font-size: 12px; }
+  .howto-arrow { font-size: 1.2rem; flex-shrink: 0; }
 
   /* Scenes */
   .scenes-grid { grid-template-columns: 1fr; }
