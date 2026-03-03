@@ -633,14 +633,29 @@ body {
 
 .ingredient-badge {
   display: inline-block;
-  background: linear-gradient(135deg, var(--gold-dark) 0%, var(--gold-light) 100%);
+  background: var(--gold);
   color: var(--black);
   font-family: var(--font-en);
-  font-weight: 700;
   font-size: 12px;
+  font-weight: 700;
   padding: 4px 14px;
   border-radius: 20px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
+}
+
+.ingredient-badges-row {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.ingredient-badges-row .ingredient-badge {
+  margin-bottom: 0;
+}
+.ingredient-badge-sub {
+  background: var(--dark4);
+  color: var(--gold);
+  border: 1px solid var(--gold);
 }
 
 .ingredient-card h3 {
