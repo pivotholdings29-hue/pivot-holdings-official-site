@@ -1129,6 +1129,21 @@ body {
   margin-top: 12px;
 }
 
+.shipping-notice {
+  margin-top: 32px;
+  text-align: center;
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+.shipping-link {
+  color: var(--gold);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.shipping-link:hover {
+  opacity: 0.8;
+}
+
 /* ============================================================
    SHIPPING
    ============================================================ */
