@@ -677,7 +677,7 @@ body {
 }
 
 .ingredient-role {
-  font-size: 11px;
+  font-size: 14px;
   color: var(--gold);
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -686,7 +686,7 @@ body {
 }
 
 .ingredient-card p:last-child {
-  font-size: 13px;
+  font-size: 16px;
   color: var(--gray-light);
   line-height: 1.7;
 }
@@ -747,7 +747,7 @@ body {
 }
 
 .ingredients-raw-label {
-  font-size: 11px;
+  font-size: 14px;
   color: var(--gold);
   font-weight: 700;
   letter-spacing: 0.15em;
@@ -756,7 +756,7 @@ body {
 }
 
 .ingredients-raw-text {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--gray-light);
   line-height: 1.9;
 }
@@ -871,13 +871,13 @@ body {
   padding: 24px;
 }
 .scene-body h3 {
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--gold-light);
   margin-bottom: 10px;
 }
 .scene-body p {
-  font-size: 14px;
+  font-size: 17px;
   color: var(--gray-light);
   line-height: 1.7;
 }
@@ -925,7 +925,7 @@ body {
 .story-text { flex: 1; }
 
 .story-text p {
-  font-size: 15px;
+  font-size: 18px;
   color: rgba(255,255,255,0.8);
   line-height: 1.9;
   margin-bottom: 20px;
@@ -933,7 +933,7 @@ body {
 .story-text strong { color: var(--white); }
 
 .story-subheading {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 700;
   color: var(--gold);
   letter-spacing: 0.04em;
@@ -1648,11 +1648,12 @@ body {
 
   /* How to */
   .howto { padding: 60px 0; }
-  .howto-steps { flex-direction: row; flex-wrap: nowrap; gap: 8px; align-items: stretch; overflow-x: auto; padding-bottom: 8px; }
-  .howto-step { min-width: 0; flex: 1; padding: 20px 12px; }
+  .howto-steps { flex-direction: column; gap: 16px; align-items: stretch; }
+  .howto-step { min-width: 0; flex: 1; padding: 24px 20px; }
+  .howto-arrow { transform: rotate(90deg); }
   .howto-step-icon { font-size: 2rem; margin-bottom: 10px; }
   .howto-step-num { font-size: 10px; margin-bottom: 10px; }
-  .howto-step p { font-size: 12px; }
+  .howto-step p { font-size: 14px; }
   .howto-arrow { font-size: 1.2rem; flex-shrink: 0; }
 
   /* Scenes */
@@ -1664,8 +1665,8 @@ body {
   /* Story */
   .story { padding: 80px 0; }
   .story-text { overflow: hidden; }
-  .story-text p { font-size: 14px; overflow-wrap: break-word; word-break: break-word; }
-  .story-subheading { font-size: 15px; padding-left: 0; border-left: none; border-bottom: 2px solid var(--gold); padding-bottom: 6px; display: inline-block; }
+  .story-text p { font-size: 16px; overflow-wrap: break-word; word-break: break-word; }
+  .story-subheading { font-size: 17px; padding-left: 0; border-left: none; border-bottom: 2px solid var(--gold); padding-bottom: 6px; display: inline-block; }
   .story-bottle img { width: clamp(100px, 28vw, 150px); height: auto; object-fit: contain; }
 
   /* Specs */
