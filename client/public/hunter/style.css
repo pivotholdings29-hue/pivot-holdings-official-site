@@ -807,6 +807,18 @@ body {
   margin-bottom: 16px;
 }
 
+.howto-step-icon--potion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.potion-svg {
+  width: 64px;
+  height: 64px;
+  filter: drop-shadow(0 0 6px rgba(58,138,58,0.5));
+}
+
 .howto-step p { font-size: 17px; color: var(--gray-light); line-height: 1.7; }
 .howto-step strong { color: var(--white); }
 
@@ -1652,6 +1664,7 @@ body {
   .howto-step { min-width: 0; flex: 1; padding: 16px 8px; text-align: center; }
   .howto-arrow { font-size: 1rem; flex-shrink: 0; transform: none; }
   .howto-step-icon { font-size: 1.6rem; margin-bottom: 8px; }
+  .potion-svg { width: 36px; height: 36px; }
   .howto-step-num { font-size: 9px; margin-bottom: 8px; }
   .howto-step h3 { font-size: 0.8rem; margin-bottom: 6px; }
   .howto-step p { font-size: 11px; line-height: 1.5; }
