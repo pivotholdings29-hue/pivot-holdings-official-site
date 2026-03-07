@@ -1648,13 +1648,13 @@ body {
 
   /* How to */
   .howto { padding: 60px 0; }
-  .howto-steps { flex-direction: column; gap: 16px; align-items: stretch; }
-  .howto-step { min-width: 0; flex: 1; padding: 24px 20px; }
-  .howto-arrow { transform: rotate(90deg); }
-  .howto-step-icon { font-size: 2rem; margin-bottom: 10px; }
-  .howto-step-num { font-size: 10px; margin-bottom: 10px; }
-  .howto-step p { font-size: 14px; }
-  .howto-arrow { font-size: 1.2rem; flex-shrink: 0; }
+  .howto-steps { flex-direction: row; flex-wrap: nowrap; gap: 4px; align-items: stretch; overflow-x: visible; }
+  .howto-step { min-width: 0; flex: 1; padding: 16px 8px; text-align: center; }
+  .howto-arrow { font-size: 1rem; flex-shrink: 0; transform: none; }
+  .howto-step-icon { font-size: 1.6rem; margin-bottom: 8px; }
+  .howto-step-num { font-size: 9px; margin-bottom: 8px; }
+  .howto-step h3 { font-size: 0.8rem; margin-bottom: 6px; }
+  .howto-step p { font-size: 11px; line-height: 1.5; }
 
   /* Scenes */
   .scenes-grid { grid-template-columns: 1fr; }
