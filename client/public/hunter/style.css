@@ -504,7 +504,7 @@ body {
   line-height: 1;
 }
 
-.problem-card p { font-size: 15px; color: var(--gray-light); line-height: 1.7; }
+.problem-card p { font-size: 18px; color: var(--gray-light); line-height: 1.7; }
 .problem-card strong { color: var(--white); display: block; margin-top: 4px; }
 
 .problem-arrow {
@@ -594,7 +594,7 @@ body {
   margin-bottom: 8px;
   color: var(--gold-light);
 }
-.feature-body p { font-size: 14px; color: var(--gray-light); line-height: 1.7; }
+.feature-body p { font-size: 17px; color: var(--gray-light); line-height: 1.7; }
 
 /* ============================================================
    INGREDIENTS
@@ -729,7 +729,7 @@ body {
 }
 
 .mechanism-step-icon { font-size: 1.8rem; margin-bottom: 8px; }
-.mechanism-step p { font-size: 12px; color: var(--gray-light); line-height: 1.5; }
+.mechanism-step p { font-size: 15px; color: var(--gray-light); line-height: 1.5; }
 .mechanism-step strong { color: var(--gold-light); }
 
 .mechanism-arrow-icon {
@@ -807,7 +807,7 @@ body {
   margin-bottom: 16px;
 }
 
-.howto-step p { font-size: 14px; color: var(--gray-light); line-height: 1.7; }
+.howto-step p { font-size: 17px; color: var(--gray-light); line-height: 1.7; }
 .howto-step strong { color: var(--white); }
 
 .howto-arrow {
@@ -1669,7 +1669,7 @@ body {
   .story-bottle img { width: clamp(100px, 28vw, 150px); height: auto; object-fit: contain; }
 
   /* Specs */
-  .specs-table th, .specs-table td { padding: 12px 14px; font-size: 13px; }
+  .specs-table th, .specs-table td { padding: 12px 14px; font-size: 16px; }
 
   /* Purchase */
   .purchase-cards { max-width: 100%; }
@@ -1681,8 +1681,8 @@ body {
   .line-banner-title { font-size: 1rem; }
 
   /* FAQ */
-  .faq-q { padding: 16px 20px; font-size: 14px; }
-  .faq-a p { font-size: 13px; }
+  .faq-q { padding: 16px 20px; font-size: 17px; }
+  .faq-a p { font-size: 16px; }
 
   /* Final CTA */
   .final-cta { padding: 80px 0; }
