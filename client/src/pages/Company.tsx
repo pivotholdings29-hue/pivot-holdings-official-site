@@ -41,7 +41,21 @@ export default function Company() {
               </div>
             </div>
 
-            {/* Future members can be added here as similar blocks */}
+            {/* Business Partner Card */}
+            <div className="group">
+              <div className="relative overflow-hidden rounded-sm mb-6 aspect-[3/4]">
+                <img 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663030557844/9KrcnehZTR9fbMqyS3eBSa/前田成穂_HP写真_5a8f80cb.JPG" 
+                  alt="ビジネスパートナー 前田 成穂" 
+                  className="w-full h-full object-cover transition-opacity duration-500 absolute inset-0 z-10"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="text-xl font-bold text-[#1A1A1A] mb-1">前田 成穂</h3>
+                <p className="text-sm text-gray-400 font-english mb-3">Naruho Maeda</p>
+                <p className="text-sm font-bold text-gray-600">ビジネスパートナー</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
