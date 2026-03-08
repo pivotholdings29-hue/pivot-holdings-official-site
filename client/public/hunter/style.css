@@ -499,9 +499,16 @@ body {
 }
 
 .problem-icon-wrap {
+<<<<<<< HEAD
   font-size: 3rem;
   margin-bottom: 20px;
   filter: drop-shadow(0 4px 12px rgba(201,168,76,0.2));
+=======
+  font-size: 40px;
+  margin-bottom: 20px;
+  display: inline-block;
+  filter: drop-shadow(0 0 10px rgba(255,255,255,0.1));
+>>>>>>> ec2dc84 (true message)
 }
 
 .problem-card p {
@@ -510,8 +517,15 @@ body {
   line-height: 1.8;
 }
 .problem-card strong {
+<<<<<<< HEAD
   color: var(--gold-light);
   font-weight: 700;
+=======
+  color: var(--white);
+  font-weight: 700;
+  display: block;
+  margin-top: 4px;
+>>>>>>> ec2dc84 (true message)
 }
 
 .problem-arrow {
@@ -519,18 +533,40 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 12px;
+<<<<<<< HEAD
+=======
+  margin-top: 40px;
+>>>>>>> ec2dc84 (true message)
   color: var(--gold);
+  font-size: 14px;
   font-weight: 700;
+<<<<<<< HEAD
   font-size: 14px;
   letter-spacing: 0.1em;
+=======
+  letter-spacing: 0.1em;
+}
+.problem-arrow svg {
+  animation: bounceArrow 2s infinite;
+}
+@keyframes bounceArrow {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(10px); }
+  60% { transform: translateY(5px); }
+>>>>>>> ec2dc84 (true message)
 }
 
 /* ============================================================
    FEATURES
    ============================================================ */
 .features {
+<<<<<<< HEAD
   padding: 100px 0;
   background: #0E0E0E;
+=======
+  padding: 120px 0;
+  background: radial-gradient(circle at 50% 30%, #1a1500 0%, var(--black) 70%);
+>>>>>>> ec2dc84 (true message)
   position: relative;
 }
 
@@ -539,29 +575,55 @@ body {
   flex-wrap: wrap;
   align-items: center;
   gap: 60px;
+<<<<<<< HEAD
 }
 
 .features-bottle {
   flex: 1 1 300px;
+=======
+  margin-top: 60px;
+}
+@media (max-width: 900px) {
+  .features-layout { flex-direction: column; }
+}
+
+.features-bottle {
+  flex: 1;
+>>>>>>> ec2dc84 (true message)
   position: relative;
   display: flex;
   justify-content: center;
 }
 .features-bottle img {
   width: 100%;
+<<<<<<< HEAD
   max-width: 280px;
   position: relative;
   z-index: 2;
   filter: drop-shadow(0 20px 50px rgba(0,0,0,0.6));
+=======
+  max-width: 320px;
+  height: auto;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 0 40px rgba(201,168,76,0.2));
+>>>>>>> ec2dc84 (true message)
 }
 .features-bottle-glow {
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
+<<<<<<< HEAD
   width: 320px; height: 320px;
   background: radial-gradient(circle, rgba(201,168,76,0.15) 0%, transparent 70%);
   z-index: 1;
   pointer-events: none;
+=======
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, rgba(201,168,76,0.2) 0%, transparent 70%);
+  z-index: 1;
+  filter: blur(40px);
+>>>>>>> ec2dc84 (true message)
 }
 
 .features-list {
@@ -578,6 +640,7 @@ body {
 
 .feature-num {
   font-family: var(--font-en);
+<<<<<<< HEAD
   font-size: 3.5rem;
   font-weight: 700;
   color: rgba(255,255,255,0.06);
@@ -594,20 +657,57 @@ body {
 .feature-body p {
   font-size: 15px;
   color: var(--gray);
+=======
+  font-size: 48px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.05);
+  line-height: 1;
+  flex-shrink: 0;
+  position: relative;
+  top: -8px;
+}
+
+.feature-body h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--gold-light);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.feature-body h3::before {
+  content: '';
+  display: block;
+  width: 24px; height: 1px;
+  background: var(--gold);
+}
+
+.feature-body p {
+  font-size: 15px;
+  color: var(--gray-light);
+  line-height: 1.8;
+>>>>>>> ec2dc84 (true message)
 }
 
 /* ============================================================
    INGREDIENTS
    ============================================================ */
 .ingredients {
+<<<<<<< HEAD
   padding: 100px 0;
   background: var(--dark);
+=======
+  padding: 120px 0;
+  background: var(--dark2);
+>>>>>>> ec2dc84 (true message)
 }
 
 .ingredients-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 24px;
+<<<<<<< HEAD
 }
 
 .ingredient-card {
@@ -617,16 +717,44 @@ body {
   padding: 32px 24px;
   position: relative;
   transition: transform var(--transition);
+=======
+  margin-bottom: 80px;
+}
+
+.ingredient-card {
+  background: var(--black);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius);
+  padding: 32px 24px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition);
+}
+.ingredient-card:hover { transform: translateY(-6px); }
+
+.ingredient-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity: 0.5;
+>>>>>>> ec2dc84 (true message)
 }
 .ingredient-card:hover { transform: translateY(-5px); }
 
 .ingredient-icon {
+<<<<<<< HEAD
   font-size: 2.5rem;
+=======
+  font-size: 40px;
+>>>>>>> ec2dc84 (true message)
   margin-bottom: 16px;
 }
 
 .ingredient-badge {
   display: inline-block;
+<<<<<<< HEAD
   background: var(--gold);
   color: var(--black);
   font-size: 11px;
@@ -652,18 +780,43 @@ body {
   min-height: 2.4em;
   display: flex;
   align-items: center;
+=======
+  background: rgba(201,168,76,0.15);
+  color: var(--gold-light);
+  font-family: var(--font-en);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(201,168,76,0.3);
+}
+
+.ingredient-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--white);
+>>>>>>> ec2dc84 (true message)
 }
 
 .ingredient-role {
   font-size: 13px;
+<<<<<<< HEAD
   color: var(--gray);
   font-weight: 700;
   margin-bottom: 16px;
   display: block;
+=======
+  color: var(--gold);
+  margin-bottom: 16px;
+  font-weight: 500;
+>>>>>>> ec2dc84 (true message)
 }
 
 .ingredient-card p:last-child {
   font-size: 14px;
+<<<<<<< HEAD
   color: var(--gray-light);
   line-height: 1.6;
 }
@@ -683,14 +836,41 @@ body {
   color: #888;
   margin-bottom: 6px;
   display: block;
+=======
+  color: var(--gray);
+  line-height: 1.7;
+}
+
+.ingredients-raw {
+  background: rgba(0,0,0,0.3);
+  padding: 24px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.05);
+}
+.ingredients-raw-label {
+  font-size: 12px;
+  color: var(--gray);
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.ingredients-raw-text {
+  font-size: 13px;
+  color: var(--gray-light);
+  line-height: 1.8;
+>>>>>>> ec2dc84 (true message)
 }
 
 /* ============================================================
    SCENES
    ============================================================ */
 .scenes {
+<<<<<<< HEAD
   padding: 100px 0;
   background: var(--dark2);
+=======
+  padding: 120px 0;
+  background: var(--black);
+>>>>>>> ec2dc84 (true message)
 }
 
 .scenes-grid {
@@ -713,12 +893,20 @@ body {
   object-fit: cover;
   transition: transform 0.6s ease;
 }
+<<<<<<< HEAD
 .scene-card:hover .scene-img { transform: scale(1.08); }
+=======
+.scene-card:hover .scene-img { transform: scale(1.05); }
+>>>>>>> ec2dc84 (true message)
 
 .scene-overlay {
   position: absolute;
   inset: 0;
+<<<<<<< HEAD
   background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) 50%, transparent 100%);
+=======
+  background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.2));
+>>>>>>> ec2dc84 (true message)
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -726,6 +914,7 @@ body {
 }
 
 .scene-overlay h3 {
+<<<<<<< HEAD
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 6px;
@@ -796,6 +985,16 @@ body {
 }
 @media (min-width: 768px) {
   .howto-arrow { display: block; }
+=======
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: var(--white);
+}
+.scene-overlay p {
+  font-size: 14px;
+  color: var(--gold-light);
+>>>>>>> ec2dc84 (true message)
 }
 
 /* ============================================================
@@ -803,11 +1002,16 @@ body {
    ============================================================ */
 .story {
   position: relative;
+<<<<<<< HEAD
   padding: 120px 0;
   color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
+=======
+  padding: 140px 0;
+  overflow: hidden;
+>>>>>>> ec2dc84 (true message)
 }
 
 .story-bg {
@@ -819,18 +1023,26 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+<<<<<<< HEAD
   filter: grayscale(0.4) brightness(0.4);
+=======
+  filter: grayscale(100%) brightness(0.4);
+>>>>>>> ec2dc84 (true message)
 }
 .story-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.6);
+<<<<<<< HEAD
   backdrop-filter: blur(2px);
+=======
+>>>>>>> ec2dc84 (true message)
 }
 
 .story-container {
   position: relative;
   z-index: 1;
+<<<<<<< HEAD
   max-width: 700px;
   text-align: center;
 }
@@ -846,19 +1058,48 @@ body {
   width: 140px;
   margin: 40px auto 0;
   opacity: 0.9;
+=======
+  display: flex;
+  justify-content: center;
+}
+
+.story-content {
+  max-width: 640px;
+  text-align: center;
+}
+
+.story-text {
+  font-size: 16px;
+  line-height: 2.2;
+  margin-bottom: 32px;
+  color: rgba(255,255,255,0.9);
+}
+
+.story-logo {
+  height: 40px;
+  width: auto;
+  margin-top: 40px;
+  opacity: 0.8;
+>>>>>>> ec2dc84 (true message)
 }
 
 /* ============================================================
    FAQ
    ============================================================ */
 .faq {
+<<<<<<< HEAD
   padding: 100px 0;
   background: var(--dark);
+=======
+  padding: 120px 0;
+  background: var(--dark2);
+>>>>>>> ec2dc84 (true message)
 }
 
 .faq-list {
   max-width: 800px;
   margin: 0 auto;
+<<<<<<< HEAD
   border-top: 1px solid var(--dark3);
 }
 
@@ -901,12 +1142,69 @@ body {
   font-size: 15px;
   line-height: 1.6;
   display: block; 
+=======
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-item {
+  background: var(--black);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+.faq-item:hover { border-color: rgba(201,168,76,0.3); }
+
+.faq-q {
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.faq-q-mark {
+  font-family: var(--font-en);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.faq-q h3 {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.faq-toggle {
+  font-size: 24px;
+  color: var(--gold);
+  transition: transform 0.3s;
+}
+.faq-item.active .faq-toggle { transform: rotate(45deg); }
+
+.faq-a {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+  background: rgba(255,255,255,0.02);
+}
+.faq-a p {
+  padding: 0 24px 24px 60px;
+  font-size: 15px;
+  color: var(--gray-light);
+  line-height: 1.8;
+>>>>>>> ec2dc84 (true message)
 }
 
 /* ============================================================
    PURCHASE
    ============================================================ */
 .purchase {
+<<<<<<< HEAD
   padding: 100px 0 140px;
   background: var(--dark2);
 }
@@ -1007,6 +1305,104 @@ body {
 
 .option-img {
   height: 160px;
+=======
+  padding: 120px 0;
+  background: var(--black);
+}
+
+.purchase-card {
+  background: linear-gradient(145deg, #1a1a1a 0%, #0d0d0d 100%);
+  border: 1px solid rgba(201,168,76,0.2);
+  border-radius: 16px;
+  padding: 60px 40px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+.purchase-label {
+  font-family: var(--font-en);
+  font-size: 12px;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+
+.purchase-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 900;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #fff, #ccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.purchase-desc {
+  font-size: 16px;
+  color: var(--gray);
+  margin-bottom: 60px;
+}
+
+.purchase-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  margin-bottom: 60px;
+}
+
+.purchase-option {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius);
+  padding: 40px 24px;
+  position: relative;
+  transition: transform 0.3s, border-color 0.3s;
+}
+.purchase-option:hover {
+  transform: translateY(-8px);
+  border-color: rgba(201,168,76,0.3);
+}
+
+.purchase-option.recommended {
+  background: rgba(201,168,76,0.05);
+  border-color: rgba(201,168,76,0.3);
+  transform: scale(1.05);
+  z-index: 2;
+}
+.purchase-option.recommended:hover {
+  transform: scale(1.05) translateY(-8px);
+}
+
+.option-badge {
+  position: absolute;
+  top: 12px; right: 12px;
+  background: var(--dark4);
+  color: var(--gray-light);
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+.option-badge.best {
+  background: var(--gold);
+  color: var(--black);
+  font-weight: 700;
+}
+
+.purchase-option h3 {
+  font-family: var(--font-en);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.option-sub {
+  font-size: 13px;
+  color: var(--gray);
+  margin-bottom: 24px;
+}
+
+.option-img {
+  height: 180px;
+>>>>>>> ec2dc84 (true message)
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1014,12 +1410,18 @@ body {
 }
 .option-img img {
   max-height: 100%;
+<<<<<<< HEAD
   max-width: 100%;
   object-fit: contain;
+=======
+  width: auto;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+>>>>>>> ec2dc84 (true message)
 }
 
 .option-price {
   margin-bottom: 12px;
+<<<<<<< HEAD
   color: var(--white);
 }
 .price-val {
@@ -1031,32 +1433,66 @@ body {
   font-size: 0.9rem;
   margin-left: 4px;
   color: var(--gray);
+=======
+}
+.price-val {
+  font-family: var(--font-en);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--white);
+}
+.price-unit {
+  font-size: 14px;
+  color: var(--gray);
+  margin-left: 4px;
+>>>>>>> ec2dc84 (true message)
 }
 
 .option-note {
   font-size: 12px;
+<<<<<<< HEAD
   color: var(--gray);
   margin-bottom: 24px;
+=======
+  color: var(--gold);
+  margin-bottom: 24px;
+  min-height: 1.5em;
+>>>>>>> ec2dc84 (true message)
 }
 
 .purchase-biz-link {
   margin-top: 40px;
   padding-top: 40px;
+<<<<<<< HEAD
   border-top: 1px solid var(--dark3);
 }
 .purchase-biz-link p {
   margin-bottom: 24px;
   color: var(--gray-light);
+=======
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.purchase-biz-link p {
+  font-size: 14px;
+  color: var(--gray);
+  margin-bottom: 16px;
+>>>>>>> ec2dc84 (true message)
 }
 
 /* ============================================================
    FOOTER
    ============================================================ */
 .site-footer {
+<<<<<<< HEAD
   background: #000;
   padding: 80px 0 30px;
   border-top: 1px solid #111;
   font-size: 14px;
+=======
+  background: var(--dark);
+  padding: 80px 0 32px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+>>>>>>> ec2dc84 (true message)
 }
 
 .footer-top {
@@ -1064,6 +1500,7 @@ body {
   flex-wrap: wrap;
   gap: 60px;
   margin-bottom: 60px;
+<<<<<<< HEAD
   justify-content: space-between;
 }
 
@@ -1074,6 +1511,24 @@ body {
   width: 140px;
   margin-bottom: 24px;
   opacity: 0.8;
+=======
+}
+
+.footer-brand {
+  flex: 1;
+  min-width: 280px;
+}
+.footer-logo {
+  height: 40px;
+  width: auto;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+.footer-brand p {
+  font-size: 14px;
+  color: var(--gray);
+  line-height: 1.8;
+>>>>>>> ec2dc84 (true message)
 }
 .footer-brand p {
   color: var(--gray);
@@ -1092,8 +1547,10 @@ body {
 .social-links a:hover { color: var(--white); }
 
 .footer-nav {
+  flex: 2;
   display: flex;
   flex-wrap: wrap;
+<<<<<<< HEAD
   gap: 40px 60px;
 }
 
@@ -1109,22 +1566,66 @@ body {
 .footer-col a {
   display: block;
   color: var(--gray);
+=======
+  gap: 40px;
+}
+
+.footer-col {
+  min-width: 140px;
+}
+.footer-col h4 {
+  font-family: var(--font-en);
+  font-size: 14px;
+  color: var(--white);
+  margin-bottom: 20px;
+  letter-spacing: 0.05em;
+}
+.footer-col a {
+  display: block;
+  font-size: 14px;
+  color: var(--gray);
+  text-decoration: none;
+>>>>>>> ec2dc84 (true message)
   margin-bottom: 12px;
   transition: color 0.2s;
 }
 .footer-col a:hover { color: var(--gold); }
 
+<<<<<<< HEAD
 .footer-bottom {
   text-align: center;
   padding-top: 30px;
   border-top: 1px solid #111;
   color: #444;
   font-size: 12px;
+=======
+.social-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+.social-links a {
+  color: var(--gray);
+  transition: color 0.2s;
+}
+.social-links a:hover { color: var(--white); }
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+.footer-bottom p {
+  font-size: 12px;
+  color: var(--gray-light);
+  opacity: 0.5;
+>>>>>>> ec2dc84 (true message)
 }
 
 /* ============================================================
    RESPONSIVE TWEAKS
    ============================================================ */
+<<<<<<< HEAD
 @media (max-width: 991px) {
   .hero { flex-direction: column; text-align: center; padding-top: 100px; }
   .hero-content { padding: 0 24px; max-width: 100%; }
@@ -1138,5 +1639,24 @@ body {
   .section-title { margin-bottom: 40px; }
   .stats-inner { gap: 30px; }
   .stat-divider { display: none; }
+=======
+@media (max-width: 768px) {
+  .header-nav, .header-inner .btn { display: none; }
+  .hamburger { display: flex; }
+  
+  .hero-content { padding: 120px 24px 60px; max-width: 100%; text-align: center; }
+  .hero-logo { margin: 0 auto 24px; height: 140px; }
+  .hero-cta-group { justify-content: center; }
+  
+  .hero { flex-direction: column; padding-top: 0; }
+  .hero-bottle { flex: 0 0 auto; width: 100%; padding: 0 0 60px; }
+  .hero-bottle img { max-height: 400px; }
+  
+  .stats-inner { gap: 32px; }
+  .stat-divider { display: none; }
+  
+  .features-layout { gap: 40px; }
+  
+>>>>>>> ec2dc84 (true message)
   .purchase-card { padding: 40px 20px; }
 }
