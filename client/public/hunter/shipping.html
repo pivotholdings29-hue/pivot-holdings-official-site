@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>配送料金一覧 | HUNTER</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .shipping-page {
+      min-height: 100vh;
+      background: var(--black);
+      padding: 120px 0 80px;
+    }
+    .shipping-page .container {
+      max-width: 800px;
+    }
+    .shipping-page h1 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .shipping-page .lead {
+      color: var(--gray);
+      margin-bottom: 40px;
+      font-size: 0.95rem;
+    }
+    .shipping-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      margin-bottom: 32px;
+    }
+    .shipping-table th {
+      background: var(--gold);
+      color: var(--black);
+      font-weight: 700;
+      padding: 12px 16px;
+      text-align: left;
+    }
+    .shipping-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--dark3);
+      color: var(--white);
+      vertical-align: top;
+    }
+    .shipping-table tr:nth-child(even) td {
+      background: var(--dark2);
+    }
+    .shipping-table tr:hover td {
+      background: var(--dark3);
+    }
+    .shipping-notes {
+      background: var(--dark2);
+      border-left: 3px solid var(--gold);
+      padding: 16px 20px;
+      border-radius: 4px;
+      margin-bottom: 40px;
+    }
+    .shipping-notes p {
+      color: var(--gray);
+      font-size: 0.85rem;
+      margin: 4px 0;
+    }
+    .back-btn {
+      display: inline-block;
+      padding: 12px 32px;
+      background: var(--gold);
+      color: var(--black);
+      font-weight: 700;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .back-btn:hover {
+      opacity: 0.85;
+    }
+    @media (max-width: 600px) {
+      .shipping-table th,
+      .shipping-table td {
+        padding: 10px 10px;
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header-inner container">
+      <a href="index.html" class="header-logo-link">
+        <img src="assets/LOGO_LETTER.png" alt="HUNTER" class="header-logo header-logo-big" />
+      </a>
+    </div>
+  </header>
+
+  <section class="shipping-page">
+    <div class="container">
+      <p class="section-label">SHIPPING</p>
+      <h1>配送料金一覧</h1>
+      <p class="lead">配送地域とサイズに応じた送料は以下の通りです。</p>
+
+      <table class="shipping-table">
+        <thead>
+          <tr>
+            <th>地域</th>
+            <th>都道府県</th>
+            <th>60サイズ送料</th>
+            <th>80サイズ送料</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>北海道</td>
+            <td>北海道</td>
+            <td>850円</td>
+            <td>1,050円</td>
+          </tr>
+          <tr>
+            <td>東北</td>
+            <td>青森・岩手・宮城・秋田・山形・福島</td>
+            <td>620円</td>
+            <td>820円</td>
+          </tr>
+          <tr>
+            <td>関東</td>
+            <td>東京・茨城・栃木・群馬・埼玉・千葉・神奈川</td>
+            <td>540円</td>
+            <td>740円</td>
+          </tr>
+          <tr>
+            <td>中部</td>
+            <td>新潟・富山・石川・福井・山梨・長野・岐阜・静岡・愛知</td>
+            <td>540円</td>
+            <td>740円</td>
+          </tr>
+          <tr>
+            <td>近畿</td>
+            <td>京都・大阪・三重・滋賀・兵庫・奈良・和歌山</td>
+            <td>620円</td>
+            <td>820円</td>
+          </tr>
+          <tr>
+            <td>中国</td>
+            <td>鳥取・島根・岡山・広島・山口</td>
+            <td>700円</td>
+            <td>900円</td>
+          </tr>
+          <tr>
+            <td>四国</td>
+            <td>徳島・香川・愛媛・高知</td>
+            <td>770円</td>
+            <td>970円</td>
+          </tr>
+          <tr>
+            <td>九州</td>
+            <td>福岡・佐賀・長崎・大分・熊本・宮崎・鹿児島</td>
+            <td>850円</td>
+            <td>1,050円</td>
+          </tr>
+          <tr>
+            <td>沖縄</td>
+            <td>沖縄</td>
+            <td>1,450円</td>
+            <td>1,810円</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="shipping-notes">
+        <p>※ 離島・一部地域は追加送料がかかる場合があります。</p>
+        <p>※ 商品の組み合わせや数量により、サイズが変更になる場合があります。</p>
+        <p>※ 梱包サイズ：14本まで60サイズ、15本以上は80サイズとなります。</p>
+      </div>
+
+      <a href="index.html#order" class="back-btn">← 注文ページに戻る</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <img src="assets/LOGO_LETTER.png" alt="HUNTER" class="footer-logo" />
+      <p class="footer-copy">© 2026 HUNTER. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

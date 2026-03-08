@@ -24,7 +24,7 @@ export default function Company() {
             <div className="group">
               <div className="relative overflow-hidden rounded-sm mb-6 aspect-[3/4]">
                 <img 
-                  src="/images/representative.jpg" 
+                  src="/images/representative_cropped.jpg" 
                   alt="代表取締役 椛島 将太" 
                   className="w-full h-full object-cover transition-opacity duration-500 absolute inset-0 z-10 group-hover:opacity-0"
                 />
