@@ -505,8 +505,12 @@ body {
   filter: drop-shadow(0 0 12px rgba(201,168,76,0.3));
 =======
   display: inline-block;
+<<<<<<< HEAD
   filter: drop-shadow(0 0 10px rgba(255,255,255,0.1));
 >>>>>>> ec2dc84 (true message)
+=======
+  filter: drop-shadow(0 0 10px rgba(201,168,76,0.2));
+>>>>>>> 8b48f2f (true message)
 }
 
 .problem-card p {
@@ -516,6 +520,7 @@ body {
 }
 .problem-card strong {
   color: var(--white);
+<<<<<<< HEAD
   font-weight: 700;
 <<<<<<< HEAD
   border-bottom: 1px solid rgba(201,168,76,0.4);
@@ -523,6 +528,9 @@ body {
   display: block;
   margin-top: 4px;
 >>>>>>> ec2dc84 (true message)
+=======
+  background: linear-gradient(transparent 60%, rgba(201,168,76,0.3) 60%);
+>>>>>>> 8b48f2f (true message)
 }
 
 .problem-arrow {
@@ -532,12 +540,15 @@ body {
   gap: 12px;
   margin-top: 40px;
   color: var(--gold);
-  font-size: 14px;
   font-weight: 700;
+<<<<<<< HEAD
 <<<<<<< HEAD
   font-size: 14px;
 =======
 >>>>>>> ec2dc84 (true message)
+=======
+  font-size: 14px;
+>>>>>>> 8b48f2f (true message)
   letter-spacing: 0.1em;
 }
 .problem-arrow svg {
@@ -559,12 +570,17 @@ body {
    ============================================================ */
 .features {
 <<<<<<< HEAD
+<<<<<<< HEAD
   padding: 100px 0;
   background: var(--black);
 =======
   padding: 120px 0;
   background: radial-gradient(circle at 50% 30%, #1a1500 0%, var(--black) 70%);
 >>>>>>> ec2dc84 (true message)
+=======
+  padding: 100px 0;
+  background: var(--black);
+>>>>>>> 8b48f2f (true message)
   position: relative;
 }
 
@@ -573,16 +589,19 @@ body {
   align-items: center;
   gap: 60px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   margin-top: 60px;
 }
 @media (max-width: 900px) {
   .features-layout { flex-direction: column; }
 >>>>>>> ec2dc84 (true message)
+=======
+>>>>>>> 8b48f2f (true message)
 }
 
 .features-bottle {
-  flex: 1;
+  flex: 0 0 40%;
   position: relative;
   display: flex;
   justify-content: center;
@@ -593,7 +612,7 @@ body {
   height: auto;
   position: relative;
   z-index: 2;
-  filter: drop-shadow(0 0 40px rgba(201,168,76,0.2));
+  filter: drop-shadow(0 0 30px rgba(201,168,76,0.2));
 }
 .features-bottle-glow {
   position: absolute;
@@ -601,10 +620,14 @@ body {
   transform: translate(-50%, -50%);
   width: 300px; height: 300px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   background: radial-gradient(circle, rgba(201,168,76,0.15) 0%, transparent 70%);
   z-index: 1;
 =======
   background: radial-gradient(circle, rgba(201,168,76,0.2) 0%, transparent 70%);
+=======
+  background: radial-gradient(circle, rgba(201,168,76,0.15) 0%, transparent 70%);
+>>>>>>> 8b48f2f (true message)
   z-index: 1;
   filter: blur(40px);
 >>>>>>> ec2dc84 (true message)
@@ -645,17 +668,25 @@ body {
 .feature-body h3::before {
   content: '';
   display: block;
-  width: 24px; height: 1px;
+  width: 24px; height: 2px;
   background: var(--gold);
 }
 
 .feature-body p {
-  font-size: 15px;
   color: var(--gray-light);
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   line-height: 1.8;
 >>>>>>> ec2dc84 (true message)
+=======
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .features-layout { flex-direction: column; }
+  .features-bottle { order: -1; margin-bottom: 40px; }
+>>>>>>> 8b48f2f (true message)
 }
 
 /* ============================================================
@@ -663,18 +694,36 @@ body {
    ============================================================ */
 .ingredients {
 <<<<<<< HEAD
+<<<<<<< HEAD
   padding: 100px 0;
   background: var(--dark);
 =======
   padding: 120px 0;
   background: var(--dark2);
 >>>>>>> ec2dc84 (true message)
+=======
+  padding: 100px 0;
+  background: var(--dark2);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background accent */
+.ingredients::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle at center, rgba(201,168,76,0.03) 0%, transparent 70%);
+  pointer-events: none;
+>>>>>>> 8b48f2f (true message)
 }
 
 .ingredients-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 24px;
+<<<<<<< HEAD
 <<<<<<< HEAD
   margin-bottom: 60px;
 }
@@ -698,35 +747,37 @@ body {
   font-size: 32px;
 =======
   margin-bottom: 80px;
+=======
+  margin-bottom: 60px;
+>>>>>>> 8b48f2f (true message)
 }
 
 .ingredient-card {
-  background: var(--black);
+  background: rgba(255,255,255,0.02);
   border: 1px solid rgba(255,255,255,0.05);
   border-radius: var(--radius);
   padding: 32px 24px;
-  text-align: center;
   position: relative;
-  overflow: hidden;
-  transition: transform var(--transition);
+  transition: var(--transition);
 }
-.ingredient-card:hover { transform: translateY(-6px); }
-
-.ingredient-card::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; height: 2px;
-  background: linear-gradient(90deg, transparent, var(--gold), transparent);
-  opacity: 0.5;
+.ingredient-card:hover {
+  background: rgba(255,255,255,0.04);
+  border-color: rgba(201,168,76,0.3);
+  transform: translateY(-4px);
 }
 
 .ingredient-icon {
+<<<<<<< HEAD
   font-size: 40px;
 >>>>>>> ec2dc84 (true message)
+=======
+  font-size: 32px;
+>>>>>>> 8b48f2f (true message)
   margin-bottom: 16px;
 }
 
 .ingredient-badge {
+<<<<<<< HEAD
   display: inline-block;
   background: rgba(201,168,76,0.15);
   color: var(--gold-light);
@@ -737,14 +788,22 @@ body {
   border-radius: 20px;
   margin-bottom: 12px;
 =======
+=======
+  position: absolute;
+  top: 16px; right: 16px;
+>>>>>>> 8b48f2f (true message)
   font-family: var(--font-en);
   font-size: 12px;
-  font-weight: 600;
-  padding: 4px 12px;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  padding: 2px 8px;
   border-radius: 20px;
+<<<<<<< HEAD
   margin-bottom: 16px;
   border: 1px solid rgba(201,168,76,0.3);
 >>>>>>> ec2dc84 (true message)
+=======
+>>>>>>> 8b48f2f (true message)
 }
 
 .ingredient-card h3 {
@@ -763,16 +822,26 @@ body {
   display: inline-block;
 =======
   font-weight: 700;
-  margin-bottom: 8px;
   color: var(--white);
+  margin-bottom: 8px;
+  min-height: 54px; /* align heights */
+  display: flex;
+  align-items: center;
 }
 
 .ingredient-role {
+<<<<<<< HEAD
   font-size: 13px;
   color: var(--gold);
   margin-bottom: 16px;
   font-weight: 500;
 >>>>>>> ec2dc84 (true message)
+=======
+  font-size: 12px;
+  color: var(--gold-light);
+  margin-bottom: 12px;
+  font-weight: 700;
+>>>>>>> 8b48f2f (true message)
 }
 
 .ingredient-card p:last-child {
@@ -789,30 +858,44 @@ body {
   border-radius: var(--radius);
 =======
   color: var(--gray);
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 .ingredients-raw {
+<<<<<<< HEAD
   background: rgba(0,0,0,0.3);
   padding: 24px;
   border-radius: var(--radius);
   border: 1px solid rgba(255,255,255,0.05);
 >>>>>>> ec2dc84 (true message)
+=======
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 32px;
+  text-align: center;
+>>>>>>> 8b48f2f (true message)
 }
 .ingredients-raw-label {
   font-size: 12px;
   color: var(--gray);
   margin-bottom: 8px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   font-weight: 700;
 >>>>>>> ec2dc84 (true message)
+=======
+>>>>>>> 8b48f2f (true message)
 }
 .ingredients-raw-text {
-  font-size: 13px;
+  font-size: 11px;
   color: var(--gray-light);
   line-height: 1.8;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  max-width: 800px;
+  margin: 0 auto;
+>>>>>>> 8b48f2f (true message)
 }
 
 /* ============================================================
@@ -826,8 +909,13 @@ body {
 
 .howto-steps {
   display: flex;
+<<<<<<< HEAD
   align-items: flex-start;
   justify-content: center;
+=======
+  justify-content: center;
+  align-items: flex-start;
+>>>>>>> 8b48f2f (true message)
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -839,10 +927,15 @@ body {
   background: var(--dark2);
   padding: 32px 20px;
   border-radius: var(--radius);
+<<<<<<< HEAD
+=======
+  border: 1px solid rgba(255,255,255,0.05);
+>>>>>>> 8b48f2f (true message)
   position: relative;
 }
 
 .howto-step-num {
+<<<<<<< HEAD
   position: absolute;
   top: -12px; left: 50%;
   transform: translateX(-50%);
@@ -854,11 +947,25 @@ body {
   padding: 4px 12px;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+=======
+  font-family: var(--font-en);
+  font-size: 12px;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(201,168,76,0.2);
+  display: inline-block;
+  padding-bottom: 4px;
+>>>>>>> 8b48f2f (true message)
 }
 
 .howto-step-icon {
   font-size: 48px;
+<<<<<<< HEAD
   margin: 16px 0;
+=======
+  margin-bottom: 20px;
+>>>>>>> 8b48f2f (true message)
 }
 
 .howto-step p {
@@ -870,12 +977,24 @@ body {
 }
 
 .howto-arrow {
+<<<<<<< HEAD
   align-self: center;
   font-size: 24px;
   color: var(--gold-dark);
   font-weight: 700;
 =======
 >>>>>>> ec2dc84 (true message)
+=======
+  font-size: 24px;
+  color: var(--gold-dark);
+  align-self: center;
+  margin-top: -20px; /* adjust for visual center */
+}
+
+@media (max-width: 768px) {
+  .howto-steps { flex-direction: column; align-items: center; }
+  .howto-arrow { transform: rotate(90deg); margin: 10px 0; }
+>>>>>>> 8b48f2f (true message)
 }
 
 /* ============================================================
@@ -883,12 +1002,17 @@ body {
    ============================================================ */
 .scenes {
 <<<<<<< HEAD
+<<<<<<< HEAD
   padding: 100px 0;
   background: var(--dark);
 =======
   padding: 120px 0;
   background: var(--black);
 >>>>>>> ec2dc84 (true message)
+=======
+  padding: 100px 0;
+  background: var(--dark);
+>>>>>>> 8b48f2f (true message)
 }
 
 .scenes-grid {
@@ -908,8 +1032,12 @@ body {
   border-radius: var(--radius);
   overflow: hidden;
   aspect-ratio: 4/3;
+<<<<<<< HEAD
   group: scene;
 >>>>>>> ec2dc84 (true message)
+=======
+  group: scene-group;
+>>>>>>> 8b48f2f (true message)
 }
 
 .scene-img {
@@ -925,13 +1053,19 @@ body {
 =======
   transition: transform 0.6s ease;
 }
+<<<<<<< HEAD
 .scene-card:hover .scene-img { transform: scale(1.05); }
 >>>>>>> ec2dc84 (true message)
+=======
+.scene-card:hover .scene-img {
+  transform: scale(1.05);
+}
+>>>>>>> 8b48f2f (true message)
 
 .scene-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.2));
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) 60%, transparent 100%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -942,14 +1076,19 @@ body {
   font-size: 20px;
   font-weight: 700;
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin-bottom: 6px;
 =======
   margin-bottom: 4px;
   color: var(--white);
 >>>>>>> ec2dc84 (true message)
+=======
+  color: var(--white);
+  margin-bottom: 4px;
+>>>>>>> 8b48f2f (true message)
 }
 .scene-overlay p {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--gold-light);
 }
 
@@ -959,11 +1098,16 @@ body {
 .story {
   position: relative;
 <<<<<<< HEAD
+<<<<<<< HEAD
   padding: 120px 0;
   color: var(--white);
 =======
   padding: 140px 0;
 >>>>>>> ec2dc84 (true message)
+=======
+  padding: 120px 0;
+  color: var(--white);
+>>>>>>> 8b48f2f (true message)
   overflow: hidden;
 }
 
@@ -976,7 +1120,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(100%) brightness(0.4);
+  filter: grayscale(100%) contrast(1.2) brightness(0.4);
 }
 .story-overlay {
   position: absolute;
@@ -1012,7 +1156,7 @@ body {
 }
 
 .story-logo {
-  height: 40px;
+  height: 60px;
   width: auto;
 <<<<<<< HEAD
   opacity: 0.8;
@@ -1028,10 +1172,14 @@ body {
    ============================================================ */
 .faq {
 <<<<<<< HEAD
+<<<<<<< HEAD
   padding: 100px 0;
   background: var(--black);
 =======
   padding: 120px 0;
+=======
+  padding: 100px 0;
+>>>>>>> 8b48f2f (true message)
   background: var(--dark2);
 >>>>>>> ec2dc84 (true message)
 }
@@ -1056,10 +1204,12 @@ body {
   border: 1px solid rgba(255,255,255,0.05);
   border-radius: var(--radius);
   overflow: hidden;
-  transition: border-color 0.3s;
 }
+<<<<<<< HEAD
 .faq-item:hover { border-color: rgba(201,168,76,0.3); }
 >>>>>>> ec2dc84 (true message)
+=======
+>>>>>>> 8b48f2f (true message)
 
 .faq-q {
   padding: 20px 24px;
@@ -1067,6 +1217,7 @@ body {
   align-items: center;
   gap: 16px;
   cursor: pointer;
+<<<<<<< HEAD
 <<<<<<< HEAD
   transition: background 0.2s;
 }
@@ -1095,13 +1246,17 @@ body {
   padding: 0 24px 24px 60px;
 =======
   user-select: none;
+=======
+  transition: background 0.2s;
+>>>>>>> 8b48f2f (true message)
 }
+.faq-q:hover { background: rgba(255,255,255,0.02); }
 
 .faq-q-mark {
   font-family: var(--font-en);
   font-size: 20px;
-  font-weight: 700;
   color: var(--gold);
+  font-weight: 700;
 }
 
 .faq-q h3 {
@@ -1121,12 +1276,17 @@ body {
   height: 0;
   overflow: hidden;
   transition: height 0.3s ease;
-  background: rgba(255,255,255,0.02);
+  background: rgba(201,168,76,0.03);
 }
 .faq-a p {
+<<<<<<< HEAD
   padding: 0 24px 24px 60px;
   font-size: 15px;
 >>>>>>> ec2dc84 (true message)
+=======
+  padding: 20px 24px 32px 60px; /* indent to align with text */
+  font-size: 14px;
+>>>>>>> 8b48f2f (true message)
   color: var(--gray-light);
   font-size: 14px;
   line-height: 1.8;
@@ -1141,6 +1301,7 @@ body {
    ============================================================ */
 .purchase {
 <<<<<<< HEAD
+<<<<<<< HEAD
   padding: 100px 0;
   background: linear-gradient(to bottom, var(--dark), #050505);
 }
@@ -1149,12 +1310,19 @@ body {
   background: var(--dark2);
 =======
   padding: 120px 0;
+=======
+  padding: 100px 0;
+>>>>>>> 8b48f2f (true message)
   background: var(--black);
 }
 
 .purchase-card {
+<<<<<<< HEAD
   background: linear-gradient(145deg, #1a1a1a 0%, #0d0d0d 100%);
 >>>>>>> ec2dc84 (true message)
+=======
+  background: linear-gradient(180deg, var(--dark2) 0%, #151515 100%);
+>>>>>>> 8b48f2f (true message)
   border: 1px solid rgba(201,168,76,0.2);
   border-radius: 16px;
   padding: 60px 40px;
@@ -1311,34 +1479,38 @@ body {
 }
 
 .purchase-desc {
-  font-size: 16px;
   color: var(--gray);
   margin-bottom: 60px;
 }
 
 .purchase-options {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
   margin-bottom: 60px;
 }
 
 .purchase-option {
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.05);
+  flex: 1;
+  min-width: 280px;
+  max-width: 340px;
+  background: var(--black);
+  border: 1px solid rgba(255,255,255,0.1);
   border-radius: var(--radius);
-  padding: 40px 24px;
+  padding: 32px 24px;
   position: relative;
-  transition: transform 0.3s, border-color 0.3s;
+  transition: var(--transition);
 }
 .purchase-option:hover {
   transform: translateY(-8px);
-  border-color: rgba(201,168,76,0.3);
+  border-color: rgba(201,168,76,0.5);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .purchase-option.recommended {
-  background: rgba(201,168,76,0.05);
-  border-color: rgba(201,168,76,0.3);
+  border-color: var(--gold);
+  background: linear-gradient(to bottom, rgba(201,168,76,0.05), var(--black));
   transform: scale(1.05);
   z-index: 2;
 }
@@ -1348,26 +1520,25 @@ body {
 
 .option-badge {
   position: absolute;
-  top: 12px; right: 12px;
-  background: var(--dark4);
-  color: var(--gray-light);
+  top: -12px; left: 50%;
+  transform: translateX(-50%);
+  background: var(--gray);
+  color: var(--white);
   font-size: 11px;
-  padding: 4px 10px;
-  border-radius: 4px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 700;
 }
 .option-badge.best {
   background: var(--gold);
   color: var(--black);
-  font-weight: 700;
 }
 
 .purchase-option h3 {
   font-family: var(--font-en);
   font-size: 24px;
-  font-weight: 700;
   margin-bottom: 4px;
 }
-
 .option-sub {
   font-size: 13px;
   color: var(--gray);
@@ -1384,11 +1555,11 @@ body {
 .option-img img {
   max-height: 100%;
   width: auto;
-  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
 }
 
 .option-price {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 .price-val {
   font-family: var(--font-en);
@@ -1397,13 +1568,13 @@ body {
   color: var(--white);
 }
 .price-unit {
-  font-size: 14px;
+  font-size: 12px;
   color: var(--gray);
   margin-left: 4px;
 }
 
 .option-note {
-  font-size: 12px;
+  font-size: 11px;
   color: var(--gold);
   margin-bottom: 24px;
   min-height: 1.5em;
@@ -1412,7 +1583,7 @@ body {
 .purchase-biz-link {
   margin-top: 40px;
   padding-top: 40px;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255,255,255,0.05);
 }
 .purchase-biz-link p {
   font-size: 14px;
@@ -1425,6 +1596,7 @@ body {
    FOOTER
    ============================================================ */
 .site-footer {
+<<<<<<< HEAD
 <<<<<<< HEAD
   background: #050505;
   padding: 80px 0 40px;
@@ -1473,6 +1645,10 @@ body {
 =======
   background: var(--dark);
   padding: 80px 0 32px;
+=======
+  background: #050505;
+  padding: 80px 0 40px;
+>>>>>>> 8b48f2f (true message)
   border-top: 1px solid rgba(255,255,255,0.05);
 }
 
@@ -1485,7 +1661,7 @@ body {
 
 .footer-brand {
   flex: 1;
-  min-width: 280px;
+  min-width: 240px;
 }
 .footer-logo {
   height: 40px;
@@ -1494,7 +1670,7 @@ body {
   opacity: 0.8;
 }
 .footer-brand p {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--gray);
   line-height: 1.8;
 }
@@ -1507,36 +1683,43 @@ body {
 }
 
 .footer-col {
+  flex: 1;
   min-width: 140px;
 }
+
 .footer-col h4 {
   font-family: var(--font-en);
-  font-size: 14px;
-  color: var(--white);
+  font-size: 12px;
+  color: var(--gold);
   margin-bottom: 20px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
 }
+
 .footer-col a {
   display: block;
-  font-size: 14px;
-  color: var(--gray);
+  color: var(--gray-light);
   text-decoration: none;
+  font-size: 13px;
   margin-bottom: 12px;
   transition: color 0.2s;
 }
-.footer-col a:hover { color: var(--gold); }
+.footer-col a:hover { color: var(--white); }
 
 .social-links {
   display: flex;
   gap: 16px;
+<<<<<<< HEAD
   margin-top: 8px;
 >>>>>>> ec2dc84 (true message)
+=======
+  margin-top: 20px;
+>>>>>>> 8b48f2f (true message)
 }
 .social-links a {
   color: var(--gray);
   transition: color 0.2s;
 }
-.social-links a:hover { color: var(--white); }
+.social-links a:hover { color: var(--gold); }
 
 <<<<<<< HEAD
 .footer-col {
@@ -1566,21 +1749,28 @@ body {
   border-top: 1px solid rgba(255,255,255,0.05);
 =======
 .footer-bottom {
-  text-align: center;
-  padding-top: 32px;
   border-top: 1px solid rgba(255,255,255,0.05);
+  padding-top: 32px;
+  text-align: center;
 }
 .footer-bottom p {
+<<<<<<< HEAD
   font-size: 12px;
   color: var(--gray-light);
   opacity: 0.5;
 >>>>>>> ec2dc84 (true message)
+=======
+  font-size: 11px;
+  color: var(--gray);
+  font-family: var(--font-en);
+>>>>>>> 8b48f2f (true message)
 }
 
 /* ============================================================
    RESPONSIVE
    ============================================================ */
 @media (max-width: 768px) {
+<<<<<<< HEAD
 <<<<<<< HEAD
   .header-nav, .btn-sm { display: none; }
   .hamburger { display: flex; }
@@ -1602,15 +1792,17 @@ body {
   .purchase-option.recommended:hover { transform: translateY(-8px); }
 =======
   .header-nav, .header-inner .btn { display: none; }
+=======
+  .header-nav, .btn-sm { display: none; }
+>>>>>>> 8b48f2f (true message)
   .hamburger { display: flex; }
   
-  .hero-content { padding: 120px 24px 60px; max-width: 100%; text-align: center; }
-  .hero-logo { margin: 0 auto 24px; height: 140px; }
+  .hero-content { padding: 40px 24px; max-width: 100%; text-align: center; }
+  .hero-logo { margin: 0 auto 24px; }
   .hero-cta-group { justify-content: center; }
   
-  .hero { flex-direction: column; padding-top: 0; }
-  .hero-bottle { flex: 0 0 auto; width: 100%; padding: 0 0 60px; }
-  .hero-bottle img { max-height: 400px; }
+  .hero { flex-direction: column; padding-top: 100px; justify-content: center; }
+  .hero-bottle { margin-top: -40px; padding-right: 0; }
   
   .stats-inner { gap: 32px; }
   .stat-divider { display: none; }
@@ -1618,5 +1810,10 @@ body {
   .features-layout { gap: 40px; }
   
   .purchase-card { padding: 40px 20px; }
+<<<<<<< HEAD
 >>>>>>> ec2dc84 (true message)
+=======
+  .purchase-option.recommended { transform: none; }
+  .purchase-option.recommended:hover { transform: translateY(-8px); }
+>>>>>>> 8b48f2f (true message)
 }
