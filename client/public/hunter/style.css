@@ -507,8 +507,12 @@ body {
   font-size: 40px;
   margin-bottom: 20px;
   display: inline-block;
+<<<<<<< HEAD
   filter: drop-shadow(0 0 10px rgba(255,255,255,0.1));
 >>>>>>> ec2dc84 (true message)
+=======
+  filter: drop-shadow(0 0 10px rgba(201,168,76,0.2));
+>>>>>>> 8b48f2f (true message)
 }
 
 .problem-card p {
@@ -522,10 +526,14 @@ body {
   font-weight: 700;
 =======
   color: var(--white);
+<<<<<<< HEAD
   font-weight: 700;
   display: block;
   margin-top: 4px;
 >>>>>>> ec2dc84 (true message)
+=======
+  background: linear-gradient(transparent 60%, rgba(201,168,76,0.3) 60%);
+>>>>>>> 8b48f2f (true message)
 }
 
 .problem-arrow {
@@ -538,12 +546,15 @@ body {
   margin-top: 40px;
 >>>>>>> ec2dc84 (true message)
   color: var(--gold);
-  font-size: 14px;
   font-weight: 700;
+<<<<<<< HEAD
 <<<<<<< HEAD
   font-size: 14px;
   letter-spacing: 0.1em;
 =======
+=======
+  font-size: 14px;
+>>>>>>> 8b48f2f (true message)
   letter-spacing: 0.1em;
 }
 .problem-arrow svg {
@@ -561,12 +572,17 @@ body {
    ============================================================ */
 .features {
 <<<<<<< HEAD
+<<<<<<< HEAD
   padding: 100px 0;
   background: #0E0E0E;
 =======
   padding: 120px 0;
   background: radial-gradient(circle at 50% 30%, #1a1500 0%, var(--black) 70%);
 >>>>>>> ec2dc84 (true message)
+=======
+  padding: 100px 0;
+  background: var(--black);
+>>>>>>> 8b48f2f (true message)
   position: relative;
 }
 
@@ -575,6 +591,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   gap: 60px;
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 
@@ -590,6 +607,12 @@ body {
 .features-bottle {
   flex: 1;
 >>>>>>> ec2dc84 (true message)
+=======
+}
+
+.features-bottle {
+  flex: 0 0 40%;
+>>>>>>> 8b48f2f (true message)
   position: relative;
   display: flex;
   justify-content: center;
@@ -606,8 +629,12 @@ body {
   height: auto;
   position: relative;
   z-index: 2;
+<<<<<<< HEAD
   filter: drop-shadow(0 0 40px rgba(201,168,76,0.2));
 >>>>>>> ec2dc84 (true message)
+=======
+  filter: drop-shadow(0 0 30px rgba(201,168,76,0.2));
+>>>>>>> 8b48f2f (true message)
 }
 .features-bottle-glow {
   position: absolute;
@@ -620,7 +647,7 @@ body {
   pointer-events: none;
 =======
   width: 300px; height: 300px;
-  background: radial-gradient(circle, rgba(201,168,76,0.2) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(201,168,76,0.15) 0%, transparent 70%);
   z-index: 1;
   filter: blur(40px);
 >>>>>>> ec2dc84 (true message)
@@ -679,15 +706,23 @@ body {
 .feature-body h3::before {
   content: '';
   display: block;
-  width: 24px; height: 1px;
+  width: 24px; height: 2px;
   background: var(--gold);
 }
 
 .feature-body p {
-  font-size: 15px;
   color: var(--gray-light);
+<<<<<<< HEAD
   line-height: 1.8;
 >>>>>>> ec2dc84 (true message)
+=======
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .features-layout { flex-direction: column; }
+  .features-bottle { order: -1; margin-bottom: 40px; }
+>>>>>>> 8b48f2f (true message)
 }
 
 /* ============================================================
@@ -695,18 +730,36 @@ body {
    ============================================================ */
 .ingredients {
 <<<<<<< HEAD
+<<<<<<< HEAD
   padding: 100px 0;
   background: var(--dark);
 =======
   padding: 120px 0;
   background: var(--dark2);
 >>>>>>> ec2dc84 (true message)
+=======
+  padding: 100px 0;
+  background: var(--dark2);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background accent */
+.ingredients::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle at center, rgba(201,168,76,0.03) 0%, transparent 70%);
+  pointer-events: none;
+>>>>>>> 8b48f2f (true message)
 }
 
 .ingredients-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 24px;
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 
@@ -719,18 +772,20 @@ body {
   transition: transform var(--transition);
 =======
   margin-bottom: 80px;
+=======
+  margin-bottom: 60px;
+>>>>>>> 8b48f2f (true message)
 }
 
 .ingredient-card {
-  background: var(--black);
+  background: rgba(255,255,255,0.02);
   border: 1px solid rgba(255,255,255,0.05);
   border-radius: var(--radius);
   padding: 32px 24px;
-  text-align: center;
   position: relative;
-  overflow: hidden;
-  transition: transform var(--transition);
+  transition: var(--transition);
 }
+<<<<<<< HEAD
 .ingredient-card:hover { transform: translateY(-6px); }
 
 .ingredient-card::before {
@@ -740,19 +795,30 @@ body {
   background: linear-gradient(90deg, transparent, var(--gold), transparent);
   opacity: 0.5;
 >>>>>>> ec2dc84 (true message)
+=======
+.ingredient-card:hover {
+  background: rgba(255,255,255,0.04);
+  border-color: rgba(201,168,76,0.3);
+  transform: translateY(-4px);
+>>>>>>> 8b48f2f (true message)
 }
 .ingredient-card:hover { transform: translateY(-5px); }
 
 .ingredient-icon {
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-size: 2.5rem;
 =======
   font-size: 40px;
 >>>>>>> ec2dc84 (true message)
+=======
+  font-size: 32px;
+>>>>>>> 8b48f2f (true message)
   margin-bottom: 16px;
 }
 
 .ingredient-badge {
+<<<<<<< HEAD
   display: inline-block;
 <<<<<<< HEAD
   background: var(--gold);
@@ -783,20 +849,23 @@ body {
 =======
   background: rgba(201,168,76,0.15);
   color: var(--gold-light);
+=======
+  position: absolute;
+  top: 16px; right: 16px;
+>>>>>>> 8b48f2f (true message)
   font-family: var(--font-en);
   font-size: 12px;
-  font-weight: 600;
-  padding: 4px 12px;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  padding: 2px 8px;
   border-radius: 20px;
-  margin-bottom: 16px;
-  border: 1px solid rgba(201,168,76,0.3);
 }
 
 .ingredient-card h3 {
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 8px;
   color: var(--white);
+<<<<<<< HEAD
 >>>>>>> ec2dc84 (true message)
 }
 
@@ -812,6 +881,19 @@ body {
   margin-bottom: 16px;
   font-weight: 500;
 >>>>>>> ec2dc84 (true message)
+=======
+  margin-bottom: 8px;
+  min-height: 54px; /* align heights */
+  display: flex;
+  align-items: center;
+}
+
+.ingredient-role {
+  font-size: 12px;
+  color: var(--gold-light);
+  margin-bottom: 12px;
+  font-weight: 700;
+>>>>>>> 8b48f2f (true message)
 }
 
 .ingredient-card p:last-child {
@@ -838,26 +920,93 @@ body {
   display: block;
 =======
   color: var(--gray);
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 .ingredients-raw {
-  background: rgba(0,0,0,0.3);
-  padding: 24px;
-  border-radius: var(--radius);
-  border: 1px solid rgba(255,255,255,0.05);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 32px;
+  text-align: center;
 }
 .ingredients-raw-label {
   font-size: 12px;
   color: var(--gray);
   margin-bottom: 8px;
-  font-weight: 700;
 }
 .ingredients-raw-text {
-  font-size: 13px;
+  font-size: 11px;
   color: var(--gray-light);
   line-height: 1.8;
+<<<<<<< HEAD
 >>>>>>> ec2dc84 (true message)
+=======
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ============================================================
+   HOW TO USE
+   ============================================================ */
+.howto {
+  padding: 100px 0;
+  background: var(--black);
+  text-align: center;
+}
+
+.howto-steps {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.howto-step {
+  flex: 1;
+  min-width: 200px;
+  max-width: 280px;
+  background: var(--dark2);
+  padding: 32px 20px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.05);
+  position: relative;
+}
+
+.howto-step-num {
+  font-family: var(--font-en);
+  font-size: 12px;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(201,168,76,0.2);
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.howto-step-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.howto-step p {
+  font-size: 15px;
+  color: var(--gray-light);
+}
+.howto-step strong {
+  color: var(--gold-light);
+}
+
+.howto-arrow {
+  font-size: 24px;
+  color: var(--gold-dark);
+  align-self: center;
+  margin-top: -20px; /* adjust for visual center */
+}
+
+@media (max-width: 768px) {
+  .howto-steps { flex-direction: column; align-items: center; }
+  .howto-arrow { transform: rotate(90deg); margin: 10px 0; }
+>>>>>>> 8b48f2f (true message)
 }
 
 /* ============================================================
@@ -865,12 +1014,17 @@ body {
    ============================================================ */
 .scenes {
 <<<<<<< HEAD
+<<<<<<< HEAD
   padding: 100px 0;
   background: var(--dark2);
 =======
   padding: 120px 0;
   background: var(--black);
 >>>>>>> ec2dc84 (true message)
+=======
+  padding: 100px 0;
+  background: var(--dark);
+>>>>>>> 8b48f2f (true message)
 }
 
 .scenes-grid {
@@ -884,7 +1038,7 @@ body {
   border-radius: var(--radius);
   overflow: hidden;
   aspect-ratio: 4/3;
-  group: scene;
+  group: scene-group;
 }
 
 .scene-img {
@@ -894,19 +1048,29 @@ body {
   transition: transform 0.6s ease;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .scene-card:hover .scene-img { transform: scale(1.08); }
 =======
 .scene-card:hover .scene-img { transform: scale(1.05); }
 >>>>>>> ec2dc84 (true message)
+=======
+.scene-card:hover .scene-img {
+  transform: scale(1.05);
+}
+>>>>>>> 8b48f2f (true message)
 
 .scene-overlay {
   position: absolute;
   inset: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
   background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) 50%, transparent 100%);
 =======
   background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.2));
 >>>>>>> ec2dc84 (true message)
+=======
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) 60%, transparent 100%);
+>>>>>>> 8b48f2f (true message)
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -988,11 +1152,11 @@ body {
 =======
   font-size: 20px;
   font-weight: 700;
-  margin-bottom: 4px;
   color: var(--white);
+  margin-bottom: 4px;
 }
 .scene-overlay p {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--gold-light);
 >>>>>>> ec2dc84 (true message)
 }
@@ -1003,6 +1167,7 @@ body {
 .story {
   position: relative;
 <<<<<<< HEAD
+<<<<<<< HEAD
   padding: 120px 0;
   color: var(--white);
   display: flex;
@@ -1010,6 +1175,10 @@ body {
   justify-content: center;
 =======
   padding: 140px 0;
+=======
+  padding: 120px 0;
+  color: var(--white);
+>>>>>>> 8b48f2f (true message)
   overflow: hidden;
 >>>>>>> ec2dc84 (true message)
 }
@@ -1024,10 +1193,14 @@ body {
   height: 100%;
   object-fit: cover;
 <<<<<<< HEAD
+<<<<<<< HEAD
   filter: grayscale(0.4) brightness(0.4);
 =======
   filter: grayscale(100%) brightness(0.4);
 >>>>>>> ec2dc84 (true message)
+=======
+  filter: grayscale(100%) contrast(1.2) brightness(0.4);
+>>>>>>> 8b48f2f (true message)
 }
 .story-overlay {
   position: absolute;
@@ -1076,7 +1249,7 @@ body {
 }
 
 .story-logo {
-  height: 40px;
+  height: 60px;
   width: auto;
   margin-top: 40px;
   opacity: 0.8;
@@ -1088,10 +1261,14 @@ body {
    ============================================================ */
 .faq {
 <<<<<<< HEAD
+<<<<<<< HEAD
   padding: 100px 0;
   background: var(--dark);
 =======
   padding: 120px 0;
+=======
+  padding: 100px 0;
+>>>>>>> 8b48f2f (true message)
   background: var(--dark2);
 >>>>>>> ec2dc84 (true message)
 }
@@ -1153,9 +1330,7 @@ body {
   border: 1px solid rgba(255,255,255,0.05);
   border-radius: var(--radius);
   overflow: hidden;
-  transition: border-color 0.3s;
 }
-.faq-item:hover { border-color: rgba(201,168,76,0.3); }
 
 .faq-q {
   padding: 20px 24px;
@@ -1163,14 +1338,15 @@ body {
   align-items: center;
   gap: 16px;
   cursor: pointer;
-  user-select: none;
+  transition: background 0.2s;
 }
+.faq-q:hover { background: rgba(255,255,255,0.02); }
 
 .faq-q-mark {
   font-family: var(--font-en);
   font-size: 20px;
-  font-weight: 700;
   color: var(--gold);
+  font-weight: 700;
 }
 
 .faq-q h3 {
@@ -1190,11 +1366,11 @@ body {
   height: 0;
   overflow: hidden;
   transition: height 0.3s ease;
-  background: rgba(255,255,255,0.02);
+  background: rgba(201,168,76,0.03);
 }
 .faq-a p {
-  padding: 0 24px 24px 60px;
-  font-size: 15px;
+  padding: 20px 24px 32px 60px; /* indent to align with text */
+  font-size: 14px;
   color: var(--gray-light);
   line-height: 1.8;
 >>>>>>> ec2dc84 (true message)
@@ -1204,6 +1380,7 @@ body {
    PURCHASE
    ============================================================ */
 .purchase {
+<<<<<<< HEAD
 <<<<<<< HEAD
   padding: 100px 0 140px;
   background: var(--dark2);
@@ -1307,11 +1484,14 @@ body {
   height: 160px;
 =======
   padding: 120px 0;
+=======
+  padding: 100px 0;
+>>>>>>> 8b48f2f (true message)
   background: var(--black);
 }
 
 .purchase-card {
-  background: linear-gradient(145deg, #1a1a1a 0%, #0d0d0d 100%);
+  background: linear-gradient(180deg, var(--dark2) 0%, #151515 100%);
   border: 1px solid rgba(201,168,76,0.2);
   border-radius: 16px;
   padding: 60px 40px;
@@ -1337,34 +1517,38 @@ body {
 }
 
 .purchase-desc {
-  font-size: 16px;
   color: var(--gray);
   margin-bottom: 60px;
 }
 
 .purchase-options {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
   margin-bottom: 60px;
 }
 
 .purchase-option {
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.05);
+  flex: 1;
+  min-width: 280px;
+  max-width: 340px;
+  background: var(--black);
+  border: 1px solid rgba(255,255,255,0.1);
   border-radius: var(--radius);
-  padding: 40px 24px;
+  padding: 32px 24px;
   position: relative;
-  transition: transform 0.3s, border-color 0.3s;
+  transition: var(--transition);
 }
 .purchase-option:hover {
   transform: translateY(-8px);
-  border-color: rgba(201,168,76,0.3);
+  border-color: rgba(201,168,76,0.5);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .purchase-option.recommended {
-  background: rgba(201,168,76,0.05);
-  border-color: rgba(201,168,76,0.3);
+  border-color: var(--gold);
+  background: linear-gradient(to bottom, rgba(201,168,76,0.05), var(--black));
   transform: scale(1.05);
   z-index: 2;
 }
@@ -1374,26 +1558,25 @@ body {
 
 .option-badge {
   position: absolute;
-  top: 12px; right: 12px;
-  background: var(--dark4);
-  color: var(--gray-light);
+  top: -12px; left: 50%;
+  transform: translateX(-50%);
+  background: var(--gray);
+  color: var(--white);
   font-size: 11px;
-  padding: 4px 10px;
-  border-radius: 4px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 700;
 }
 .option-badge.best {
   background: var(--gold);
   color: var(--black);
-  font-weight: 700;
 }
 
 .purchase-option h3 {
   font-family: var(--font-en);
   font-size: 24px;
-  font-weight: 700;
   margin-bottom: 4px;
 }
-
 .option-sub {
   font-size: 13px;
   color: var(--gray);
@@ -1415,6 +1598,7 @@ body {
   object-fit: contain;
 =======
   width: auto;
+<<<<<<< HEAD
   filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
 >>>>>>> ec2dc84 (true message)
 }
@@ -1434,6 +1618,13 @@ body {
   margin-left: 4px;
   color: var(--gray);
 =======
+=======
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
+}
+
+.option-price {
+  margin-bottom: 8px;
+>>>>>>> 8b48f2f (true message)
 }
 .price-val {
   font-family: var(--font-en);
@@ -1442,18 +1633,22 @@ body {
   color: var(--white);
 }
 .price-unit {
-  font-size: 14px;
+  font-size: 12px;
   color: var(--gray);
   margin-left: 4px;
 >>>>>>> ec2dc84 (true message)
 }
 
 .option-note {
+<<<<<<< HEAD
   font-size: 12px;
 <<<<<<< HEAD
   color: var(--gray);
   margin-bottom: 24px;
 =======
+=======
+  font-size: 11px;
+>>>>>>> 8b48f2f (true message)
   color: var(--gold);
   margin-bottom: 24px;
   min-height: 1.5em;
@@ -1464,6 +1659,7 @@ body {
   margin-top: 40px;
   padding-top: 40px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   border-top: 1px solid var(--dark3);
 }
 .purchase-biz-link p {
@@ -1471,6 +1667,9 @@ body {
   color: var(--gray-light);
 =======
   border-top: 1px solid rgba(255,255,255,0.1);
+=======
+  border-top: 1px solid rgba(255,255,255,0.05);
+>>>>>>> 8b48f2f (true message)
 }
 .purchase-biz-link p {
   font-size: 14px;
@@ -1484,6 +1683,7 @@ body {
    ============================================================ */
 .site-footer {
 <<<<<<< HEAD
+<<<<<<< HEAD
   background: #000;
   padding: 80px 0 30px;
   border-top: 1px solid #111;
@@ -1491,6 +1691,10 @@ body {
 =======
   background: var(--dark);
   padding: 80px 0 32px;
+=======
+  background: #050505;
+  padding: 80px 0 40px;
+>>>>>>> 8b48f2f (true message)
   border-top: 1px solid rgba(255,255,255,0.05);
 >>>>>>> ec2dc84 (true message)
 }
@@ -1516,7 +1720,7 @@ body {
 
 .footer-brand {
   flex: 1;
-  min-width: 280px;
+  min-width: 240px;
 }
 .footer-logo {
   height: 40px;
@@ -1525,7 +1729,7 @@ body {
   opacity: 0.8;
 }
 .footer-brand p {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--gray);
   line-height: 1.8;
 >>>>>>> ec2dc84 (true message)
@@ -1571,25 +1775,31 @@ body {
 }
 
 .footer-col {
+  flex: 1;
   min-width: 140px;
 }
+
 .footer-col h4 {
   font-family: var(--font-en);
-  font-size: 14px;
-  color: var(--white);
+  font-size: 12px;
+  color: var(--gold);
   margin-bottom: 20px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
 }
+
 .footer-col a {
   display: block;
-  font-size: 14px;
-  color: var(--gray);
+  color: var(--gray-light);
   text-decoration: none;
+<<<<<<< HEAD
 >>>>>>> ec2dc84 (true message)
+=======
+  font-size: 13px;
+>>>>>>> 8b48f2f (true message)
   margin-bottom: 12px;
   transition: color 0.2s;
 }
-.footer-col a:hover { color: var(--gold); }
+.footer-col a:hover { color: var(--white); }
 
 <<<<<<< HEAD
 .footer-bottom {
@@ -1602,24 +1812,30 @@ body {
 .social-links {
   display: flex;
   gap: 16px;
-  margin-top: 8px;
+  margin-top: 20px;
 }
 .social-links a {
   color: var(--gray);
   transition: color 0.2s;
 }
-.social-links a:hover { color: var(--white); }
+.social-links a:hover { color: var(--gold); }
 
 .footer-bottom {
-  text-align: center;
-  padding-top: 32px;
   border-top: 1px solid rgba(255,255,255,0.05);
+  padding-top: 32px;
+  text-align: center;
 }
 .footer-bottom p {
+<<<<<<< HEAD
   font-size: 12px;
   color: var(--gray-light);
   opacity: 0.5;
 >>>>>>> ec2dc84 (true message)
+=======
+  font-size: 11px;
+  color: var(--gray);
+  font-family: var(--font-en);
+>>>>>>> 8b48f2f (true message)
 }
 
 /* ============================================================
@@ -1641,16 +1857,15 @@ body {
   .stat-divider { display: none; }
 =======
 @media (max-width: 768px) {
-  .header-nav, .header-inner .btn { display: none; }
+  .header-nav, .btn-sm { display: none; }
   .hamburger { display: flex; }
   
-  .hero-content { padding: 120px 24px 60px; max-width: 100%; text-align: center; }
-  .hero-logo { margin: 0 auto 24px; height: 140px; }
+  .hero-content { padding: 40px 24px; max-width: 100%; text-align: center; }
+  .hero-logo { margin: 0 auto 24px; }
   .hero-cta-group { justify-content: center; }
   
-  .hero { flex-direction: column; padding-top: 0; }
-  .hero-bottle { flex: 0 0 auto; width: 100%; padding: 0 0 60px; }
-  .hero-bottle img { max-height: 400px; }
+  .hero { flex-direction: column; padding-top: 100px; justify-content: center; }
+  .hero-bottle { margin-top: -40px; padding-right: 0; }
   
   .stats-inner { gap: 32px; }
   .stat-divider { display: none; }
@@ -1659,4 +1874,6 @@ body {
   
 >>>>>>> ec2dc84 (true message)
   .purchase-card { padding: 40px 20px; }
+  .purchase-option.recommended { transform: none; }
+  .purchase-option.recommended:hover { transform: translateY(-8px); }
 }
