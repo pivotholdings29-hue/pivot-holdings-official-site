@@ -25,7 +25,7 @@ export default function Company() {
               <div className="relative overflow-hidden rounded-sm mb-6 aspect-[3/4]">
                 {/* Hover Image (Background) */}
                 <img 
-                  src="/assets/team/kabashima_hover.png" 
+                  src="/assets/team/kabashima_nature.jpg" 
                   alt="代表取締役 椛島 将太 (Hover)" 
                   className="w-full h-full object-cover absolute inset-0 z-0"
                 />
