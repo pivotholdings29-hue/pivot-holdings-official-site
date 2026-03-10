@@ -1,2 +1,3 @@
 - [ ] Fix broken image link for representative by saving image locally with alphanumeric filename and updating Company.tsx
 - [ ] Restore hover effect for representative photo by adding the second image and updating Company.tsx
+- [ ] Update representative hover image to 'nature' photo and verify implementation before push
