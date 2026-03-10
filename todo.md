@@ -1,0 +1,1 @@
+- [ ] Fix broken image link for representative by saving image locally with alphanumeric filename and updating Company.tsx
