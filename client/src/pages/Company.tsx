@@ -24,14 +24,9 @@ export default function Company() {
             <div className="group">
               <div className="relative overflow-hidden rounded-sm mb-6 aspect-[3/4]">
                 <img 
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663030557844/9KrcnehZTR9fbMqyS3eBSa/椛島さん写真_ビジネス_7a6d6708.jpg" 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663030557844/9KrcnehZTR9fbMqyS3eBSa/椛島さん写真_ビジネス_0276060c.jpg" 
                   alt="代表取締役 椛島 将太" 
-                  className="w-full h-full object-cover transition-opacity duration-500 absolute inset-0 z-10 group-hover:opacity-0"
-                />
-                <img 
-                  src="/images/representative-nature.jpg" 
-                  alt="代表取締役 椛島 将太 (Nature)" 
-                  className="w-full h-full object-cover absolute inset-0 z-0"
+                  className="w-full h-full object-cover transition-opacity duration-500 absolute inset-0 z-10"
                 />
               </div>
               <div className="text-center">
