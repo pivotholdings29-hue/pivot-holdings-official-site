@@ -21,17 +21,17 @@ export default function Company() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
             {/* Representative Card */}
-            <div className="group">
+            <div className="group relative">
               <div className="relative overflow-hidden rounded-sm mb-6 aspect-[3/4]">
-                {/* Hover Image (Background) */}
+                {/* Hover Image (Background) - The one to show on hover */}
                 <img 
-                  src="/assets/team/kabashima_nature.jpg" 
+                  src="/images/representative-nature.jpg" 
                   alt="代表取締役 椛島 将太 (Hover)" 
                   className="w-full h-full object-cover absolute inset-0 z-0"
                 />
                 {/* Default Image (Foreground) - Fades out on hover */}
                 <img 
-                  src="/assets/team/kabashima.jpg" 
+                  src="/images/representative_cropped.jpg" 
                   alt="代表取締役 椛島 将太" 
                   className="w-full h-full object-cover transition-opacity duration-500 absolute inset-0 z-10 group-hover:opacity-0"
                 />
