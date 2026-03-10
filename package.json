@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build",
+    "check-lp": "node scripts/check-lp-integrity.js",
+    "build": "node scripts/check-lp-integrity.js && vite build",
     "start": "NODE_ENV=production node dist/index.js",
     "preview": "vite preview --host",
     "check": "tsc --noEmit",
