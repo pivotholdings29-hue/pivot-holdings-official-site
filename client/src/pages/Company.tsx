@@ -31,7 +31,7 @@ export default function Company() {
                 />
                 {/* Default Image (Foreground) - Fades out on hover */}
                 <img 
-                  src="/images/representative_cropped.jpg" 
+                  src="/images/representative-business.jpg" 
                   alt="代表取締役 椛島 将太" 
                   className="w-full h-full object-cover transition-opacity duration-500 absolute inset-0 z-10 group-hover:opacity-0"
                 />
