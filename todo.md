@@ -3,6 +3,8 @@
 - [x] Update representative hover image to 'nature' photo and verify implementation before push
 - [x] Review code for any remaining issues
 - [x] Push changes to GitHub
-- [ ] Update Kabashima-san's default (1st) image to the newly attached business photo
-- [ ] Verify that the hover image remains unchanged
-- [ ] Review the changes before finalizing
+- [x] Update Kabashima-san's default (1st) image to the newly attached business photo
+- [x] Verify that the hover image remains unchanged
+- [x] Review the changes before finalizing
+- [ ] Push the latest image update to GitHub
+- [ ] Perform a final code review to ensure everything is correct
