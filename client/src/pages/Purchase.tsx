@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Building2, User, Utensils } from "lucide-react";
+import { Building2, User, Utensils, MessageCircle } from "lucide-react";
 
 export default function Purchase() {
   return (
@@ -69,22 +69,39 @@ export default function Purchase() {
               </TabsList>
 
               <TabsContent value="toc" className="mt-0">
-                <div className="bg-white p-4 md:p-8 rounded-sm border border-gray-100 shadow-xl">
-                  <div className="mb-8 text-center">
-                    <h3 className="text-xl font-bold text-[#1A1A1A] mb-2">一般のお客様向け ご注文フォーム</h3>
-                    <p className="text-sm text-gray-500">個人でのご購入はこちらからお願いいたします。</p>
+                <div className="bg-white p-8 md:p-12 rounded-sm border border-gray-100 shadow-xl text-center">
+                  <div className="mb-8">
+                    <h3 className="text-2xl font-bold text-[#1A1A1A] mb-4">一般のお客様向け ご注文</h3>
+                    <p className="text-gray-500 leading-relaxed mb-8">
+                      一般のお客様のご注文は、HUNTER公式LINEにて承っております。<br />
+                      下記ボタン、またはQRコードより友だち追加の上、ご注文ください。
+                    </p>
                   </div>
-                  <iframe 
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSeC8Kup7d66TaJqN3wPKqBv-RyQ5CVUPD5szXDEGWHMoa44Zw/viewform?embedded=true" 
-                    width="100%" 
-                    height="1800" 
-                    frameBorder="0" 
-                    marginHeight={0} 
-                    marginWidth={0}
-                    title="Hunter注文フォーム（一般）"
-                  >
-                    読み込んでいます…
-                  </iframe>
+
+                  <div className="flex flex-col items-center justify-center gap-8">
+                    <a 
+                      href="https://line.me/R/ti/p/@278bzuez" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-3 bg-[#06C755] hover:bg-[#05b34c] text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 w-full max-w-md"
+                    >
+                      <MessageCircle className="w-6 h-6" />
+                      公式LINEで注文する
+                    </a>
+
+                    <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                      <img 
+                        src="/hunter/assets/line-qr.png" 
+                        alt="HUNTER 公式LINE QRコード" 
+                        className="w-48 h-48 object-contain"
+                      />
+                      <p className="mt-2 text-xs text-gray-400 font-medium">@278bzuez</p>
+                    </div>
+                    
+                    <p className="text-sm text-gray-400">
+                      ※ スマートフォンの方はボタンをタップ、<br className="md:hidden" />PCの方はQRコードをスキャンしてください。
+                    </p>
+                  </div>
                 </div>
               </TabsContent>
 
