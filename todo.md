@@ -6,5 +6,8 @@
 - [x] Update Kabashima-san's default (1st) image to the newly attached business photo
 - [x] Verify that the hover image remains unchanged
 - [x] Review the changes before finalizing
-- [ ] Push the latest image update to GitHub
-- [ ] Perform a final code review to ensure everything is correct
+- [x] Push the latest image update to GitHub
+- [x] Perform a final code review to ensure everything is correct
+- [x] Replace Google Form order links with Official LINE link
+- [x] Add Official LINE QR code to the website
+- [ ] Push changes to GitHub
