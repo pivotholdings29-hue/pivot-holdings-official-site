@@ -6,5 +6,30 @@
 - [x] Update Kabashima-san's default (1st) image to the newly attached business photo
 - [x] Verify that the hover image remains unchanged
 - [x] Review the changes before finalizing
-- [ ] Push the latest image update to GitHub
-- [ ] Perform a final code review to ensure everything is correct
+- [x] Push the latest image update to GitHub
+- [x] Perform a final code review to ensure everything is correct
+- [x] Replace Google Form order links with Official LINE link
+- [x] Add Official LINE QR code to the website
+- [x] Push changes to GitHub
+- [x] Investigate why changes are not reflected on the live site
+- [x] Check GitHub Actions status for deployment failures
+- [x] Verify if the correct branch (main) is being deployed
+- [x] Re-push or trigger deployment if necessary
+- [x] Identify React components containing 'General Customer Order Form'
+- [x] Update links to Official LINE in React components
+- [x] Add QR code to React components
+- [x] Push changes to GitHub
+- [x] Add Ichigo Honda to the team section on the Company page
+- [x] Add business photo for Ichigo Honda
+- [x] Add nature photo for Ichigo Honda
+- [x] Update Company.tsx with new team member details
+- [x] Push changes to GitHub
+- [x] Add Yusuke Yamagata to the team section on the Company page
+- [x] Add business photo for Yusuke Yamagata
+- [x] Update Company.tsx with new team member details
+- [x] Push changes to GitHub
+- [x] Reorder team members: Kabashima -> Honda -> Yamagata -> Maeda
+- [x] Update Ichigo Honda's job title to "営業"
+- [x] Update Yusuke Yamagata's job title to "プロジェクトマネージャー"
+- [x] Update Yusuke Yamagata's hover image to the attached trail running photo
+- [ ] Push changes to GitHub

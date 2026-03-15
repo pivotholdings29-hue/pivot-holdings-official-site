@@ -18,8 +18,29 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout main
         uses: actions/checkout@v4
+        with:
+          path: main-repo
+
+      - name: Checkout hunter-stable branch
+        uses: actions/checkout@v4
+        with:
+          ref: hunter-stable
+          path: hunter-stable-repo
+
+      - name: Restore LP files from hunter-stable
+        run: |
+          STABLE_DIR="hunter-stable-repo/client/public/hunter"
+          MAIN_DIR="main-repo/client/public/hunter"
+          cp "$STABLE_DIR/index.html" "$MAIN_DIR/index.html"
+          cp "$STABLE_DIR/style.css" "$MAIN_DIR/style.css"
+          cp "$STABLE_DIR/main.js" "$MAIN_DIR/main.js"
+          for pdf in "$STABLE_DIR"/*.pdf; do
+            [ -f "$pdf" ] && cp "$pdf" "$MAIN_DIR/"
+          done
+          cp -r "$STABLE_DIR/assets/." "$MAIN_DIR/assets/"
+          echo "✅ LP files restored from hunter-stable branch"
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -32,15 +53,17 @@ jobs:
           version: 9
 
       - name: Install dependencies
+        working-directory: main-repo
         run: pnpm install --no-frozen-lockfile
 
       - name: Build
+        working-directory: main-repo
         run: pnpm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: ./main-repo/dist
 
   deploy:
     environment:
