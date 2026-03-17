@@ -68,18 +68,18 @@ export default function Company() {
 
             {/* 3. Team Member Card - Yano */}
             <div className="group relative">
-              <div className="relative overflow-hidden rounded-sm mb-6 aspect-[3/4]">
+              <div className="relative overflow-hidden rounded-sm mb-6 flex items-center justify-center bg-gray-50 aspect-[3/4]">
                 {/* Hover Image (Background) - The one to show on hover */}
                 <img 
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310419663030557844/9KrcnehZTR9fbMqyS3eBSa/矢野_nature_ec64deea.jpg" 
                   alt="営業 矢野 智与 (Hover)" 
                   className="w-full h-full object-cover absolute inset-0 z-0"
                 />
-                {/* Default Image (Foreground) - Fades out on hover */}
+                {/* Default Image (Foreground) - Fades out on hover. Using object-contain to keep original aspect ratio */}
                 <img 
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310419663030557844/9KrcnehZTR9fbMqyS3eBSa/矢野_ビジネス_67e0cd53.jpg" 
                   alt="営業 矢野 智与" 
-                  className="w-full h-full object-cover transition-opacity duration-500 absolute inset-0 z-10 group-hover:opacity-0"
+                  className="w-full h-full object-contain transition-opacity duration-500 absolute inset-0 z-10 group-hover:opacity-0 bg-white"
                 />
               </div>
               <div className="text-center">
