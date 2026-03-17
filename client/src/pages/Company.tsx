@@ -19,7 +19,7 @@ export default function Company() {
             <p className="text-gray-400 font-bold tracking-widest text-xs uppercase">チーム紹介</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 max-w-7xl mx-auto">
             {/* 1. Representative Card - Kabashima */}
             <div className="group relative">
               <div className="relative overflow-hidden rounded-sm mb-6 aspect-[3/4]">
@@ -66,7 +66,30 @@ export default function Company() {
               </div>
             </div>
 
-            {/* 3. Team Member Card - Yamagata */}
+            {/* 3. Team Member Card - Yano */}
+            <div className="group relative">
+              <div className="relative overflow-hidden rounded-sm mb-6 aspect-[3/4]">
+                {/* Hover Image (Background) - The one to show on hover */}
+                <img 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663030557844/9KrcnehZTR9fbMqyS3eBSa/矢野_nature_ec64deea.jpg" 
+                  alt="営業 矢野 智与 (Hover)" 
+                  className="w-full h-full object-cover absolute inset-0 z-0"
+                />
+                {/* Default Image (Foreground) - Fades out on hover */}
+                <img 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663030557844/9KrcnehZTR9fbMqyS3eBSa/矢野_ビジネス_67e0cd53.jpg" 
+                  alt="営業 矢野 智与" 
+                  className="w-full h-full object-cover transition-opacity duration-500 absolute inset-0 z-10 group-hover:opacity-0"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="text-xl font-bold text-[#1A1A1A] mb-1">矢野 智与</h3>
+                <p className="text-sm text-gray-400 font-english mb-3 notranslate" translate="no">Toshinobu Yano</p>
+                <p className="text-sm font-bold text-gray-600">営業</p>
+              </div>
+            </div>
+
+            {/* 4. Team Member Card - Yamagata */}
             <div className="group relative">
               <div className="relative overflow-hidden rounded-sm mb-6 aspect-[3/4]">
                 {/* Hover Image (Background) - The one to show on hover */}
@@ -89,19 +112,19 @@ export default function Company() {
               </div>
             </div>
 
-            {/* 4. Business Partner Card - Maeda */}
+            {/* 5. Business Partner Card - Maeda */}
             <div className="group">
               <div className="relative overflow-hidden rounded-sm mb-6 aspect-[3/4]">
                 <img 
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310419663030557844/9KrcnehZTR9fbMqyS3eBSa/前田成穂_HP写真_5a8f80cb.JPG" 
-                  alt="マーケティング担当 前田 成穂" 
+                  alt="マーケティング 前田 成穂" 
                   className="w-full h-full object-cover transition-opacity duration-500 absolute inset-0 z-10"
                 />
               </div>
               <div className="text-center">
                 <h3 className="text-xl font-bold text-[#1A1A1A] mb-1">前田 成穂</h3>
                 <p className="text-sm text-gray-400 font-english mb-3 notranslate" translate="no">Naruho Maeda</p>
-                <p className="text-sm font-bold text-gray-600">マーケティング担当</p>
+                <p className="text-sm font-bold text-gray-600">マーケティング</p>
               </div>
             </div>
           </div>
