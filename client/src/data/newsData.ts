@@ -11,6 +11,14 @@ export interface NewsItem {
 
 export const newsItems: NewsItem[] = [
   {
+    id: 4,
+    date: "2026.03.17",
+    category: "PRESS",
+    title: "懸賞なび 2026年 5月号にHUNTERが掲載されました。",
+    content: "白夜書房が発行する「懸賞なび」2026年5月号にて、お肉を食べるならこれ1本！「Hunter（ハンター）」が紹介されました。L-カルニチン1000mgやイヌリン600mgなどを配合し、脂の多い肉料理などの重たい食事の不安をケアし、翌朝の爽快な目覚めをサポートするエナジードリンクとして取り上げていただいております。本誌では読者プレゼント企画も実施されておりますので、ぜひご覧ください。",
+    link: "https://www.byakuya-shobo.co.jp/book/b10161432.html"
+  },
+  {
     id: 3,
     date: "2026.01.29",
     category: "PRESS",
