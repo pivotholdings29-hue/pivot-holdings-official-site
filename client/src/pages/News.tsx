@@ -75,6 +75,15 @@ export default function News() {
             </DialogTitle>
           </DialogHeader>
           <div className="text-gray-500 leading-loose pt-6 text-base font-light space-y-4">
+            {selectedItem?.imageUrl && (
+              <div className="mb-6">
+                <img 
+                  src={selectedItem.imageUrl} 
+                  alt={selectedItem.title} 
+                  className="w-full h-auto rounded-sm border border-gray-100"
+                />
+              </div>
+            )}
             <p>{selectedItem?.content}</p>
             {selectedItem?.category === 'EVENT' && (
               <div className="bg-gray-50 p-6 rounded-sm mt-6 text-sm">

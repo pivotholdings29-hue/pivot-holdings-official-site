@@ -5,11 +5,20 @@ export interface NewsItem {
   title: string;
   content?: string;
   link?: string; // For external links like PR Times
+  imageUrl?: string; // For displaying images in the modal
   location?: string; // For events
   time?: string; // For events
 }
 
 export const newsItems: NewsItem[] = [
+  {
+    id: 4,
+    date: "2026.03.17",
+    category: "PRESS",
+    title: "懸賞なび 2026年 5月号にHUNTERが掲載されました。",
+    content: "白夜書房が発行する「懸賞なび」2026年5月号にて、お肉を食べるならこれ1本！「HUNTER（ハンター）」が紹介されました。L-カルニチン1000mgやイヌリン600mgなどを配合し、脂の多い肉料理などの重たい食事の不安をケアし、翌朝の爽快な目覚めをサポートするエナジードリンクとして取り上げていただいております。本誌では読者プレゼント企画も実施されておりますので、ぜひご覧ください。",
+    imageUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030557844/9KrcnehZTR9fbMqyS3eBSa/懸賞なび_2026年5月号_103733f7.png"
+  },
   {
     id: 3,
     date: "2026.01.29",
@@ -33,61 +42,6 @@ export const newsItems: NewsItem[] = [
   }
 ];
 
-export const eventItems: NewsItem[] = [
-  {
-    id: 106,
-    date: "2026.03.25",
-    category: "EVENT",
-    title: "経営層限定✖︎ジビエBBQ🍖",
-    content: "経営層の方々限定のジビエBBQを開催します。ビジネスの最前線で活躍される皆様との交流を深める特別な一夜です。",
-    location: "都内某所（参加者のみにお知らせします）",
-    time: "20:00〜"
-  },
-  {
-    id: 105,
-    date: "2026.03.11",
-    category: "EVENT",
-    title: "誰でも参加OKのジビエBBQ🍖",
-    content: "どなたでもご参加いただけるオープンなジビエBBQです。ジビエ初心者の方も、常連の方も、美味しいお肉と楽しい会話で盛り上がりましょう！",
-    location: "都内某所（参加者のみにお知らせします）",
-    time: "20:00〜"
-  },
-  {
-    id: 104,
-    date: "2026.03.05",
-    category: "EVENT",
-    title: "Hunter販売協力者様向けBBQ🍖",
-    content: "私たちが開発したドリンク「Hunter」の販売にご協力いただけそうな方々（マーケティング、食品、商社、営業など）をお招きしてのBBQです。ご興味がある方はぜひご参加ください。",
-    location: "都内某所（参加者のみにお知らせします）",
-    time: "20:00〜"
-  },
-  {
-    id: 103,
-    date: "2026.02.27",
-    category: "EVENT",
-    title: "通常BBQ",
-    content: "定期開催のジビエBBQです。初めての方も大歓迎です。ジビエの美味しさと楽しさを体験してください。",
-    location: "都内某所（参加者のみにお知らせします）",
-    time: "20:00開場"
-  },
-  {
-    id: 102,
-    date: "2026.02.19",
-    category: "EVENT",
-    title: "ジビエBBQ戦略共有",
-    content: "今後のジビエBBQの展開や戦略について共有する会を開催します。興味のある方はぜひご参加ください。",
-    location: "都内某所（参加者のみにお知らせします）",
-    time: "20:00開場"
-  },
-  {
-    id: 101,
-    date: "2026.02.10",
-    category: "EVENT",
-    title: "ジビエBBQ経営者交流会",
-    content: "経営者様向けのジビエBBQ交流会を開催いたします。美味しいジビエ料理を囲みながら、ビジネスやビジョンについて語り合いましょう。",
-    location: "都内某所（参加者のみにお知らせします）",
-    time: "18:00〜21:00"
-  }
-];
+export const eventItems: NewsItem[] = [];
 
 export const allItems = [...newsItems, ...eventItems].sort((a, b) => b.date.localeCompare(a.date));

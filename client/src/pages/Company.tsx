@@ -6,7 +6,7 @@ export default function Company() {
     <Layout>
       <div className="bg-gray-50 py-20 md:py-32">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 font-english tracking-wide text-[#1A1A1A]">COMPANY</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 font-english tracking-wide text-[#1A1A1A] notranslate" translate="no">COMPANY</h1>
           <p className="text-gray-400 font-bold tracking-widest text-sm uppercase">企業情報</p>
         </div>
       </div>
@@ -15,7 +15,7 @@ export default function Company() {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="mb-16 text-center">
-            <h2 className="text-3xl font-bold mb-4 font-english tracking-wide text-[#1A1A1A]">TEAM</h2>
+            <h2 className="text-3xl font-bold mb-4 font-english tracking-wide text-[#1A1A1A] notranslate" translate="no">TEAM</h2>
             <p className="text-gray-400 font-bold tracking-widest text-xs uppercase">チーム紹介</p>
           </div>
           
@@ -38,7 +38,7 @@ export default function Company() {
               </div>
               <div className="text-center">
                 <h3 className="text-xl font-bold text-[#1A1A1A] mb-1">椛島 将太</h3>
-                <p className="text-sm text-gray-400 font-english mb-3">Shota Kabashima</p>
+                <p className="text-sm text-gray-400 font-english mb-3 notranslate" translate="no">Shota Kabashima</p>
                 <p className="text-sm font-bold text-gray-600">代表取締役</p>
               </div>
             </div>
@@ -66,41 +66,41 @@ export default function Company() {
       <section className="py-24 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="mb-16 text-center">
-            <h2 className="text-3xl font-bold mb-4 font-english tracking-wide text-[#1A1A1A]">OVERVIEW</h2>
+            <h2 className="text-3xl font-bold mb-4 font-english tracking-wide text-[#1A1A1A] notranslate" translate="no">OVERVIEW</h2>
             <p className="text-gray-400 font-bold tracking-widest text-xs uppercase">会社概要</p>
           </div>
 
           <div className="bg-white p-10 md:p-16 rounded-sm border border-gray-100 shadow-sm">
             <dl className="space-y-10">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">
-                <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Company Name</dt>
+                <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1 notranslate" translate="no">Company Name</dt>
                 <dd className="md:col-span-2 font-bold text-xl text-[#1A1A1A]">pH株式会社</dd>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">
-                <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Reading</dt>
+                <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1 notranslate" translate="no">Reading</dt>
                 <dd className="md:col-span-2 text-gray-600">
                   ピーエイチカブシキガイシャ
                 </dd>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">
-                <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Representative</dt>
+                <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1 notranslate" translate="no">Representative</dt>
                 <dd className="md:col-span-2 text-gray-600">代表取締役　椛島 将太</dd>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">
-                <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Phone</dt>
+                <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1 notranslate" translate="no">Phone</dt>
                 <dd className="md:col-span-2 text-gray-600">080-5426-6537</dd>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">
-                <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Established</dt>
+                <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1 notranslate" translate="no">Established</dt>
                 <dd className="md:col-span-2 text-gray-600">2025年12月23日</dd>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">
-                <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Location</dt>
+                <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1 notranslate" translate="no">Location</dt>
                 <dd className="md:col-span-2 text-gray-600 leading-relaxed">
                   〒153-0061<br />
                   東京都目黒区中目黒1丁目1-72-504
@@ -108,7 +108,7 @@ export default function Company() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-gray-100 pb-10">
-                <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Business</dt>
+                <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1 notranslate" translate="no">Business</dt>
                 <dd className="md:col-span-2 space-y-3 text-gray-600">
                   <p>・飲料および食品関連商品の企画・開発・販売</p>
                   <p>・自社ブランド商品のプロデュース</p>
@@ -118,7 +118,7 @@ export default function Company() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1">Partners</dt>
+                <dt className="font-bold text-gray-400 text-xs tracking-widest uppercase pt-1 notranslate" translate="no">Partners</dt>
                 <dd className="md:col-span-2 space-y-3 text-gray-600">
                   <p>・食品製造関連事業者</p>
                   <p>・イベント運営会社</p>
