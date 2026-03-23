@@ -1413,6 +1413,13 @@ body {
 .final-cta-inner {
   position: relative;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.final-cta-inner .btn {
+  width: clamp(260px, 40vw, 400px);
 }
 
 .final-cta-logo {
