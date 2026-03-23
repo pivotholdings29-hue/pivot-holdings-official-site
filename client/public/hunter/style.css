@@ -1821,3 +1821,19 @@ body {
 @media (max-width: 600px) {
   .line-qr-img { width: 130px; height: 130px; }
 }
+
+/* ========== INSTAGRAM CTA BUTTON ========== */
+.btn-instagram-cta {
+  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(220,39,67,0.3);
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-instagram-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 30px rgba(220,39,67,0.5);
+  color: #fff;
+}
