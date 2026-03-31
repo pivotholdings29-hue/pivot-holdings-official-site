@@ -3,14 +3,14 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 
 export default function Shipping() {
   const shippingRates = [
-    { region: "北海道", prefectures: "北海道", size60: "850円", size80: "1,050円" },
-    { region: "東北", prefectures: "青森・岩手・宮城・秋田・山形・福島", size60: "620円", size80: "820円" },
-    { region: "関東", prefectures: "東京・茨城・栃木・群馬・埼玉・千葉・神奈川", size60: "540円", size80: "740円" },
-    { region: "中部", prefectures: "新潟・富山・石川・福井・山梨・長野・岐阜・静岡・愛知", size60: "540円", size80: "740円" },
-    { region: "近畿", prefectures: "京都・大阪・三重・滋賀・兵庫・奈良・和歌山", size60: "620円", size80: "820円" },
-    { region: "中国", prefectures: "鳥取・島根・岡山・広島・山口", size60: "700円", size80: "900円" },
-    { region: "四国", prefectures: "徳島・香川・愛媛・高知", size60: "770円", size80: "970円" },
-    { region: "九州", prefectures: "福岡・佐賀・長崎・大分・熊本・宮崎・鹿児島", size60: "850円", size80: "1,050円" },
+    { region: "北海道", prefectures: "北海道", size60: "1,179円", size80: "1,415円" },
+    { region: "東北", prefectures: "青森・岩手・宮城・秋田・山形・福島", size60: "851円", size80: "1,097円" },
+    { region: "関東", prefectures: "東京・茨城・栃木・群馬・埼玉・千葉・神奈川・山梨", size60: "745円", size80: "999円" },
+    { region: "中部", prefectures: "新潟・富山・石川・福井・長野・岐阜・静岡・愛知・三重", size60: "745円", size80: "999円" },
+    { region: "近畿", prefectures: "京都・大阪・滋賀・兵庫・奈良・和歌山", size60: "851円", size80: "1,097円" },
+    { region: "中国", prefectures: "鳥取・島根・岡山・広島・山口", size60: "965円", size80: "1,203円" },
+    { region: "四国", prefectures: "徳島・香川・愛媛・高知", size60: "1,063円", size80: "1,301円" },
+    { region: "九州", prefectures: "福岡・佐賀・長崎・大分・熊本・宮崎・鹿児島", size60: "1,179円", size80: "1,415円" },
     { region: "沖縄", prefectures: "沖縄", size60: "1,450円", size80: "1,810円" },
   ];
 
