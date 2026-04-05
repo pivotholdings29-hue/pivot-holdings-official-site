@@ -23,7 +23,7 @@ export default function NewsDetail() {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
               <div className="flex items-center gap-4 mb-4">
-                <span className="text-gray-300 font-mono">2026.04.05</span>
+                <span className="text-gray-300 font-mono">2026.04.03</span>
                 <span className="inline-block px-2 py-0.5 text-[10px] font-bold border rounded-sm tracking-wider text-white border-white bg-[#FF6B00]/80">
                   EVENT
                 </span>

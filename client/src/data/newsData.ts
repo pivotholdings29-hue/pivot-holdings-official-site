@@ -13,7 +13,7 @@ export interface NewsItem {
 export const newsItems: NewsItem[] = [
   {
     id: 5,
-    date: "2026.04.05",
+    date: "2026.04.03",
     category: "EVENT",
     title: "【ジビエBBQ】インフルエンサー ‘食いしん坊女子 りっかちゃん’が参加！",
     content: "SNS総フォロワー約56万人を誇る大食いインフルエンサーの食いしん坊女子 りっかさんを招き、ジビエBBQを開催しました。鹿肉の脚を丸々1本（約4kg）用意し、その常識外れのボリュームをまさかのペロリと完食。ジビエの「ポテンシャル」と「体験価値」についてお伝えします。",
