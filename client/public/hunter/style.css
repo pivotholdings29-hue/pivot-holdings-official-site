@@ -1981,16 +1981,18 @@ body {
 }
 .event-card:hover .event-card-more { color: #c9a84c; }
 
-/* Overlay card (full-image with text overlay) */
-.event-card-overlay {
-  width: 320px;
-  position: relative;
-  overflow: hidden;
-  background: #000;
+/* Photo card (full image + text below, no overlay) */
+.event-card-photo {
+  background: #1a1a1a;
 }
-.event-card-overlay .event-card-link {
+.event-card-photo .event-card-link {
   display: block;
   position: relative;
+}
+.event-card-img-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 .event-card-img-full {
   display: block;
@@ -1999,62 +2001,27 @@ body {
   object-fit: contain;
   transition: transform 0.4s ease;
 }
-.event-card-overlay:hover .event-card-img-full { transform: scale(1.03); }
-.event-card-overlay-body {
-  position: absolute;
-  inset: 0;
+.event-card-photo:hover .event-card-img-full { transform: scale(1.03); }
+.event-card-body {
+  padding: 14px 16px 16px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding: 14px 14px 0;
-  pointer-events: none;
+  gap: 6px;
+  background: #1a1a1a;
 }
-.event-card-overlay-body .event-card-badge {
-  position: absolute;
-  top: 14px;
-  left: 14px;
-  pointer-events: auto;
-}
-.event-card-overlay-bottom {
-  background: linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.75) 50%, transparent 100%);
-  border-radius: 0 0 16px 16px;
-  padding: 40px 14px 14px;
-  pointer-events: auto;
-  margin: 0 -14px;
-  padding-left: 14px;
-  padding-right: 14px;
-}
-.event-card-overlay .event-card-date {
+.event-card-date {
   color: #c9a84c;
   font-size: 0.75rem;
   display: block;
-  margin-bottom: 4px;
 }
-.event-card-overlay .event-card-title {
+.event-card-title {
   font-size: 0.88rem;
+  font-weight: 700;
   color: #fff;
   line-height: 1.5;
-  margin: 0 0 6px;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+  margin: 0;
 }
-.event-card-overlay .event-card-desc {
-  font-size: 0.78rem;
-  color: rgba(255,255,255,0.8);
-  line-height: 1.6;
-  margin: 0 0 10px;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-.event-card-overlay .event-card-meta {
-  border-top: 1px solid rgba(255,255,255,0.15);
-  padding-top: 8px;
-  margin-top: 0;
-}
-.event-card-overlay .event-card-insta { color: #c9a84c; }
-.event-card-overlay .event-card-more { color: rgba(255,255,255,0.6); }
-.event-card-overlay:hover .event-card-more { color: #c9a84c; }
+.event-card-photo:hover .event-card-more { color: #c9a84c; }
 
 /* Coming soon card */
 .event-card-coming {
