@@ -35,17 +35,16 @@ export default function NewsDetail() {
               <div className="text-lg">
                 <p className="font-bold mb-4">SNS総フォロワー約56万人を誇る大食いインフルエンサーの食いしん坊女子 りっかさんを招き、ジビエBBQを開催。</p>
                 <p className="mb-4">
-                  <a href="https://www.instagram.com/rikka_0301/" target="_blank" rel="noopener noreferrer" className="text-[#0066FF] hover:underline font-bold">
+                  <a href="https://www.instagram.com/kuishinbo_joshi/" target="_blank" rel="noopener noreferrer" className="text-[#0066FF] hover:underline font-bold">
                     ＠りっかちゃんのアカウントリンク (Instagram、TikTok、YouTube)
                   </a>
                 </p>
                 <p>今回用意したのは、鹿肉の脚を丸々1本（約4kg）。その常識外れのボリュームを、まさかのペロリと完食。参加者も弊社の運営メンバーも、興味津々で見ていました。</p>
               </div>
 
-              {/* 画像グリッド1 */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* 画像単体 (りっかちゃん紹介) */}
+              <div>
                 <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663030557844/9KrcnehZTR9fbMqyS3eBSa/LINE_ALBUM_りっかちゃん掲載OK_260405_5_cf12c1f2.jpg" alt="りっかちゃんと鹿肉" className="w-full h-auto rounded-sm object-cover shadow-sm" />
-                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663030557844/9KrcnehZTR9fbMqyS3eBSa/LINE_ALBUM_りっかちゃん掲載OK_260405_3_ed5161a2.jpg" alt="鹿肉にかぶりつく様子" className="w-full h-auto rounded-sm object-cover shadow-sm" />
               </div>
 
               {/* 本文① */}
@@ -54,9 +53,10 @@ export default function NewsDetail() {
                 <p>ジビエは「硬い・臭い・難しい」といったイメージを持たれがちです。しかし本来は、適切に処理・調理すれば非常に美味しく、栄養価も高い食材。その価値を“体験として伝える”ため、今回のジビエBBQコラボを企画しました。</p>
               </div>
 
-              {/* 画像単体 */}
-              <div>
+              {/* 画像グリッド1 (BBQの様子) */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663030557844/9KrcnehZTR9fbMqyS3eBSa/LINE_ALBUM_りっかちゃん掲載OK_260405_1_c9d6b560.jpg" alt="BBQで焼かれる鹿肉" className="w-full h-auto rounded-sm object-cover shadow-sm" />
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663030557844/9KrcnehZTR9fbMqyS3eBSa/LINE_ALBUM_りっかちゃん掲載OK_260405_4_f694d7bc.jpg" alt="参加者との様子" className="w-full h-auto rounded-sm object-cover shadow-sm" />
               </div>
 
               {/* 本文② */}
@@ -65,9 +65,9 @@ export default function NewsDetail() {
                 <p>当日は、鹿肉の脚を丸ごと豪快に焼き上げるところからスタート。参加者全員が驚く中、りっかさんはそのボリュームを前にしても一切臆することなく、圧巻の食べっぷりを披露。結果として、約4kgの鹿肉を完食。「ジビエ＝美味しくて食べられる」というイメージをつけてくれるのではないかと思います。</p>
               </div>
 
-              {/* 画像グリッド2 */}
+              {/* 画像グリッド2 (食べる様子と商品) */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663030557844/9KrcnehZTR9fbMqyS3eBSa/LINE_ALBUM_りっかちゃん掲載OK_260405_4_f694d7bc.jpg" alt="参加者との様子" className="w-full h-auto rounded-sm object-cover shadow-sm" />
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663030557844/9KrcnehZTR9fbMqyS3eBSa/LINE_ALBUM_りっかちゃん掲載OK_260405_3_ed5161a2.jpg" alt="鹿肉にかぶりつく様子" className="w-full h-auto rounded-sm object-cover shadow-sm" />
                 <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663030557844/9KrcnehZTR9fbMqyS3eBSa/LINE_ALBUM_りっかちゃん掲載OK_260405_2_d20022a1.jpg" alt="Hunterドリンクと鹿肉" className="w-full h-auto rounded-sm object-cover shadow-sm" />
               </div>
 
@@ -105,11 +105,9 @@ export default function NewsDetail() {
 
               {/* CTA */}
               <div className="flex flex-col sm:flex-row gap-4 pt-8 border-t border-gray-100">
-                <Link href="/contact">
-                  <a className="inline-flex items-center justify-center px-8 py-4 bg-[#1A1A1A] text-white font-bold rounded-sm hover:bg-[#0066FF] transition-colors text-sm w-full sm:w-auto">
-                    👉 ジビエBBQの参加はこちら
-                  </a>
-                </Link>
+                <a href="https://www.instagram.com/gibierland/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-4 bg-[#1A1A1A] text-white font-bold rounded-sm hover:bg-[#0066FF] transition-colors text-sm w-full sm:w-auto">
+                  👉 ジビエBBQの参加はこちら
+                </a>
                 <Link href="/contact">
                   <a className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#1A1A1A] border-2 border-[#1A1A1A] font-bold rounded-sm hover:bg-gray-50 transition-colors text-sm w-full sm:w-auto">
                     👉 コラボ・取材のご相談はこちら
