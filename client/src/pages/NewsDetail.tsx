@@ -44,11 +44,29 @@ export default function NewsDetail() {
               {/* リード文 */}
               <div className="text-lg">
                 <p className="font-bold mb-4">SNS総フォロワー約56万人を誇る大食いインフルエンサーの食いしん坊女子 りっかさんを招き、ジビエBBQを開催。</p>
-                <p className="mb-4">
-                  <a href="https://www.instagram.com/kuishinbo_joshi/" target="_blank" rel="noopener noreferrer" className="text-[#0066FF] hover:underline font-bold">
-                    ＠りっかちゃんのアカウントリンク (Instagram、TikTok、YouTube)
-                  </a>
-                </p>
+                <div className="mb-6 bg-gray-50 p-4 rounded-sm border border-gray-100">
+                  <p className="font-bold text-sm text-gray-500 mb-2">＠りっかちゃんのアカウントリンク</p>
+                  <ul className="space-y-2">
+                    <li>
+                      <a href="https://www.instagram.com/kuishinbo_joshi/" target="_blank" rel="noopener noreferrer" className="text-[#0066FF] hover:underline font-bold flex items-center gap-2">
+                        <span className="w-20 inline-block text-gray-700">Instagram</span>
+                        <span className="truncate">https://www.instagram.com/kuishinbo_joshi/</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/@%E9%A3%9F%E3%81%84%E3%81%97%E3%82%93%E5%9D%8A%E5%A5%B3%E5%AD%90%E3%82%8A%E3%81%A3%E3%81%8B%E3%81%A1%E3%82%83%E3%82%93" target="_blank" rel="noopener noreferrer" className="text-[#0066FF] hover:underline font-bold flex items-center gap-2">
+                        <span className="w-20 inline-block text-gray-700">YouTube</span>
+                        <span className="truncate">https://www.youtube.com/@食いしん坊女子りっかちゃん</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.tiktok.com/@ricca_ogui" target="_blank" rel="noopener noreferrer" className="text-[#0066FF] hover:underline font-bold flex items-center gap-2">
+                        <span className="w-20 inline-block text-gray-700">TikTok</span>
+                        <span className="truncate">https://www.tiktok.com/@ricca_ogui</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
                 <p>今回用意したのは、鹿肉の脚を丸々1本（約4kg）。その常識外れのボリュームを、まさかのペロリと完食。参加者も弊社の運営メンバーも、興味津々で見ていました。</p>
               </div>
 
