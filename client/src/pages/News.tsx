@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Link } from "wouter";
 
 import { newsItems, eventItems, allItems } from "@/data/newsData";
 
@@ -116,6 +117,37 @@ function NewsList({ items, onSelect, emptyMessage }: { items: any[], onSelect: (
   return (
     <div className="space-y-0 border-t border-gray-100">
       {items.map((item) => {
+        const isInternalLink = item.link && item.link.startsWith('/');
+        
+        const content = (
+          <div className="flex flex-col md:flex-row md:items-center gap-6 mb-2">
+            <div className="flex items-center gap-4 min-w-[200px]">
+              <span className="text-gray-400 font-mono">{item.date}</span>
+              <span className={`inline-block px-2 py-0.5 text-[10px] font-bold border rounded-sm tracking-wider ${
+                item.category === 'INFO' ? 'text-[#0066FF] border-[#0066FF]' :
+                item.category === 'EVENT' ? 'text-[#FF6B00] border-[#FF6B00]' :
+                item.category === 'PRESS' ? 'text-[#0066FF] border-[#0066FF]' :
+                'text-[#1A1A1A] border-[#1A1A1A]'
+              }`}>
+                {item.category}
+              </span>
+            </div>
+            <h3 className="text-lg font-bold text-[#1A1A1A] group-hover:text-[#0066FF] transition-colors">
+              {item.title}
+            </h3>
+          </div>
+        );
+
+        if (isInternalLink) {
+          return (
+            <Link key={item.id} href={item.link}>
+              <a className="block group cursor-pointer bg-white py-10 border-b border-gray-100 hover:bg-gray-50 transition-all px-6 -mx-6 rounded-sm">
+                {content}
+              </a>
+            </Link>
+          );
+        }
+
         const Wrapper = item.link ? 'a' : 'div';
         const props = item.link 
           ? { href: item.link, target: "_blank", rel: "noopener noreferrer" } 
@@ -127,25 +159,11 @@ function NewsList({ items, onSelect, emptyMessage }: { items: any[], onSelect: (
             className="block group cursor-pointer bg-white py-10 border-b border-gray-100 hover:bg-gray-50 transition-all px-6 -mx-6 rounded-sm"
             {...props}
           >
-            <div className="flex flex-col md:flex-row md:items-center gap-6 mb-2">
-              <div className="flex items-center gap-4 min-w-[200px]">
-                <span className="text-gray-400 font-mono">{item.date}</span>
-                <span className={`inline-block px-2 py-0.5 text-[10px] font-bold border rounded-sm tracking-wider ${
-                  item.category === 'INFO' ? 'text-[#0066FF] border-[#0066FF]' :
-                  item.category === 'EVENT' ? 'text-[#FF6B00] border-[#FF6B00]' :
-                  item.category === 'PRESS' ? 'text-[#0066FF] border-[#0066FF]' :
-                  'text-[#1A1A1A] border-[#1A1A1A]'
-                }`}>
-                  {item.category}
-                </span>
-              </div>
-              <h3 className="text-lg font-bold text-[#1A1A1A] group-hover:text-[#0066FF] transition-colors">
-                {item.title}
-              </h3>
-            </div>
+            {content}
           </Wrapper>
         );
       })}
     </div>
+
   );
 }

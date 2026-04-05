@@ -10,6 +10,7 @@ import Business from "./pages/Business";
 import Products from "./pages/Products";
 import Purchase from "./pages/Purchase";
 import News from "./pages/News";
+import NewsDetail from "./pages/NewsDetail";
 import Company from "./pages/Company";
 import Contact from "./pages/Contact";
 import Legal from "./pages/Legal";
@@ -26,6 +27,7 @@ function Router() {
       <Route path="/products" component={Products} />
       <Route path="/purchase" component={Purchase} />
       <Route path="/news" component={News} />
+      <Route path="/news/rikka-bbq" component={NewsDetail} />
       <Route path="/company" component={Company} />
       <Route path="/contact" component={Contact} />
       <Route path="/legal" component={Legal} />
