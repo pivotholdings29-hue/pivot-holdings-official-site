@@ -10,23 +10,33 @@ export default function NewsDetail() {
 
   return (
     <Layout>
-      <div className="bg-gray-50 py-20 md:py-32">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <div className="flex items-center gap-4 mb-6">
-              <span className="text-gray-500 font-mono">2026.04.05</span>
-              <span className="inline-block px-2 py-0.5 text-[10px] font-bold border rounded-sm tracking-wider text-[#FF6B00] border-[#FF6B00]">
-                EVENT
-              </span>
+      {/* ヒーロー画像セクション */}
+      <div className="relative w-full h-[40vh] md:h-[60vh] bg-gray-900 overflow-hidden">
+        <img 
+          src="https://d2xsxph8kpxj0f.cloudfront.net/310419663030557844/9KrcnehZTR9fbMqyS3eBSa/LINE_ALBUM_りっかちゃん掲載OK_260405_1_c9d6b560.jpg" 
+          alt="ジビエBBQの様子" 
+          className="absolute inset-0 w-full h-full object-cover opacity-60"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+        
+        <div className="absolute bottom-0 left-0 w-full p-6 md:p-12">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto">
+              <div className="flex items-center gap-4 mb-4">
+                <span className="text-gray-300 font-mono">2026.04.05</span>
+                <span className="inline-block px-2 py-0.5 text-[10px] font-bold border rounded-sm tracking-wider text-white border-white bg-[#FF6B00]/80">
+                  EVENT
+                </span>
+              </div>
+              <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight text-white drop-shadow-md">
+                【ジビエBBQ】インフルエンサー ‘食いしん坊女子 りっかちゃん’が参加！
+              </h1>
             </div>
-            <h1 className="text-2xl md:text-4xl font-bold mb-6 leading-tight text-[#1A1A1A]">
-              【ジビエBBQ】インフルエンサー ‘食いしん坊女子 りっかちゃん’が参加！
-            </h1>
           </div>
         </div>
       </div>
 
-      <section className="py-16 md:py-24">
+      <section className="py-12 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto bg-white p-6 md:p-12 rounded-sm border border-gray-100 shadow-sm">
             <div className="space-y-10 text-gray-700 leading-loose">
@@ -53,9 +63,8 @@ export default function NewsDetail() {
                 <p>ジビエは「硬い・臭い・難しい」といったイメージを持たれがちです。しかし本来は、適切に処理・調理すれば非常に美味しく、栄養価も高い食材。その価値を“体験として伝える”ため、今回のジビエBBQコラボを企画しました。</p>
               </div>
 
-              {/* 画像グリッド1 (BBQの様子) */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663030557844/9KrcnehZTR9fbMqyS3eBSa/LINE_ALBUM_りっかちゃん掲載OK_260405_1_c9d6b560.jpg" alt="BBQで焼かれる鹿肉" className="w-full h-auto rounded-sm object-cover shadow-sm" />
+              {/* 画像単体 (参加者との様子) */}
+              <div>
                 <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663030557844/9KrcnehZTR9fbMqyS3eBSa/LINE_ALBUM_りっかちゃん掲載OK_260405_4_f694d7bc.jpg" alt="参加者との様子" className="w-full h-auto rounded-sm object-cover shadow-sm" />
               </div>
 
