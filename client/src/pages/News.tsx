@@ -84,7 +84,7 @@ export default function News() {
                 />
               </div>
             )}
-            <p>{selectedItem?.content}</p>
+            <div className="news-content">{selectedItem?.content}</div>
             {selectedItem?.category === 'EVENT' && (
               <div className="bg-gray-50 p-6 rounded-sm mt-6 text-sm">
                 <div className="grid grid-cols-[80px_1fr] gap-4 mb-2">
