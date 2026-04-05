@@ -43,7 +43,7 @@ export default function NewsDetail() {
               </div>
 
               {/* 画像単体 (りっかちゃん紹介) */}
-              <div>
+              <div className="max-w-md mx-auto">
                 <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663030557844/9KrcnehZTR9fbMqyS3eBSa/LINE_ALBUM_りっかちゃん掲載OK_260405_5_cf12c1f2.jpg" alt="りっかちゃんと鹿肉" className="w-full h-auto rounded-sm object-cover shadow-sm" />
               </div>
 
