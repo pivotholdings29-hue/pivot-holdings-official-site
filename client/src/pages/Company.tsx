@@ -113,12 +113,19 @@ export default function Company() {
             </div>
 
             {/* 5. Business Partner Card - Maeda */}
-            <div className="group">
+            <div className="group relative">
               <div className="relative overflow-hidden rounded-sm mb-6 aspect-[3/4]">
+                {/* Hover Image (Background) - The one to show on hover */}
+                <img 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663030557844/9KrcnehZTR9fbMqyS3eBSa/なる_nature_d9b00717.jpg" 
+                  alt="マーケティング 前田 成穂 (Hover)" 
+                  className="w-full h-full object-cover absolute inset-0 z-0"
+                />
+                {/* Default Image (Foreground) - Fades out on hover */}
                 <img 
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310419663030557844/9KrcnehZTR9fbMqyS3eBSa/前田成穂_HP写真_5a8f80cb.JPG" 
                   alt="マーケティング 前田 成穂" 
-                  className="w-full h-full object-cover transition-opacity duration-500 absolute inset-0 z-10"
+                  className="w-full h-full object-cover transition-opacity duration-500 absolute inset-0 z-10 group-hover:opacity-0"
                 />
               </div>
               <div className="text-center">
