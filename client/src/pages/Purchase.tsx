@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Building2, User, Utensils, MessageCircle } from "lucide-react";
+import { Building2, User, Utensils, ExternalLink } from "lucide-react";
 
 export default function Purchase() {
   return (
@@ -73,34 +73,21 @@ export default function Purchase() {
                   <div className="mb-8">
                     <h3 className="text-2xl font-bold text-[#1A1A1A] mb-4">一般のお客様向け ご注文</h3>
                     <p className="text-gray-500 leading-relaxed mb-8">
-                      一般のお客様のご注文は、HUNTER公式LINEにて承っております。<br />
-                      下記ボタン、またはQRコードより友だち追加の上、ご注文ください。
+                      一般のお客様のご注文は、BASE公式ストアにて承っております。<br />
+                      下記ボタンよりオンラインストアにアクセスしてください。
                     </p>
                   </div>
 
                   <div className="flex flex-col items-center justify-center gap-8">
                     <a 
-                      href="https://line.me/R/ti/p/@278bzuez" 
+                      href="https://hunterdrink.base.shop/" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-3 bg-[#06C755] hover:bg-[#05b34c] text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 w-full max-w-md"
+                      className="inline-flex items-center justify-center gap-3 bg-[#1DB446] hover:bg-[#19a03a] text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 w-full max-w-md"
                     >
-                      <MessageCircle className="w-6 h-6" />
-                      公式LINEで注文する
+                      <ExternalLink className="w-6 h-6" />
+                      オンラインストアで購入
                     </a>
-
-                    <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
-                      <img 
-                        src="/hunter/assets/line-qr.png" 
-                        alt="HUNTER 公式LINE QRコード" 
-                        className="w-48 h-48 object-contain"
-                      />
-                      <p className="mt-2 text-xs text-gray-400 font-medium">@278bzuez</p>
-                    </div>
-                    
-                    <p className="text-sm text-gray-400">
-                      ※ スマートフォンの方はボタンをタップ、<br className="md:hidden" />PCの方はQRコードをスキャンしてください。
-                    </p>
                   </div>
                 </div>
               </TabsContent>
