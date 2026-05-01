@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, MessageCircle, Instagram } from "lucide-react";
+import { ArrowRight, MessageCircle, Instagram, ExternalLink } from "lucide-react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { motion } from "framer-motion";
