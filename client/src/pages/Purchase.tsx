@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Building2, User, Utensils, ExternalLink } from "lucide-react";
+import { Building2, User, Utensils, MessageCircle } from "lucide-react";
 
 export default function Purchase() {
   return (
@@ -85,7 +85,7 @@ export default function Purchase() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-3 bg-[#1DB446] hover:bg-[#19a03a] text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 w-full max-w-md"
                     >
-                      <ExternalLink className="w-6 h-6" />
+                      <MessageCircle className="w-6 h-6" />
                       オンラインストアで購入
                     </a>
                   </div>
