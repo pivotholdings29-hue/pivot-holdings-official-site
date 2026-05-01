@@ -189,7 +189,76 @@ export default function Products() {
                 </motion.div>
               </div>
 
+              {/* Story Section */}
+              <div className="max-w-4xl mx-auto border-t border-gray-100 pt-24">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8 }}
+                >
+                  <h2 className="text-3xl md:text-4xl font-bold mb-12 text-[#1A1A1A] text-center font-english tracking-wide">STORY & VISION</h2>
+                  
+                  <div className="space-y-16 text-gray-600 leading-loose font-light">
+                    {/* Part 1: Origin */}
+                    <div>
+                      <h3 className="text-xl font-bold mb-6 text-[#1A1A1A] flex items-center gap-3">
+                        <span className="w-8 h-[1px] bg-[#0066FF]"></span>
+                        活動の原点：ジビエBBQ
+                      </h3>
+                      <p className="mb-6">
+                        この活動の原点は、とてもシンプルです。「ジビエが美味しい。これをもっと多くの人に食べてもらいたい」という思いから、ジビエBBQを始めました。
+                      </p>
+                      <p>
+                        実際にやってみると、細かいことを気にしない、好奇心が強くて行動力のある人たちが自然と集まってきました。その雰囲気がとても面白くて、「この輪をもっと広げていきたい」と思うようになりました。
+                      </p>
+                    </div>
 
+                    {/* Part 2: Hypothesis */}
+                    <div>
+                      <h3 className="text-xl font-bold mb-6 text-[#1A1A1A] flex items-center gap-3">
+                        <span className="w-8 h-[1px] bg-[#0066FF]"></span>
+                        正解のない「仮説」を楽しむ
+                      </h3>
+                      <p className="mb-6">
+                        ジビエは、まだ科学的な裏付けが十分に整っていない分野だと感じています。今のジビエの立ち位置は、サウナブームの初期にとても近いと思っています。 「何がいいのか」「どう入るのが正解か」など、誰もはっきり分かっていない中で、それぞれが自分の感覚や好みを堂々と語り合っていた時代です。
+                      </p>
+                      <p className="mb-6">
+                        ジビエも今まさにその初期段階にあります。「これが正解」と決まっていないからこそ、仮説を自由に出し合うこと自体が楽しいのです。 例えば、「ジビエを食べると創造性が上がる気がする」といった感覚的な話も、ここでは大歓迎です。 鹿やイノシシが持つ、生き延びるための研ぎ澄まされたエネルギーを取り込んでいるのではないか——そんな検証できない仮説を自由に語り合えるのが、今のジビエの面白さです。
+                      </p>
+                    </div>
+
+                    {/* Part 3: Drink Concept */}
+                    <div>
+                      <h3 className="text-xl font-bold mb-6 text-[#1A1A1A] flex items-center gap-3">
+                        <span className="w-8 h-[1px] bg-[#0066FF]"></span>
+                        「消化」をテーマにしたエナジードリンク
+                      </h3>
+                      <p className="mb-6">
+                        ジビエを広げるために、周辺事業から何か盛り上げることができないかと考えました。その一つが、今回開発したドリンク「Hunter」です。
+                      </p>
+                      <p>
+                        日本人をもっと肉食にしたいと思っています。肉をしっかり食べて、もっとワイルドになってほしい。ただ、日本人の体質的に、肉は重く感じやすく、消化が得意ではありません。 そこで、「肉を食べるときの消化を助け、元気になる」という、これまでにあまりなかったコンセプトのエナジードリンクを作りました。
+                      </p>
+                    </div>
+
+                    {/* Part 4: Evolution */}
+                    <div>
+                      <h3 className="text-xl font-bold mb-6 text-[#1A1A1A] flex items-center gap-3">
+                        <span className="w-8 h-[1px] bg-[#0066FF]"></span>
+                        人類の進化
+                      </h3>
+                      <p className="mb-6">
+                        「消化」というテーマで、人類にもう一度進化が起きるのではないかと考えています。 かつて人類は、火を使って消化を効率化したことで活動時間を増やし、文明を発展させました。 今、AIによって脳の役割が変わり、時間的・精神的な余白が増えていく中で、身体のほうももう一段階進化できる余地があるのではないか。その鍵が「消化」だと考えています。
+                      </p>
+                      <p>
+                        これからは、「どう楽しむか」「どう味わうか」という価値観が重要になっていきます。<br />
+                        ジビエやこのドリンクは、その世界に入るための入り口であり、ツールです。
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
             </TabsContent>
 
             {/* Choco AI Tab Content */}

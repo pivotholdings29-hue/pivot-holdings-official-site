@@ -109,7 +109,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* News Section (Simplified) */}
+      {/* News Section (Simplified) - Commented out to fix layout issues */}
+      {/*
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-end mb-12 border-b border-gray-100 pb-6">
@@ -159,29 +160,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Our Story Section */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-[#1A1A1A] text-center font-english tracking-wide">OUR STORY</h2>
-          <h3 className="text-4xl md:text-5xl font-bold mb-8 text-[#1A1A1A] text-center">
-            「肉食革命」で、<br />
-            人類を進化させる。
-          </h3>
-          <div className="max-w-4xl mx-auto text-gray-600 leading-loose">
-            <p className="mb-6">
-              私たちは、お肉を愛するすべての人々が、健康や翌日のコンディションを気にすることなく、心ゆくまで食事を楽しめる世界を目指しています。
-            </p>
-            <p className="mb-6">
-              「HUNTER」は、最新の栄養科学に基づき、脂の多い食事をサポートする成分を凝縮。あなたの食生活に寄り添い、毎日を全力で駆け抜けるためのパートナーとなります。
-            </p>
-            <p className="mb-6">
-              ●ジビエ料理<br />
-              Eat Meat, Stay Sharp.
-            </p>
-          </div>
-        </div>
-      </section>
+      */}
 
       {/* Contact CTA */}
       <section className="py-32 bg-[#F9F9F9]">
@@ -210,20 +189,20 @@ export default function Home() {
                   className="inline-flex items-center text-sm font-bold text-[#1A1A1A] hover:text-[#0066FF] transition-colors border-b border-[#1A1A1A] hover:border-[#0066FF] pb-1"
                 >
                   <Instagram className="w-4 h-4 mr-2" />
-                  Instagram
+                  Instagramを見る
                 </a>
               </div>
 
-              {/* BASE Link */}
+              {/* LINE Link */}
               <div className="flex flex-col items-center">
                 <a 
                   href="https://hunterdrink.base.shop/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-bold text-[#1A1A1A] hover:text-[#0066FF] transition-colors border-b border-[#1A1A1A] hover:border-[#0066FF] pb-1"
+                  className="inline-flex items-center text-sm font-bold text-[#1A1A1A] hover:text-[#06C755] transition-colors border-b border-[#1A1A1A] hover:border-[#06C755] pb-1"
                 >
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  Online Shop
+                  <MessageCircle className="w-4 h-4 mr-2" />
+                  公式LINEを見る
                 </a>
               </div>
             </div>
