@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HUNTER – お肉を食べる時はこれ1本！</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" sizes="128x128" href="assets/wolf-icon.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/wolf-icon-64.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/wolf-icon.png" />
+</head>
+<body>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <img src="assets/LOGO_LETTER.png" alt="HUNTER" class="header-logo header-logo-big" />
+      <nav class="header-nav">
+        <a href="#features">特徴</a>
+        <a href="#ingredients">成分</a>
+        <a href="#scenes">シーン</a>
+        <a href="#story">ストーリー</a>
+        <a href="#faq">FAQ</a>
+        <a href="#download">資料DL</a>
+        <a href="#purchase">購入</a>
+      </nav>
+      <a href="#purchase" class="btn btn-gold btn-sm">今すぐ購入</a>
+      <button class="hamburger" id="hamburger" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile nav -->
+    <nav class="mobile-nav" id="mobile-nav">
+      <a href="#features" class="mobile-nav-link">特徴</a>
+      <a href="#ingredients" class="mobile-nav-link">成分</a>
+      <a href="#scenes" class="mobile-nav-link">シーン</a>
+      <a href="#story" class="mobile-nav-link">ストーリー</a>
+      <a href="#faq" class="mobile-nav-link">FAQ</a>
+      <a href="#download" class="mobile-nav-link">資料ダウンロード</a>
+      <a href="#purchase" class="mobile-nav-link">購入</a>
+    </nav>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="assets/photos/hero-steak.jpg" alt="" class="hero-bg-img" />
+      <div class="hero-bg-overlay"></div>
+    </div>
+    <div class="hero-content fade-in-up">
+      <img src="assets/LOGO_LETTER.png" alt="HUNTER" class="hero-logo" />
+      <p class="hero-revolution">さあ、<span class="gold-text">肉食革命</span>を始めよう。</p>
+      <h1 class="hero-headline">お肉を食べる時は<span class="gold-text">これ1本！</span></h1>
+      <p class="hero-sub">
+        肉食革命を引き起こし、人類を進化させる。<br />
+        脂っこい食事を楽しみながら、翌日も全力で駆け抜けろ。
+      </p>
+      <div class="hero-cta-group">
+        <a href="#purchase" class="btn btn-gold btn-lg">まずは1本から試してみる</a>
+        <a href="#purchase-biz" class="btn btn-outline btn-lg">業者様はこちら</a>
+      </div>
+
+    </div>
+    <div class="hero-bottle fade-in-right">
+      <img src="assets/MOCK_B_0226_透明背景.PNG" alt="HUNTER ボトル" />
+    </div>
+    <div class="hero-scroll-hint">
+      <span>SCROLL</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== STATS TICKER ========== -->
+  <section class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <span class="stat-num" data-target="1000">0</span><span class="stat-unit">mg</span>
+        <p>L-カルニチン配合</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="11">0</span><span class="stat-unit">種</span>
+        <p>ビタミン複合配合</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="600">0</span><span class="stat-unit">mg</span>
+        <p>イヌリン配合</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="100">0</span><span class="stat-unit">ml</span>
+        <p>飲みやすいショットサイズ</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== INGREDIENTS ========== -->
+  <section class="ingredients reveal" id="ingredients">
+    <div class="container">
+      <p class="section-label">KEY INGREDIENTS</p>
+      <h2 class="section-title">科学が支える<br /><span class="gold-text">4つの主要成分</span></h2>
+      <div class="ingredients-grid">
+        <div class="ingredient-card reveal-child">
+          <div class="ingredient-icon">💊</div>
+          <div class="ingredient-badge">1,000mg</div>
+          <h3>L-カルニチン</h3>
+          <p class="ingredient-role">脂の多い肉料理に</p>
+          <p>L-カルニチン 1,000mg 配合。焼肉・ステーキ・BBQなど、脂の多い肉料理を楽しむシーンに。</p>
+        </div>
+        <div class="ingredient-card reveal-child">
+          <div class="ingredient-icon">🌾</div>
+          <div class="ingredient-badges-row">
+            <div class="ingredient-badge">600mg</div>
+            <div class="ingredient-badge ingredient-badge-sub">500mg</div>
+          </div>
+          <h3>イヌリン / 食物繊維</h3>
+          <p class="ingredient-role">コンディションサポートに</p>
+          <p>イヌリン 600mg / 食物繊維 500mg 配合。整腸環境を整え、食事を楽しんだ翌日のコンディション管理をサポート。</p>
+        </div>
+        <div class="ingredient-card reveal-child">
+          <div class="ingredient-icon">🧬</div>
+          <div class="ingredient-badge">500mg</div>
+          <h3>米糠・大豆エキス<br />納豆菌発酵加工食品</h3>
+          <p class="ingredient-role">お酒や食事シーンに</p>
+          <p>米糠・大豆エキス納豆菌発酵加工食品 500mg 配合。飲み会・接待・会食など、お酒や食事を楽しむシーンに。</p>
+        </div>
+        <div class="ingredient-card reveal-child">
+          <div class="ingredient-icon">⚡</div>
+          <div class="ingredient-badge">複合配合</div>
+          <h3>ビタミン群</h3>
+          <p class="ingredient-role">忙しい毎日のサポートに</p>
+          <p>ビタミンA・B群・C・D・E 配合。忙しいビジネスマンやハードワーカーの毎日のコンディション管理に。</p>
+        </div>
+      </div>
+
+
+
+      <div class="ingredients-raw reveal">
+        <p class="ingredients-raw-label">原材料名</p>
+        <p class="ingredients-raw-text">レモン果汁、甜菜糖、L-カルニチン（1,000mg）、イヌリン（600mg）、食物繊維（500mg）、ポリデキストロース（500mg）、米糠・大豆エキス納豆菌発酵物加工食品（500mg）／ビタミンC（12.12mg）、カフェイン（100mg）、ビタミンE（0.72mg）、ナイアシン（1.44mg）、パントテン酸Ca（0.73mg）、ビタミンB1（0.11mg）、ビタミンB6（0.14mg）、ビタミンB2（0.156mg）、ビタミンA（0.078mg）、葉酸（0.029mg）、ビタミンD（0.0011mg）、ビタミンB12（0.00054mg）</p>
+      </div>
+
+      <div class="ingredients-raw reveal" style="margin-top: 28px;">
+        <p class="ingredients-raw-label">栄養成分表示（100ml）</p>
+        <p class="ingredients-raw-text">エネルギー 50kcal、たんぱく質 0g、脂質 0g、炭水化物 13g、食塩相当量 0.2mg</p>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- ========== FEATURES ========== -->
+  <section class="features reveal" id="features">
+    <div class="container">
+      <p class="section-label">HUNTER の提供価値</p>
+      <h2 class="section-title">肉料理を楽しむすべてのシーンに<span class="gold-text"> HUNTER が寄り添う</span></h2>
+      <div class="features-layout">
+        <div class="features-bottle reveal-child">
+          <img src="assets/MOCK_B_0226_透明背景.PNG" alt="HUNTER ボトル" />
+          <div class="features-bottle-glow"></div>
+        </div>
+        <div class="features-list">
+          <div class="feature-item reveal-child">
+            <div class="feature-num">01</div>
+            <div class="feature-body">
+              <h3>脂の多い肉料理に</h3>
+              <p>L-カルニチン 1,000mg 配合。焼肉・ステーキ・BBQなど、脂の多い肉料理を楽しむシーンに対応した成分を凝縮。</p>
+            </div>
+          </div>
+          <div class="feature-item reveal-child">
+            <div class="feature-num">02</div>
+            <div class="feature-body">
+              <h3>コンディションサポートに</h3>
+              <p>イヌリン 600mg / 食物繊維 500mg 配合。食事を楽しんだ翌日のコンディション管理をサポート。</p>
+            </div>
+          </div>
+          <div class="feature-item reveal-child">
+            <div class="feature-num">03</div>
+            <div class="feature-body">
+              <h3>忙しい毎日のサポートに</h3>
+              <p>ビタミンA・B群・C・D・E 配合。忙しいビジネスマンやハードワーカーの毎日のコンディション管理をサポートします。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- ========== EVENTS & COLLAB ========== -->
+  <section class="events reveal" id="events">
+    <div class="container">
+      <p class="section-label">EVENTS &amp; COLLAB</p>
+      <h2 class="section-title">イベント・<span class="gold-text">コラボ情報</span></h2>
+      <p class="events-lead">インフルエンサーとのコラボレーションやイベントの最新情報をお届けします。</p>
+    </div>
+    <div class="events-scroll-wrapper">
+      <div class="events-track">
+
+        <!-- Card 1: りっかちゃん -->
+        <article class="event-card event-card-photo">
+          <a href="https://pivotholdings.co.jp/news/rikka-bbq" target="_blank" rel="noopener" class="event-card-link">
+            <div class="event-card-img-wrap">
+              <img src="collab_rikka5.webp" alt="食いしん坊女子 りっかちゃん × ジビエBBQ × HUNTER" class="event-card-img-full" />
+              <span class="event-card-badge">EVENT</span>
+            </div>
+            <div class="event-card-body">
+              <time class="event-card-date">2026.04.03</time>
+              <h3 class="event-card-title">【ジビエBBQ】インフルエンサー '食いしん坊女子 りっかちゃん'が参加！</h3>
+              <div class="event-card-meta">
+                <a href="https://www.instagram.com/kuishinbo_joshi/" target="_blank" rel="noopener" class="event-card-insta" onclick="event.stopPropagation()">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                  @kuishinbo_joshi
+                </a>
+                <a href="https://pivotholdings.co.jp/news/rikka-bbq" target="_blank" rel="noopener" class="event-card-more">記事を読む →</a>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Placeholder: 今後のカード -->
+        <div class="event-card event-card-coming">
+          <div class="event-card-coming-inner">
+            <span class="event-coming-icon">📅</span>
+            <p class="event-coming-text">次のイベント・コラボ情報<br />近日公開予定</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOW IT WORKS ========== -->
+  <section class="howto reveal" id="howto">
+    <div class="container">
+      <p class="section-label">HOW TO USE</p>
+      <h2 class="section-title">肉を楽しむために<span class="gold-text">HUNTER</span>を</h2>
+      <div class="howto-steps">
+        <div class="howto-step reveal-child">
+          <div class="howto-step-num">STEP 1</div>
+          <div class="howto-step-icon">🍖</div>
+          <p><strong>今日は肉の日</strong><br>焼肉・ステーキ・BBQ。<br>好きなだけ,思いきり食べる。</p>
+        </div>
+        <div class="howto-arrow">→</div>
+        <div class="howto-step reveal-child">
+          <div class="howto-step-num">STEP 2</div>
+          <div class="howto-step-icon howto-step-icon--potion">
+            <svg class="potion-svg" viewBox="0 0 80 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Neck flanges -->
+              <rect x="22" y="4" width="36" height="8" rx="3" fill="#3a8a3a" stroke="#111" stroke-width="3.5"/>
+              <!-- Neck -->
+              <rect x="30" y="12" width="20" height="12" rx="2" fill="#3a8a3a" stroke="#111" stroke-width="3.5"/>
+              <!-- Body outer -->
+              <path d="M14 36 Q10 44 10 54 Q10 76 40 76 Q70 76 70 54 Q70 44 66 36 L58 24 L22 24 Z" fill="#3a8a3a" stroke="#111" stroke-width="4"/>
+              <!-- Liquid fill (darker green rectangle inside body) -->
+              <path d="M18 52 Q18 70 40 70 Q62 70 62 52 L62 50 L18 50 Z" fill="#2a6a2a" opacity="0.85"/>
+              <!-- Label rectangle -->
+              <rect x="22" y="44" width="36" height="20" rx="4" fill="#1a4a1a" stroke="#3a8a3a" stroke-width="1.5"/>
+              <!-- Swirl / bubble in neck -->
+              <path d="M40 20 Q44 16 40 13 Q36 16 40 20" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round"/>
+              <!-- Highlight -->
+              <ellipse cx="24" cy="38" rx="4" ry="7" fill="white" opacity="0.15" transform="rotate(-15 24 38)"/>
+            </svg>
+          </div>
+          <p><strong>HUNTERを1本</strong><br>食前または食中に<br>そのまま飲むだけ。</p>
+        </div>
+        <div class="howto-arrow">→</div>
+        <div class="howto-step reveal-child">
+          <div class="howto-step-num">STEP 3</div>
+          <div class="howto-step-icon">✨</div>
+          <p><strong>肉をエネルギーに</strong><br>明日も軽やかに動ける<br>新しい肉の楽しみ方。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SCENES ========== -->
+  <section class="scenes reveal" id="scenes">
+    <div class="container">
+      <p class="section-label">USE SCENES</p>
+      <h2 class="section-title">あなたの生活に<span class="gold-text">HUNTER</span>を</h2>
+      <div class="scenes-grid">
+        <div class="scene-card reveal-child">
+          <div class="scene-img" style="background-image: url('assets/photos/scene-business.jpg')"></div>
+          <div class="scene-body">
+            <h3>ビジネス会食・接待</h3>
+            <p>大切な商談の前後に。接待の席でも翌朝のコンディションを気にせず、大切な席を楽しめます。</p>
+          </div>
+        </div>
+        <div class="scene-card reveal-child">
+          <div class="scene-img" style="background-image: url('assets/photos/scene-bbq2.jpg')"></div>
+          <div class="scene-body">
+            <h3>週末のBBQ・焼肉</h3>
+            <p>仲間との焼肉・BBQを心ゆくまで楽しんで。翌日のコンディションを気にせず、全力でスタートできます。</p>
+          </div>
+        </div>
+        <div class="scene-card reveal-child">
+          <div class="scene-img" style="background-image: url('assets/photos/scene-training.jpg');"></div>
+          <div class="scene-body">
+            <h3>トレーニング・スポーツ後</h3>
+            <p>L-カルニチンやイヌリンは脂質代謝・整腸環境のサポートに。高タンパクな赤身肉・鶏肉をしっかり食べた後のコンディション管理にも活用できます。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STORY ========== -->
+  <section class="story reveal" id="story">
+    <div class="story-bg">
+      <img src="assets/photos/hero-bg.jpg" alt="" />
+      <div class="story-bg-overlay"></div>
+    </div>
+    <div class="container story-inner">
+      <div class="story-text reveal-child">
+        <p class="section-label">OUR STORY</p>
+        <h2 class="section-title">「ジビエをもっと多くの人に」<span class="gold-text"> — その思いから始まった</span></h2>
+
+        <h3 class="story-subheading">活動の原点：ジビエBBQ</h3>
+        <p>「ジビエが美味しい。もっと多くの人に食べてもらいたい」——その思いからジビエBBQを始めました。集まってくるのは、好奇心が強く行動力のある人たち。その雰囲気が面白くて、輪をもっと広げたいと思うようになりました。</p>
+
+        <h3 class="story-subheading">正解のない「仮説」を楽しむ</h3>
+        <p>ジビエの立ち位置は、サウナブームの初期に近いと感じています。「これが正解」と決まっていないからこそ、仮説を自由に出し合うこと自体が楽しい。「ジビエを食べると創造性が上がる気がする」——そんな検証できない仮説を語り合えるのが、今のジビエの面白さです。</p>
+
+        <h3 class="story-subheading">「消化」をテーマにしたエナジードリンク</h3>
+        <p>日本人をもっと肉食にしたい。肉をしっかり食べて、もっとワイルドになってほしい。ただ、日本人の体質的に肉は重く感じやすい。そこで「肉を食べるときの消化を助け、元気になる」という、これまでにないコンセプトのエナジードリンク「Hunter」を作りました。</p>
+
+        <h3 class="story-subheading">人類の進化</h3>
+        <p>かつて人類は火で消化を効率化し、文明を発展させました。今、AIが脳の役割を変えていく中で、身体ももう一段階進化できるのではないか。その鍵が「消化」です。<strong>ジビエとHunterは、その世界への入り口です。</strong></p>
+        <div class="story-sns">
+          <p class="story-sns-label">毎月開催のジビエBBQの様子はこちらから</p>
+          <a href="https://www.instagram.com/gibierland/" target="_blank" rel="noopener" class="btn-sns btn-instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            @gibierland をフォローする
+          </a>
+        </div>
+      </div>
+      <div class="story-bottle reveal-child">
+        <img src="assets/MOCK_B_0226_透明背景.PNG" alt="HUNTER ボトル" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRODUCT SPECS ========== -->
+  <section class="specs reveal">
+    <div class="container">
+      <div class="specs-box reveal-child">
+        <h2 class="specs-title">PRODUCT SPECS</h2>
+        <table class="specs-table">
+          <tbody>
+            <tr><th>商品名</th><td>HUNTER（ハンター）</td></tr>
+            <tr><th>名称</th><td>清涼飲料水</td></tr>
+            <tr><th>カテゴリー</th><td>エナジードリンク</td></tr>
+            <tr><th>価格</th><td>¥1,800（税抜）</td></tr>
+            <tr><th>内容量</th><td>100ml</td></tr>
+            <tr><th>賞味期限</th><td>製造後12か月</td></tr>
+            <tr><th>保存方法</th><td>直射日光・高温多湿を避け、常温で保存（過熱・冷凍不可）</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PURCHASE ========== -->
+  <section class="purchase reveal" id="purchase">
+    <div class="container">
+      <p class="section-label">ORDER</p>
+      <h2 class="section-title">今すぐ<span class="gold-text">HUNTER</span>を手に入れる</h2>
+      <div class="purchase-cards">
+
+        <!-- 一般購入 -->
+        <div class="purchase-card purchase-card-main reveal-child">
+          <div class="purchase-card-badge">個人のお客様</div>
+          <div class="purchase-card-recommended">おすすめ</div>
+          <h3>オンラインショップで購入</h3>
+          <p class="purchase-price">¥1,800<span>（税抜）/ 1本</span></p>
+          <ul class="purchase-features">
+            <li>✓ 1本単位から注文可能</li>
+            <li>✓ BASEショップで簡単決済</li>
+            <li>✓ 入金確認後10営業日以内に発送</li>
+          </ul>
+          <a href="https://hunterdrink.base.shop/" target="_blank" rel="noopener" class="btn btn-gold btn-lg btn-full">オンラインショップで購入する →</a>
+          <p class="purchase-note">※ 公式BASEショップにてご注文を承ります</p>
+        </div>
+
+        <!-- 業者様 -->
+        <div class="purchase-card reveal-child" id="purchase-biz">
+          <div class="purchase-card-badge purchase-card-badge-silver">業者様</div>
+          <h3>店舗販売をご検討の方</h3>
+          <p>業者様向けの卸価格でご提供いたします。焼肉店・ステーキハウス・居酒屋など、お肉料理を提供する店舗様にご活用いただいています。</p>
+          <ul class="purchase-features">
+            <li>✓ 卸価格でのご提供</li>
+            <li>✓ 初回はGoogleフォームにてお申込み</li>
+          </ul>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSf9T8qshRv-0Mm6lnSfKUMZiU6EGFyXSaQocDE3p0dJJDTzlg/viewform" target="_blank" rel="noopener" class="btn btn-outline btn-lg btn-full">業者様のお問い合わせ →</a>
+        </div>
+
+        <!-- 代理店 -->
+        <div class="purchase-card reveal-child">
+          <div class="purchase-card-badge purchase-card-badge-silver">販売代理店様</div>
+          <h3>代理店契約</h3>
+          <p>HUNTER の販売代理店として、ともに「肉食革命」を広めていただけるパートナーを募集しています。</p>
+          <ul class="purchase-features">
+            <li>✓ 代理店契約可能</li>
+            <li>✓ 詳細はGoogleフォームにてご相談</li>
+          </ul>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScJO2Fgps5KgJ8F2HFyVkLeVw6nONl2LrMMeczqZXIvmbO2NQ/viewform" target="_blank" rel="noopener" class="btn btn-outline btn-lg btn-full">代理店のお問い合わせ →</a>
+        </div>
+
+      </div>
+      <div class="shipping-notice reveal-child">
+        <p>📦 送料について：配送料金は配送地域・サイズにより異なります。詳細は<a href="shipping.html" class="shipping-link">送料料金一覧ページ</a>をご確認ください。</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== FAQ ========== -->
+  <section class="faq reveal" id="faq">
+    <div class="container">
+      <p class="section-label">FAQ</p>
+      <h2 class="section-title">よくある<span class="gold-text">ご質問</span></h2>
+      <div class="faq-list">
+        <div class="faq-item reveal-child">
+          <button class="faq-q" aria-expanded="false">
+            <span>いつ飲めばいいですか？</span>
+            <span class="faq-icon">＋</span>
+          </button>
+          <div class="faq-a">
+            <p>脂の多い食事の食前または食中にお飲みいただくのが最も効果的です。焼肉・ステーキ・BBQなど、脂っこい食事を楽しむ前後にお召し上がりください。</p>
+          </div>
+        </div>
+        <div class="faq-item reveal-child">
+          <button class="faq-q" aria-expanded="false">
+            <span>1日に何本まで飲めますか？</span>
+            <span class="faq-icon">＋</span>
+          </button>
+          <div class="faq-a">
+            <p>1日1本を目安にお飲みください。カフェインを含む成分が配合されておりますので、過剰摂取はお控えください。</p>
+          </div>
+        </div>
+        <div class="faq-item reveal-child">
+          <button class="faq-q" aria-expanded="false">
+            <span>子供や妊婦でも飲めますか？</span>
+            <span class="faq-icon">＋</span>
+          </button>
+          <div class="faq-a">
+            <p>本製品はカフェインを含んでいるため、小児・妊娠中・授乳中の方はお控えください。また、薬を服用中の方は医師にご相談の上お召し上がりください。</p>
+          </div>
+        </div>
+        <div class="faq-item reveal-child">
+          <button class="faq-q" aria-expanded="false">
+            <span>どんな味ですか？</span>
+            <span class="faq-icon">＋</span>
+          </button>
+          <div class="faq-a">
+            <p>レモン果汁を使用したすっきりとした甘さとほのかな酸味のある飲みやすい味わいです。100mlのショットサイズなので、一気に飲み切れます。</p>
+          </div>
+        </div>
+        <div class="faq-item reveal-child">
+          <button class="faq-q" aria-expanded="false">
+            <span>スポーツをする方でも飲めますか？</span>
+            <span class="faq-icon">＋</span>
+          </button>
+          <div class="faq-a">
+            <p>L-カルニチンは脂質代謝をサポートする成分として知られており、トレーニングを習慣にしている方にもご活用いただけます。また、イヌリン・食物繊維は整腸環境を整え、高タンパクな食事の後のコンディション管理にも役立ちます。ジムやスポーツ施設での販売も対応しておりますので、お気軽にお問い合わせください。</p>
+          </div>
+        </div>
+        <div class="faq-item reveal-child">
+          <button class="faq-q" aria-expanded="false">
+            <span>業者様での導入はどのように進めますか？</span>
+            <span class="faq-icon">＋</span>
+          </button>
+          <div class="faq-a">
+            <p>初回はGoogleフォームよりお問い合わせください。卸価格や最低発注数などの詳細をご案内いたします。2回目以降のご注文は専用フォームにて簡単にお手続きいただけます。</p>
+          </div>
+        </div>
+        <div class="faq-item reveal-child">
+          <button class="faq-q" aria-expanded="false">
+            <span>賞味期限が近づいたらどうすればいいですか？</span>
+            <span class="faq-icon">＋</span>
+          </button>
+          <div class="faq-a">
+            <p>製造後12か月が賞味期限です。直射日光・高温多湿を避け、常温で保存してください。過熱・冷凍はお控えください。賞味期限内にお召し上がりいただくことをお勧めします。</p>
+          </div>
+        </div>
+        <div class="faq-item reveal-child">
+          <button class="faq-q" aria-expanded="false">
+            <span>配送はいつ届きますか？</span>
+            <span class="faq-icon">＋</span>
+          </button>
+          <div class="faq-a">
+            <p>入金確認後、10営業日以内に発送いたします。梱包サイズ14本までは60サイズ、15本以上は80サイズとなります。お支払いはクレジットカード・銀行振込に対応しております。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DOWNLOAD ========== -->
+  <section class="download reveal" id="download">
+    <div class="container">
+      <div class="download-header">
+        <p class="section-label">DOWNLOAD</p>
+        <h2 class="section-title">資料<span class="gold-text">ダウンロード</span></h2>
+        <p class="download-desc">Hunterに関する資料データをご用意しています。<br />以下のフォームにご入力いただくと、ダウンロードリンクをご案内します。</p>
+      </div>
+      <div class="download-content">
+        <div class="download-previews">
+          <div class="download-preview-card reveal-child">
+            <div class="download-preview-img">
+              <svg viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg" class="pop-thumbnail">
+                <rect width="120" height="160" rx="4" fill="#1a1a1a" stroke="#c9a84c" stroke-width="2"/>
+                <rect x="8" y="8" width="104" height="144" rx="2" fill="#111"/>
+                <text x="60" y="35" text-anchor="middle" fill="#c9a84c" font-size="8" font-weight="bold">HUNTER</text>
+                <rect x="20" y="45" width="80" height="1" fill="#c9a84c" opacity="0.5"/>
+                <text x="60" y="62" text-anchor="middle" fill="#fff" font-size="6">飲食店向け POP</text>
+                <text x="60" y="75" text-anchor="middle" fill="#c9a84c" font-size="5">B5 テーブル用</text>
+                <rect x="30" y="85" width="60" height="40" rx="2" fill="#222" stroke="#c9a84c" stroke-width="0.5"/>
+                <text x="60" y="100" text-anchor="middle" fill="#c9a84c" font-size="5">肉食革命</text>
+                <text x="60" y="112" text-anchor="middle" fill="#fff" font-size="4">ジビエ専用サプリ</text>
+                <text x="60" y="122" text-anchor="middle" fill="#888" font-size="4">HUNTER</text>
+                <rect x="35" y="135" width="50" height="10" rx="2" fill="#c9a84c"/>
+                <text x="60" y="143" text-anchor="middle" fill="#111" font-size="5" font-weight="bold">POP資料</text>
+              </svg>
+            </div>
+            <div class="download-preview-info">
+              <h3>テーブルPOP（B5サイズ）</h3>
+              <p>お店のテーブルに置いて使える、B5サイズの卓上POPです。</p>
+            </div>
+          </div>
+          <div class="download-preview-card reveal-child">
+            <div class="download-preview-img">
+              <svg viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg" class="pop-thumbnail">
+                <rect width="120" height="160" rx="4" fill="#1a1a1a" stroke="#c9a84c" stroke-width="2"/>
+                <rect x="8" y="8" width="104" height="144" rx="2" fill="#111"/>
+                <text x="60" y="35" text-anchor="middle" fill="#c9a84c" font-size="8" font-weight="bold">HUNTER</text>
+                <rect x="20" y="45" width="80" height="1" fill="#c9a84c" opacity="0.5"/>
+                <text x="60" y="62" text-anchor="middle" fill="#fff" font-size="6">飲食店向け POP</text>
+                <text x="60" y="75" text-anchor="middle" fill="#c9a84c" font-size="5">A4 勉強用</text>
+                <rect x="30" y="85" width="60" height="40" rx="2" fill="#222" stroke="#c9a84c" stroke-width="0.5"/>
+                <text x="60" y="100" text-anchor="middle" fill="#c9a84c" font-size="5">肉食革命</text>
+                <text x="60" y="112" text-anchor="middle" fill="#fff" font-size="4">ジビエ専用サプリ</text>
+                <text x="60" y="122" text-anchor="middle" fill="#888" font-size="4">HUNTER</text>
+                <rect x="35" y="135" width="50" height="10" rx="2" fill="#c9a84c"/>
+                <text x="60" y="143" text-anchor="middle" fill="#111" font-size="5" font-weight="bold">POP資料</text>
+              </svg>
+            </div>
+            <div class="download-preview-info">
+              <h3>壁面POP（A4サイズ）</h3>
+              <p>壁やレジ周りに貼って使える、A4サイズのポスター型POPです。</p>
+            </div>
+          </div>
+        </div>
+        <div class="download-form-wrap">
+          <div class="download-form-box">
+            <h3 class="download-form-title">資料ダウンロード申請フォーム</h3>
+            <p class="download-form-note">必要事項をご入力の上、送信してください。<br />ご登録のメールアドレスにダウンロードリンクをお送りします。</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZxA56SK_6DMnCerZ13rtNU1S37c0tiUPQ0CRx3YMcM8ldgA/viewform" target="_blank" rel="noopener" class="btn btn-gold btn-lg download-form-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:8px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              申請フォームを開く
+            </a>
+            <ul class="download-form-items">
+              <li>会社名・店舗名</li>
+              <li>担当者名</li>
+              <li>メールアドレス</li>
+              <li>電話番号</li>
+            </ul>
+            <p class="download-form-privacy">ご入力いただいた情報は、資料送付およびHunterに関するご案内にのみ使用します。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FINAL CTA ========== -->
+  <section class="final-cta reveal">
+    <div class="final-cta-bg">
+      <img src="assets/photos/hero-steak.jpg" alt="" />
+      <div class="final-cta-overlay"></div>
+    </div>
+    <div class="container final-cta-inner">
+      <img src="assets/LOGO_LETTER.png" alt="HUNTER" class="final-cta-logo" />
+      <h2>さあ、<span class="gold-text">肉食革命</span>を始めよう。</h2>
+      <p>脂っこい食事を楽しみながら、翌日も全力で駆け抜ける。HUNTER が、あなたの食生活を進化させます。</p>
+          <a href="https://hunterdrink.base.shop/" target="_blank" rel="noopener" class="btn btn-gold btn-xl">オンラインショップで購入する →</a>
+          <a href="https://www.instagram.com/hunter_drinkofficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" class="btn btn-instagram-cta btn-xl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:8px"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            公式Instagramをフォローする
+          </a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="assets/LOGO_LETTER.png" alt="HUNTER" class="footer-logo" />
+      <nav class="footer-nav">
+        <a href="#features">特徴</a>
+        <a href="#ingredients">成分</a>
+        <a href="#scenes">シーン</a>
+        <a href="#story">ストーリー</a>
+        <a href="#faq">FAQ</a>
+        <a href="#download">資料DL</a>
+        <a href="#purchase">購入</a>
+
+      </nav>
+      <div class="footer-sns">
+        <a href="https://www.instagram.com/hunter_drinkofficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" class="footer-sns-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Instagram
+        </a>
+
+      </div>
+      <p class="footer-copy">© 2026 HUNTER. All rights reserved.</p>
+      <p class="footer-disclaimer">※ 本製品は食品です。医薬品ではありません。疾病の診断、治療、予防を目的としたものではありません。</p>
+      <p class="footer-legal"><a href="tokushoho.html">特定商取引法に基づく表記</a></p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="トップへ戻る">↑</button>
+
+  <script src="main.js"></script>
+</body>
+</html>
