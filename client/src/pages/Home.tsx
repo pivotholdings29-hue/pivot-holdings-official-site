@@ -102,14 +102,15 @@ export default function Home() {
                 <ArrowRight className="text-[#0066FF] group-hover:translate-x-1 transition-transform duration-300" />
               </h3>
               <p className="text-gray-400 text-sm leading-loose relative z-10 flex-grow">
-                LINE-EC、イベント販売、パートナー経由での購入方法はこちら。
+                オンラインショップでのご購入はこちらから。イベントやパートナー経由でのご購入も引き続き可能です。
               </p>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* News Section (Simplified) */}
+      {/* News Section (Simplified) - Commented out to fix layout issues */}
+      {/*
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-end mb-12 border-b border-gray-100 pb-6">
@@ -159,6 +160,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      */}
 
       {/* Contact CTA */}
       <section className="py-32 bg-[#F9F9F9]">
@@ -194,7 +196,7 @@ export default function Home() {
               {/* LINE Link */}
               <div className="flex flex-col items-center">
                 <a 
-                  href="https://line.me/R/ti/p/@278bzuez" 
+                  href="https://hunterdrink.base.shop/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-sm font-bold text-[#1A1A1A] hover:text-[#06C755] transition-colors border-b border-[#1A1A1A] hover:border-[#06C755] pb-1"

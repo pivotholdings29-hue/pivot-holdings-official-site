@@ -150,7 +150,7 @@ export default function Products() {
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 border-b border-gray-100 pb-4">
                         <div className="font-bold text-gray-900">原材料名</div>
                         <div className="sm:col-span-2 text-gray-600 leading-relaxed">
-                          甜菜糖（国内製造）、レモン果汁、L-カルニチンフマル酸塩、イヌリン、ポリデキストロース、米糠・大豆エキス納豆菌発酵物加工食品 / ビタミンC、カフェイン、抽出 ビタミンE、ナイアシン、パントテン酸 Ca、ビタミンB1、ビタミンB6、ビタミンB2、ビタミンA、葉酸、ビタミンD、ビタミンB12
+                          果糖ぶどう糖液糖（国内製造）、甜菜糖、米糠発酵抽出物、マカエキス、エゾウコギエキス、スッポンエキス、豚睾丸エキス、赤マムシエキス、ローヤルゼリーエキス、牡蠣エキス、サソリエキス、冬虫夏草エキス、ニンニクエキス、海蛇エキス、ハブエキス、馬の心臓エキス／酸味料、香料、アルギニン、カフェイン、カラメル色素、保存料（安息香酸Na）、ナイアシン、ビタミンB6、ビタミンB1、ビタミンB2、香辛料抽出物、ビタミンB12
                         </div>
                       </div>
                     </div>
@@ -173,9 +173,9 @@ export default function Products() {
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-6">
-                    <a href="https://line.me/R/ti/p/@278bzuez" target="_blank" rel="noopener noreferrer">
-                      <Button className="bg-[#06C755] hover:bg-[#05b34c] text-white px-10 py-7 rounded-sm transition-all duration-300 shadow-none group w-full sm:w-auto">
-                        公式LINEで詳細を見る
+                    <a href="https://hunterdrink.base.shop/" target="_blank" rel="noopener noreferrer">
+                      <Button className="bg-[#0066FF] hover:bg-[#0052CC] text-white px-10 py-7 rounded-sm transition-all duration-300 shadow-none group w-full sm:w-auto">
+                        オンラインショップで購入する
                         <ExternalLink className="ml-2 w-4 h-4" />
                       </Button>
                     </a>
