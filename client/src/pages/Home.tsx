@@ -109,7 +109,56 @@ export default function Home() {
         </div>
       </section>
 
+      {/* News Section (Simplified) */}
+      <section className="py-24">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-between items-end mb-12 border-b border-gray-100 pb-6">
+            <div>
+              <h2 className="text-3xl font-bold mb-2 font-english tracking-wide text-[#1A1A1A]">NEWS</h2>
+              <p className="text-gray-400 text-xs tracking-widest uppercase">Latest Information</p>
+            </div>
+            <Link href="/news">
+              <Button variant="ghost" className="text-gray-500 hover:text-[#0066FF] hover:bg-transparent p-0 font-medium">
+                VIEW ALL <ArrowRight className="w-4 h-4 ml-2" />
+              </Button>
+            </Link>
+          </div>
 
+          <div className="space-y-0">
+            {allItems.slice(0, 5).map((item) => {
+              const Wrapper = item.link ? 'a' : Link;
+              const props = item.link 
+                ? { href: item.link, target: "_blank", rel: "noopener noreferrer" } 
+                : { href: "/news" };
+
+              return (
+                <Wrapper 
+                  key={item.id}
+                  className="block group cursor-pointer"
+                  {...props}
+                >
+                  <div className="flex flex-col md:flex-row md:items-center gap-6 py-8 border-b border-gray-100 group-hover:bg-gray-50 transition-colors px-6 -mx-6">
+                    <div className="flex items-center gap-4 min-w-[200px]">
+                      <span className="text-sm text-gray-400 font-mono">{item.date}</span>
+                      <span className={`inline-block px-2 py-0.5 text-[10px] font-bold border rounded-sm tracking-wider ${
+                        item.category === 'INFO' ? 'text-[#0066FF] border-[#0066FF]' :
+                        item.category === 'EVENT' ? 'text-[#FF6B00] border-[#FF6B00]' :
+                        item.category === 'PRESS' ? 'text-[#0066FF] border-[#0066FF]' :
+                        'text-[#1A1A1A] border-[#1A1A1A]'
+                      }`}>
+                        {item.category}
+                      </span>
+                    </div>
+                    <h3 className="text-lg font-medium text-[#1A1A1A] group-hover:text-[#0066FF] transition-colors">
+                      {item.title}
+                    </h3>
+                  </div>
+                </Wrapper>
+              );
+            })}
+          </div>
+        </div>
+      </section>
 
       {/* Contact CTA */}
       <section className="py-32 bg-[#F9F9F9]">
@@ -144,15 +193,15 @@ export default function Home() {
 
               {/* LINE Link */}
               <div className="flex flex-col items-center">
-                  <a 
-                    href="https://hunterdrink.base.shop/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center text-sm font-bold text-[#1A1A1A] hover:text-[#0066FF] transition-colors border-b border-[#1A1A1A] hover:border-[#0066FF] pb-1"
-                  >
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    オンラインショップを見る
-                  </a>
+                <a 
+                  href="https://line.me/R/ti/p/@278bzuez" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-sm font-bold text-[#1A1A1A] hover:text-[#06C755] transition-colors border-b border-[#1A1A1A] hover:border-[#06C755] pb-1"
+                >
+                  <MessageCircle className="w-4 h-4 mr-2" />
+                  公式LINEを見る
+                </a>
               </div>
             </div>
           </div>

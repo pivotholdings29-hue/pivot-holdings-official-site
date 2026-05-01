@@ -150,7 +150,7 @@ export default function Products() {
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 border-b border-gray-100 pb-4">
                         <div className="font-bold text-gray-900">原材料名</div>
                         <div className="sm:col-span-2 text-gray-600 leading-relaxed">
-                          レモン果汁、甜菜糖、L-カルニチン（1,000mg）、イヌリン（600mg）、食物繊維（500mg）、ポリデキストロース（500mg）、米糠・大豆エキス納豆菌発酵物加工食品（500mg）／ビタミンC（12.12mg）、カフェイン（100mg）、ビタミンE（0.72mg）、ナイアシン（1.44mg）、パントテン酸Ca（0.73mg）、ビタミンB1（0.11mg）、ビタミンB6（0.14mg）、ビタミンB2（0.156mg）、ビタミンA（0.078mg）、葉酸（0.029mg）、ビタミンD（0.0011mg）、ビタミンB12（0.00054mg）
+                          甜菜糖（国内製造）、レモン果汁、L-カルニチンフマル酸塩、イヌリン、ポリデキストロース、米糠・大豆エキス納豆菌発酵物加工食品 / ビタミンC、カフェイン、抽出 ビタミンE、ナイアシン、パントテン酸 Ca、ビタミンB1、ビタミンB6、ビタミンB2、ビタミンA、葉酸、ビタミンD、ビタミンB12
                         </div>
                       </div>
                     </div>
@@ -173,9 +173,9 @@ export default function Products() {
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-6">
-                    <a href="https://hunterdrink.base.shop/" target="_blank" rel="noopener noreferrer">
-                      <Button className="bg-[#1A1A1A] hover:bg-[#0066FF] text-white px-10 py-7 rounded-sm transition-all duration-300 shadow-none group w-full sm:w-auto">
-                        オンラインショップで購入する
+                    <a href="https://line.me/R/ti/p/@278bzuez" target="_blank" rel="noopener noreferrer">
+                      <Button className="bg-[#06C755] hover:bg-[#05b34c] text-white px-10 py-7 rounded-sm transition-all duration-300 shadow-none group w-full sm:w-auto">
+                        公式LINEで詳細を見る
                         <ExternalLink className="ml-2 w-4 h-4" />
                       </Button>
                     </a>
