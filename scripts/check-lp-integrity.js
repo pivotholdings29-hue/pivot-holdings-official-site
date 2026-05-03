@@ -21,12 +21,12 @@ const ROOT = resolve(__dirname, '..');
 
 const CHECKS = [
   {
-    file: 'client/public/hunter/index.html',
+    file: 'lp/index.html',
     minLines: 400,
     description: 'HUNTER LP HTML',
   },
   {
-    file: 'client/public/hunter/style.css',
+    file: 'lp/style.css',
     minLines: 1000,
     description: 'HUNTER LP CSS',
   },
