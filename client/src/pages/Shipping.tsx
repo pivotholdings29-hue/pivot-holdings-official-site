@@ -4,14 +4,18 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 export default function Shipping() {
   const shippingRates = [
     { region: "北海道", prefectures: "北海道", size60: "1,179円", size80: "1,415円" },
-    { region: "東北", prefectures: "青森・岩手・宮城・秋田・山形・福島", size60: "851円", size80: "1,097円" },
+    { region: "北東北", prefectures: "青森・岩手・秋田", size60: "851円", size80: "1,097円" },
+    { region: "南東北", prefectures: "宮城・山形・福島", size60: "745円", size80: "999円" },
     { region: "関東", prefectures: "東京・茨城・栃木・群馬・埼玉・千葉・神奈川・山梨", size60: "745円", size80: "999円" },
-    { region: "中部", prefectures: "新潟・富山・石川・福井・長野・岐阜・静岡・愛知・三重", size60: "745円", size80: "999円" },
-    { region: "近畿", prefectures: "京都・大阪・滋賀・兵庫・奈良・和歌山", size60: "851円", size80: "1,097円" },
+    { region: "信越", prefectures: "新潟・長野", size60: "745円", size80: "999円" },
+    { region: "北陸", prefectures: "富山・石川・福井", size60: "745円", size80: "999円" },
+    { region: "東海", prefectures: "岐阜・静岡・愛知・三重", size60: "745円", size80: "999円" },
+    { region: "関西", prefectures: "滋賀・京都・大阪・兵庫・奈良・和歌山", size60: "851円", size80: "1,097円" },
     { region: "中国", prefectures: "鳥取・島根・岡山・広島・山口", size60: "965円", size80: "1,203円" },
     { region: "四国", prefectures: "徳島・香川・愛媛・高知", size60: "1,063円", size80: "1,301円" },
-    { region: "九州", prefectures: "福岡・佐賀・長崎・大分・熊本・宮崎・鹿児島", size60: "1,179円", size80: "1,415円" },
-    { region: "沖縄", prefectures: "沖縄", size60: "1,450円", size80: "1,810円" },
+    { region: "北九州", prefectures: "福岡・佐賀・長崎・大分", size60: "1,179円", size80: "1,415円" },
+    { region: "南九州", prefectures: "熊本・宮崎・鹿児島", size60: "1,179円", size80: "1,415円" },
+    { region: "沖縄", prefectures: "沖縄", size60: "別途お問い合わせ", size80: "別途お問い合わせ" },
   ];
 
   return (
@@ -55,8 +59,10 @@ export default function Shipping() {
             </div>
             
             <div className="mt-8 text-sm text-gray-500 space-y-2">
-              <p>※ 離島・一部地域は追加送料がかかる場合があります。</p>
+              <p>※ 送料はすべて税抜き表示です。</p>
+              <p>※ 離島・一部地域は追加中継料がかかる場合があります。</p>
               <p>※ 商品の組み合わせや数量により、サイズが変更になる場合があります。</p>
+              <p>※ 梱包サイズ：14本まで60サイズ、15本以上は80サイズとなります。</p>
             </div>
           </div>
         </div>
