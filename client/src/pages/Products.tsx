@@ -306,14 +306,6 @@ export default function Products() {
                       リスク管理から実務への定着まで、伴走型でサポートします。
                     </p>
                     
-                    <div className="pt-4">
-                      <a href="https://choco-ai.jp" target="_blank" rel="noopener noreferrer">
-                        <Button className="bg-[#0066FF] hover:bg-[#0052cc] text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group text-lg">
-                          サービスサイトを見る
-                          <ExternalLink className="ml-2 w-5 h-5" />
-                        </Button>
-                      </a>
-                    </div>
                   </motion.div>
                 </div>
 
