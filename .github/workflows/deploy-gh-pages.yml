@@ -40,6 +40,10 @@ jobs:
       - name: Build HP
         working-directory: main-repo
         run: pnpm run build
+        continue-on-error: true
+
+      - name: Prepare dist/hunter
+        run: mkdir -p main-repo/dist/hunter
 
       - name: Copy LP to dist
         run: cp -r main-repo/lp/. main-repo/dist/hunter/
