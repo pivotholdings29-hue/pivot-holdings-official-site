@@ -705,6 +705,23 @@
   <!-- Back to top -->
   <button class="back-to-top" id="back-to-top" aria-label="トップへ戻る">↑</button>
 
+  <script>
+    // ホバー画像スワップ：スクロール中の誤解除を防ぐため150msデバウンス
+    document.querySelectorAll('.event-card-photo').forEach(function(card) {
+      var swap = card.querySelector('.event-card-img-swap');
+      if (!swap) return;
+      var leaveTimer;
+      card.addEventListener('mouseenter', function() {
+        clearTimeout(leaveTimer);
+        card.classList.add('is-hovered');
+      });
+      card.addEventListener('mouseleave', function() {
+        leaveTimer = setTimeout(function() {
+          card.classList.remove('is-hovered');
+        }, 150);
+      });
+    });
+  </script>
   <script src="main.js"></script>
 </body>
 </html>
