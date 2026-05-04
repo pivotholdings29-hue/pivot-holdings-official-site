@@ -12,6 +12,13 @@ export interface NewsItem {
 
 export const newsItems: NewsItem[] = [
   {
+    id: 6,
+    date: "2026.05.04",
+    category: "PRESS",
+    title: "【青果祭2026】\"新しい食体験\"が話題｜HUNTERドリンク×ジビエ串が来場者から高い関心、人気商品は初日完売も",
+    link: "https://newsrelea.se/8Vx5gm"
+  },
+  {
     id: 5,
     date: "2026.04.03",
     category: "EVENT",
