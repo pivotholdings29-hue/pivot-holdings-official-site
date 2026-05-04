@@ -30,50 +30,31 @@
   <button class="back-to-top" id="back-to-top" aria-label="トップへ戻る">↑</button>
 
   <script>
-    // ホバー画像スワップ：スクロール中もカーソル位置で判定
+    // ホバー画像スワップ：カーソル座標とカード位置を常時比較して即時更新
     (function() {
-      var mouseX = 0, mouseY = 0;
+      var mouseX = -9999, mouseY = -9999;
+
+      function updateHover() {
+        document.querySelectorAll('.event-card-photo').forEach(function(card) {
+          if (!card.querySelector('.event-card-img-swap')) return;
+          var r = card.getBoundingClientRect();
+          var over = mouseX >= r.left && mouseX <= r.right && mouseY >= r.top && mouseY <= r.bottom;
+          card.classList.toggle('is-hovered', over);
+        });
+      }
+
       document.addEventListener('mousemove', function(e) {
         mouseX = e.clientX;
         mouseY = e.clientY;
+        updateHover();
       });
 
-      function isOver(el) {
-        var r = el.getBoundingClientRect();
-        return mouseX >= r.left && mouseX <= r.right && mouseY >= r.top && mouseY <= r.bottom;
-      }
+      window.addEventListener('scroll', updateHover, { passive: true });
 
-      function updateCards() {
-        document.querySelectorAll('.event-card-photo').forEach(function(card) {
-          if (!card.querySelector('.event-card-img-swap')) return;
-          if (isOver(card)) {
-            card.classList.add('is-hovered');
-          } else {
-            card.classList.remove('is-hovered');
-          }
-        });
-      }
-
-      // スクロール時（縦・横どちらも）に再判定
-      window.addEventListener('scroll', updateCards, { passive: true });
       var scrollTrack = document.querySelector('.events-scroll-wrapper');
       if (scrollTrack) {
-        scrollTrack.addEventListener('scroll', updateCards, { passive: true });
+        scrollTrack.addEventListener('scroll', updateHover, { passive: true });
       }
-
-      // 通常のマウスイベントも維持
-      document.querySelectorAll('.event-card-photo').forEach(function(card) {
-        if (!card.querySelector('.event-card-img-swap')) return;
-        card.addEventListener('mouseenter', function() {
-          card.classList.add('is-hovered');
-        });
-        card.addEventListener('mouseleave', function() {
-          // スクロール由来の mouseleave は無視（座標で再確認）
-          setTimeout(function() {
-            if (!isOver(card)) card.classList.remove('is-hovered');
-          }, 50);
-        });
-      });
     })();
   </script>
   <script src="main.js"></script>
