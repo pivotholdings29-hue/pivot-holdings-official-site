@@ -2020,6 +2020,7 @@ body {
   opacity: 0;
   transition: opacity 0.4s ease;
 }
+.event-card-photo:hover .event-card-img-swap,
 .event-card-photo.is-hovered .event-card-img-swap { opacity: 1; transform: none; }
 .event-card-video .event-card-img-wrap {
   overflow: visible;
