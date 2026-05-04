@@ -37,10 +37,6 @@ jobs:
         working-directory: main-repo
         run: pnpm install --no-frozen-lockfile
 
-      - name: Build LP (sections を結合して index.html を生成)
-        working-directory: main-repo
-        run: node lp/build.js
-
       - name: Build HP
         working-directory: main-repo
         run: pnpm run build
