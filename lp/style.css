@@ -1989,6 +1989,8 @@ body {
 .event-card-photo {
   background: #1a1a1a;
 }
+/* translateY を無効化：カードが動くと mouseleave が誤発火してホバーがループするため */
+.event-card-photo:hover { transform: none; }
 .event-card-photo .event-card-link {
   display: block;
   position: relative;
