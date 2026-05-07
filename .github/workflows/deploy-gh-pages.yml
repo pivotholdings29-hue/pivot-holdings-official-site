@@ -48,6 +48,12 @@ jobs:
       - name: Copy LP to dist
         run: cp -r main-repo/lp/. main-repo/dist/hunter/
 
+      - name: Prepare dist/ricca
+        run: mkdir -p main-repo/dist/ricca
+
+      - name: Copy Ricca LP to dist
+        run: cp -r main-repo/ricca-lp/. main-repo/dist/ricca/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

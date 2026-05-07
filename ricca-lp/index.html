@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HUNTER × りっか | 大食い女王の相棒ドリンク</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink:      #FF5C8A;
+      --pink-hot:  #FF2D6F;
+      --pink-soft: #FFAECB;
+      --pink-pale: #FFF0F5;
+      --pink-bg:   #FFF5F8;
+      --cream:     #FFFAF6;
+      --dark:      #2D1020;
+      --gray:      #999;
+      --white:     #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+      color: var(--dark);
+      background: var(--cream);
+      overflow-x: hidden;
+    }
+
+    /* ===== ユーティリティ ===== */
+    .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+    .text-center { text-align: center; }
+    .text-pink { color: var(--pink); }
+
+    /* ===== ヘッダー ===== */
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,245,248,.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 3px dashed var(--pink-soft);
+      padding: 10px 0;
+    }
+    .header-inner {
+      max-width: 960px; margin: 0 auto; padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    }
+    .header-logo {
+      font-size: 20px; font-weight: 900; color: var(--pink);
+      display: flex; align-items: center; gap: 8px; white-space: nowrap;
+    }
+    .header-logo .x-mark { color: var(--dark); font-weight: 400; }
+    .header-nav {
+      display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+    }
+    .header-nav a {
+      font-size: 15px; font-weight: 700; color: var(--dark);
+      text-decoration: none; padding: 5px 12px;
+      border-radius: 20px; white-space: nowrap;
+      transition: background .15s, color .15s;
+    }
+    .header-nav a:hover {
+      background: var(--pink-pale); color: var(--pink);
+    }
+    .header-cta {
+      background: var(--pink-hot); color: #fff;
+      padding: 10px 24px; border-radius: 50px;
+      font-size: 15px; font-weight: 900;
+      text-decoration: none; font-family: inherit;
+      box-shadow: 0 4px 0 #9e002a;
+      transition: transform .1s, box-shadow .1s;
+      display: inline-block; white-space: nowrap;
+    }
+    .header-cta:hover { transform: translateY(2px); box-shadow: 0 2px 0 #9e002a; }
+
+    /* ===== ヒーロー ===== */
+    .hero {
+      background: var(--pink-bg);
+      padding: 28px 0 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: radial-gradient(var(--pink-soft) 1.5px, transparent 1.5px);
+      background-size: 28px 28px;
+      opacity: .3;
+    }
+    .hero-inner {
+      display: flex; align-items: center; gap: 8px;
+      max-width: 960px; margin: 0 auto; padding: 0 24px;
+      position: relative; z-index: 1;
+    }
+    .hero-text { flex: 1; padding-bottom: 16px; min-width: 0; max-width: 420px; }
+
+    .collab-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--pink-hot); color: #fff;
+      font-size: 13px; font-weight: 900; letter-spacing: .5px;
+      padding: 6px 18px; border-radius: 50px;
+      margin-bottom: 14px;
+      box-shadow: 0 3px 0 #9e002a;
+    }
+    .collab-badge::before { content: '★'; font-size: 10px; }
+    .collab-badge::after  { content: '★'; font-size: 10px; }
+
+    /* ヒーロータイトル：2行で完結するようにサイズ制御 */
+    .hero-title {
+      font-size: clamp(30px, 4.8vw, 52px);
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 14px;
+      letter-spacing: -0.5px;
+      word-break: keep-all;
+      overflow-wrap: normal;
+    }
+    .hero-title .line1 { display: block; color: var(--dark); }
+    .hero-title .line2 {
+      display: block; color: var(--pink-hot);
+    }
+    .hero-title .line2-inner {
+      position: relative;
+      display: inline-block;
+    }
+    .hero-title .line2-inner::after {
+      content: '';
+      position: absolute; bottom: -4px; left: 0; right: 0; height: 6px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 8'%3E%3Cpath d='M0,5 Q50,1 100,5 Q150,9 200,5' stroke='%23FF5C8A' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/100%;
+    }
+
+    .hero-copy {
+      font-size: 19px; line-height: 1.85; color: #555;
+      margin-bottom: 18px;
+      word-break: keep-all;
+    }
+    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-main {
+      background: var(--pink-hot); color: #fff;
+      padding: 16px 40px; border-radius: 50px;
+      font-size: 20px; font-weight: 900;
+      text-decoration: none; font-family: inherit;
+      box-shadow: 0 5px 0 #9e002a;
+      transition: transform .1s, box-shadow .1s;
+      display: inline-block; white-space: nowrap;
+    }
+    .btn-main:hover { transform: translateY(3px); box-shadow: 0 2px 0 #9e002a; }
+    .btn-sub {
+      background: #fff; color: var(--pink);
+      border: 3px solid var(--pink);
+      padding: 14px 32px; border-radius: 50px;
+      font-size: 19px; font-weight: 900;
+      text-decoration: none; font-family: inherit;
+      transition: background .15s; white-space: nowrap;
+    }
+    .btn-sub:hover { background: var(--pink-pale); }
+
+    /* ヒーロービジュアル */
+    .hero-visual {
+      flex: 0 0 480px;
+      position: relative; height: 440px;
+      display: flex; align-items: flex-end;
+      justify-content: center; gap: 12px;
+    }
+    .hero-bottle {
+      width: 148px; flex-shrink: 0; align-self: flex-end;
+      filter: drop-shadow(0 16px 32px rgba(255,45,111,.35));
+      animation: float-bottle 3.5s ease-in-out infinite;
+      z-index: 2;
+    }
+    .hero-chara-main {
+      width: 315px; flex-shrink: 0; align-self: flex-end;
+      z-index: 3;
+      animation: float 3s ease-in-out infinite;
+      filter: drop-shadow(0 8px 20px rgba(255,45,111,.2));
+    }
+    /* ロゴスタンプ：キャラ上部の透明エリアに配置（ボトルと重ならない） */
+    .hero-logo-stamp {
+      position: absolute; right: 4px; top: 8px;
+      width: 120px; z-index: 1;
+      animation: rotate-slow 10s linear infinite;
+    }
+    .hero-deco-star1 {
+      position: absolute; top: 80px; right: 82px;
+      font-size: 22px; animation: spin-slow 6s linear infinite;
+      color: var(--pink-hot); opacity: .7;
+    }
+    .hero-deco-star2 {
+      position: absolute; top: 240px; left: 168px;
+      font-size: 16px; animation: spin-slow 4s linear infinite reverse;
+      color: var(--pink-soft);
+    }
+    .hero-deco-heart {
+      position: absolute; bottom: 150px; left: 162px;
+      font-size: 18px; animation: float 2.5s ease-in-out infinite;
+      animation-delay: .8s; color: var(--pink-hot);
+    }
+
+    @keyframes float {
+      0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}
+    }
+    @keyframes float-bottle {
+      0%,100%{transform:translateY(0)}
+      50%{transform:translateY(-14px)}
+    }
+    @keyframes rotate-slow {
+      from{transform:rotate(0deg)}to{transform:rotate(360deg)}
+    }
+    @keyframes spin-slow {
+      from{transform:rotate(0deg)}to{transform:rotate(360deg)}
+    }
+
+    /* 波形セクション区切り（統一高さ） */
+    .wave-divider { display: block; width: 100%; line-height: 0; margin-top: 16px; }
+    .wave-divider svg { display: block; width: 100%; }
+
+    /* ===== りっかプロフィール ===== */
+    .ricca-section { background: #fff; padding: 52px 0 0; }
+
+    .section-heading { text-align: center; margin-bottom: 28px; }
+    .section-tag {
+      display: inline-block;
+      background: var(--pink-pale); color: var(--pink);
+      font-size: 15px; font-weight: 900; letter-spacing: 2px;
+      padding: 5px 18px; border-radius: 50px;
+      border: 2px solid var(--pink-soft);
+      margin-bottom: 14px;
+    }
+    .section-title-lg {
+      font-size: clamp(32px, 5vw, 50px);
+      font-weight: 900; line-height: 1.35;
+      word-break: keep-all;
+    }
+
+    .profile-card {
+      background: var(--pink-bg);
+      border-radius: 32px;
+      border: 3px solid var(--pink-soft);
+      padding: 40px;
+      display: flex; gap: 36px; align-items: flex-start;
+      position: relative;
+    }
+    .profile-card::before {
+      content: '';
+      position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+      width: 80px; height: 26px;
+      background: rgba(255,174,203,.55);
+      border-radius: 4px;
+    }
+    .profile-left { flex: 0 0 290px; text-align: center; }
+    .profile-chara-wrap {
+      width: 260px; height: 260px;
+      border-radius: 50%;
+      overflow: hidden; margin: 0 auto 14px;
+      border: 5px solid var(--pink);
+      box-shadow: 0 8px 28px rgba(255,45,111,.28);
+    }
+    .profile-chara-wrap img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center top;
+      display: block;
+    }
+    .profile-logo { width: 150px; }
+
+    .profile-right { flex: 1; min-width: 0; }
+    .profile-name-en {
+      font-size: 14px; font-weight: 900; color: var(--pink);
+      letter-spacing: 3px; margin-bottom: 4px;
+    }
+    .profile-name-ja {
+      font-size: 48px; font-weight: 900; line-height: 1.1; margin-bottom: 6px;
+    }
+    .profile-catch {
+      font-size: 19px; font-weight: 700; color: #777; margin-bottom: 18px;
+    }
+
+    .follower-row {
+      display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 18px;
+    }
+    .follower-badge {
+      background: var(--pink-hot); color: #fff;
+      border-radius: 14px; padding: 8px 16px; text-align: center;
+      box-shadow: 0 3px 0 #9e002a; min-width: 100px;
+    }
+    .follower-badge .num { font-size: 28px; font-weight: 900; display: block; line-height: 1.1; }
+    .follower-badge .lbl { font-size: 13px; font-weight: 700; display: block; opacity: .9; margin-top: 2px; }
+    .follower-badge.alt {
+      background: #fff; color: var(--pink-hot);
+      border: 2px solid var(--pink-soft);
+      box-shadow: 0 3px 0 var(--pink-soft);
+    }
+    .follower-badge.alt .num { font-size: 22px; }
+
+    .hashtag-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px; }
+    .hashtag {
+      background: #fff; border: 2px solid var(--pink-soft);
+      color: var(--pink); font-size: 15px; font-weight: 700;
+      padding: 5px 14px; border-radius: 20px; white-space: nowrap;
+    }
+
+    .profile-desc {
+      font-size: 20px; line-height: 1.85; color: #555; margin-bottom: 20px;
+      word-break: keep-all;
+    }
+    .sns-row { display: flex; gap: 10px; flex-wrap: wrap; }
+    .sns-pill {
+      padding: 10px 20px; border-radius: 50px;
+      font-size: 16px; font-weight: 900; text-decoration: none;
+      font-family: inherit; transition: opacity .15s; white-space: nowrap;
+    }
+    .sns-pill:hover { opacity: .8; }
+    .sns-tt  { background: #000; color: #fff; }
+    .sns-yt  { background: #ff0000; color: #fff; }
+    .sns-x   { background: #1a1a1a; color: #fff; }
+
+    /* ===== りっかの活動 ===== */
+    .activity-section { background: var(--pink-bg); padding: 48px 0 0; }
+    .activity-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .activity-card {
+      position: relative; border-radius: 18px; overflow: hidden;
+      aspect-ratio: 16/9;
+      display: block; text-decoration: none;
+      box-shadow: 0 6px 20px rgba(0,0,0,.12);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .activity-card:hover { transform: translateY(-6px); box-shadow: 0 12px 32px rgba(255,45,111,.25); }
+    .activity-card img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+    }
+    .activity-card .act-label {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,.75));
+      color: #fff; font-size: 14px; font-weight: 900;
+      padding: 28px 12px 10px; line-height: 1.4;
+    }
+    .activity-card .act-play {
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 52px; height: 52px;
+      background: rgba(255,45,111,.88);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; color: #fff;
+      opacity: 0; transition: opacity .2s;
+    }
+    .activity-card:hover .act-play { opacity: 1; }
+    .activity-note {
+      text-align: center; margin-top: 22px;
+      font-size: 16px; color: var(--gray);
+    }
+    .activity-note a { color: var(--pink); font-weight: 700; text-decoration: none; }
+    .activity-note a:hover { text-decoration: underline; }
+
+    /* ===== ストーリー ===== */
+    .story-section {
+      background: var(--pink-bg); padding: 48px 0 0;
+      position: relative; overflow: hidden;
+    }
+    /* Case A: りっかのリアル写真を薄く背景に */
+    .story-section::before {
+      content: '';
+      position: absolute; inset: 0; z-index: 0;
+      background: url('./images/ricca_photo.jpg') center/cover no-repeat;
+      opacity: 0.08;
+      filter: blur(4px);
+      transform: scale(1.06);
+      pointer-events: none;
+    }
+    .story-section .container,
+    .story-section .wave-divider { position: relative; z-index: 1; }
+
+    .manga-bubble-wrap { max-width: 720px; margin: 0 auto; }
+    .manga-bubble {
+      background: #fff;
+      border: 3px solid var(--dark);
+      border-radius: 24px;
+      padding: 24px 32px;
+      position: relative;
+      font-size: 21px; line-height: 1.9; color: #444;
+      word-break: keep-all;
+    }
+    .manga-bubble::after {
+      content: '';
+      position: absolute; bottom: -22px; left: 56px;
+      border: 12px solid transparent;
+      border-top-color: var(--dark);
+    }
+    .manga-bubble::before {
+      content: '';
+      position: absolute; bottom: -16px; left: 58px;
+      border: 10px solid transparent;
+      border-top-color: #fff;
+      z-index: 1;
+    }
+    .manga-bubble .quote-mark {
+      font-size: 52px; color: var(--pink-soft); line-height: 0;
+      vertical-align: -18px; margin-right: 4px;
+    }
+    .manga-speaker {
+      display: flex; align-items: center; gap: 14px;
+      margin-top: 20px;
+    }
+    .manga-speaker img {
+      width: 160px; height: 160px; border-radius: 50%;
+      border: 4px solid var(--pink);
+      box-shadow: 0 6px 20px rgba(255,45,111,.22);
+      object-fit: cover; object-position: center top;
+    }
+    .manga-speaker .name { font-weight: 900; font-size: 18px; }
+    .manga-speaker .role { font-size: 15px; color: var(--gray); }
+
+    /* ===== 成分 ===== */
+    .ingredients-section { background: #fff; padding: 48px 0 0; }
+    .ingredient-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+    .ingredient-card {
+      background: var(--pink-bg);
+      border: 2px solid var(--pink-soft);
+      border-radius: 22px; padding: 26px 22px;
+      display: flex; gap: 16px; align-items: flex-start;
+      transition: transform .2s;
+    }
+    .ingredient-card:hover { transform: translateY(-4px); }
+    .ing-icon {
+      flex: 0 0 52px; height: 52px;
+      background: var(--pink); border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px; box-shadow: 0 3px 0 #c4004a;
+    }
+    .ing-body { min-width: 0; }
+    .ing-name { font-size: 17px; font-weight: 900; color: var(--pink); margin-bottom: 2px; }
+    .ing-amount { font-size: 30px; font-weight: 900; margin-bottom: 6px; line-height: 1.2; }
+    .ing-desc { font-size: 18px; color: #666; line-height: 1.7; word-break: keep-all; }
+
+    /* りっかリアクション */
+    .reaction-strip {
+      margin-top: 20px;
+      background: var(--pink-hot);
+      border-radius: 16px; padding: 14px 24px;
+      display: flex; align-items: center; gap: 16px;
+    }
+    .reaction-strip img {
+      width: 120px; height: 120px;
+      flex-shrink: 0;
+      object-fit: contain;
+    }
+    .reaction-strip p {
+      font-size: 22px; font-weight: 900; color: #fff; line-height: 1.45;
+      word-break: keep-all;
+    }
+
+    /* ===== HOW TO ===== */
+    .howto-section { background: var(--pink-bg); padding: 48px 0 0; }
+    .steps { display: flex; gap: 0; align-items: flex-start; justify-content: center; }
+    .step { flex: 1; max-width: 260px; text-align: center; padding: 0 18px; position: relative; }
+    .step:not(:last-child)::after {
+      content: '→'; position: absolute; right: -14px; top: 20px;
+      font-size: 28px; color: var(--pink);
+    }
+    .step-circle {
+      width: 68px; height: 68px;
+      background: var(--pink-hot); color: #fff;
+      border-radius: 50%; font-size: 30px; font-weight: 900;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 16px; box-shadow: 0 4px 0 #9e002a;
+    }
+    .step h4 { font-size: 24px; font-weight: 900; margin-bottom: 8px; }
+    .step p { font-size: 19px; color: #666; line-height: 1.7; word-break: keep-all; }
+
+    /* ===== こんな人に ===== */
+    .target-section {
+      background: var(--pink-hot);
+      padding: 28px 0 0; position: relative; overflow: hidden;
+    }
+    .target-section::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: radial-gradient(rgba(255,255,255,.15) 1.5px, transparent 1.5px);
+      background-size: 24px 24px;
+    }
+    .target-section .section-tag { background: #fff; color: var(--pink-hot); border-color: #fff; }
+    .target-section .section-title-lg { color: #fff; }
+    .target-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px;
+    }
+    .target-item {
+      background: rgba(255,255,255,.22);
+      border: 2px solid rgba(255,255,255,.5);
+      border-radius: 14px; padding: 12px 16px;
+      display: flex; align-items: center; gap: 12px;
+      font-weight: 900; font-size: 19px; color: #fff;
+      word-break: keep-all;
+    }
+    .target-item .emoji { font-size: 26px; flex-shrink: 0; }
+    .charas-row { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+    .charas-row img {
+      width: 165px; height: 165px;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 12px rgba(0,0,0,.2));
+    }
+
+    /* ===== どこで買えるの ===== */
+    .where-section { background: #fff; padding: 48px 0 0; }
+    .where-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+    .where-card {
+      background: var(--pink-bg);
+      border: 3px solid var(--pink-soft);
+      border-radius: 22px; padding: 22px 22px; text-align: center;
+      position: relative;
+    }
+    .where-card .where-num {
+      position: absolute; top: -18px; left: 50%; transform: translateX(-50%);
+      width: 36px; height: 36px;
+      background: var(--pink-hot); color: #fff;
+      border-radius: 50%; font-size: 18px; font-weight: 900;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 3px 0 #9e002a;
+    }
+    .where-icon { font-size: 36px; margin-bottom: 8px; display: block; }
+    .where-tag {
+      display: inline-block; background: var(--pink); color: #fff;
+      font-size: 14px; font-weight: 900; padding: 4px 14px;
+      border-radius: 20px; margin-bottom: 12px; white-space: nowrap;
+    }
+    .where-card h3 { font-size: 26px; font-weight: 900; margin-bottom: 12px; }
+    .where-card p {
+      font-size: 19px; color: #666; line-height: 1.8;
+      word-break: keep-all; text-align: left;
+    }
+    .where-card img {
+      width: 165px; height: 165px; margin-top: 12px;
+      object-fit: contain; display: block; margin-left: auto; margin-right: auto;
+    }
+
+    .coming-soon {
+      margin-top: 28px; background: var(--pink-pale);
+      border: 2.5px dashed var(--pink);
+      border-radius: 18px; padding: 20px 28px; text-align: center;
+    }
+    .coming-soon .cs-badge {
+      display: inline-block; background: var(--pink); color: #fff;
+      font-size: 12px; font-weight: 900; letter-spacing: 2px;
+      padding: 4px 14px; border-radius: 20px; margin-bottom: 10px;
+    }
+    .coming-soon p { font-size: 18px; font-weight: 700; }
+    .coming-soon small { font-size: 15px; color: var(--gray); }
+
+    /* ===== 購入 ===== */
+    .purchase-section { background: var(--pink-bg); padding: 48px 0 0; }
+    .purchase-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+    .purchase-card {
+      background: #fff; border-radius: 28px; padding: 34px 26px; text-align: center;
+      border: 3px solid var(--pink-soft);
+    }
+    .purchase-card.featured {
+      border-color: var(--pink-hot);
+      box-shadow: 0 6px 0 var(--pink-hot), 0 10px 30px rgba(255,45,111,.15);
+    }
+    .purchase-card .p-icon { font-size: 42px; margin-bottom: 14px; display: block; }
+    .purchase-card h3 { font-size: 26px; font-weight: 900; margin-bottom: 10px; }
+    .purchase-card p {
+      font-size: 19px; color: #666; line-height: 1.8;
+      margin-bottom: 18px; word-break: keep-all; text-align: left;
+    }
+    .price-tag {
+      background: var(--pink-bg); border-radius: 16px; padding: 16px; margin: 16px 0;
+    }
+    .price-tag .price { font-size: 42px; font-weight: 900; color: var(--pink-hot); }
+    .price-tag .price-note { font-size: 13px; color: var(--gray); margin-top: 4px; }
+    .btn-buy {
+      display: block; width: 100%;
+      background: var(--pink-hot); color: #fff;
+      padding: 15px; border-radius: 50px;
+      font-size: 19px; font-weight: 900;
+      text-decoration: none; font-family: inherit;
+      box-shadow: 0 4px 0 #9e002a;
+      transition: transform .1s, box-shadow .1s;
+    }
+    .btn-buy:hover { transform: translateY(2px); box-shadow: 0 2px 0 #9e002a; }
+    .btn-inquiry {
+      display: block; width: 100%;
+      background: #fff; color: var(--pink);
+      border: 3px solid var(--pink);
+      padding: 13px; border-radius: 50px;
+      font-size: 17px; font-weight: 900;
+      text-decoration: none; font-family: inherit;
+    }
+
+    /* ===== スペック ===== */
+    .spec-section { background: #fff; padding: 48px 0 0; }
+    .spec-table { width: 100%; border-collapse: collapse; font-size: 17px; }
+    .spec-table th, .spec-table td {
+      padding: 15px 18px; text-align: left;
+      border-bottom: 2px solid var(--pink-pale);
+      word-break: keep-all; line-height: 1.7;
+    }
+    .spec-table th {
+      background: var(--pink-bg); font-weight: 900; color: var(--pink); width: 28%;
+    }
+
+    /* ===== SNSフォロー ===== */
+    .follow-section { background: var(--pink-bg); padding: 24px 20px 28px; text-align: center; }
+    .follow-chara {
+      width: 210px; height: 210px; margin: 0 auto 12px; display: block;
+      object-fit: contain;
+    }
+    .follow-title { font-size: 28px; font-weight: 900; margin-bottom: 8px; word-break: keep-all; }
+    .follow-sub { font-size: 17px; color: #666; margin-bottom: 18px; }
+    .follow-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .sns-pill-lg {
+      padding: 13px 28px; border-radius: 50px;
+      font-size: 18px; font-weight: 900;
+      text-decoration: none; font-family: inherit;
+      transition: opacity .15s; box-shadow: 0 4px 0 rgba(0,0,0,.2);
+      white-space: nowrap;
+    }
+    .sns-pill-lg:hover { opacity: .85; }
+
+    /* ===== フッター ===== */
+    footer {
+      background: var(--dark); color: rgba(255,255,255,.6);
+      padding: 28px 20px; text-align: center;
+    }
+    footer .foot-logo { font-size: 19px; font-weight: 900; color: var(--pink); margin-bottom: 14px; }
+    footer a { color: rgba(255,255,255,.55); text-decoration: none; }
+    footer a:hover { color: var(--pink); }
+    footer .foot-links {
+      display: flex; gap: 20px; justify-content: center;
+      margin-bottom: 18px; flex-wrap: wrap; font-size: 14px;
+    }
+    footer .foot-copy { font-size: 12px; }
+
+    /* ===== レスポンシブ ===== */
+    @media (max-width: 720px) {
+      .header-nav { display: none; }
+      .activity-grid { grid-template-columns: repeat(2, 1fr); }
+      .hero-inner { flex-direction: column-reverse; }
+      .hero-visual { width: 100%; flex: none; height: 280px; }
+      .hero-text { padding-bottom: 0; }
+      .hero-title .line2 { white-space: normal; }
+      .hero-btns { justify-content: center; }
+      .ingredient-grid { grid-template-columns: 1fr; }
+      .profile-card { flex-direction: column; align-items: center; }
+      .target-grid { grid-template-columns: 1fr; }
+      .where-grid { grid-template-columns: 1fr; }
+      .purchase-grid { grid-template-columns: 1fr; }
+      .steps { flex-direction: column; align-items: center; }
+      .step:not(:last-child)::after { display: none; }
+      .follower-row { justify-content: center; }
+      .hashtag-row { justify-content: center; }
+      .sns-row { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== ヘッダー ===== -->
+<header>
+  <div class="header-inner">
+    <div class="header-logo">
+      HUNTER <span class="x-mark">×</span> りっか
+    </div>
+    <nav class="header-nav">
+      <a href="#ricca">りっかって？</a>
+      <a href="#activity">活動シーン</a>
+      <a href="#ingredients">成分</a>
+      <a href="#howto">使い方</a>
+      <a href="#where">どこで買える？</a>
+    </nav>
+    <a href="#purchase" class="header-cta">購入する ♡</a>
+  </div>
+</header>
+
+
+<!-- ===== ヒーロー ===== -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="collab-badge">大食いタレント りっか コラボ</div>
+      <h1 class="hero-title">
+        <span class="line1">大食いりっかの</span>
+        <span class="line2"><span class="line2-inner">相棒、見つけた。</span></span>
+      </h1>
+      <p class="hero-copy">
+        食べる前に1本、食べ終わった後も笑顔でいたいから。<br>りっかが本気で選んだドリンクが、あなたの食卓へ。
+      </p>
+      <div class="hero-btns">
+        <a href="#purchase" class="btn-main">今すぐ購入する ♡</a>
+        <a href="#ricca" class="btn-sub">りっかって？</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <img class="hero-bottle" src="./images/hunter_bottle.png" alt="HUNTERドリンク" />
+      <img class="hero-chara-main" src="./images/ricca_jump.png" alt="りっかちゃん" />
+      <img class="hero-logo-stamp" src="./images/ricca_logo.png" alt="りっかロゴ" />
+      <span class="hero-deco-star1">✦</span>
+      <span class="hero-deco-star2">✦</span>
+      <span class="hero-deco-heart">♡</span>
+    </div>
+  </div>
+
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,28 C240,56 480,0 720,28 C960,56 1200,0 1440,28 L1440,56 L0,56 Z" fill="#ffffff"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ===== りっか紹介 ===== -->
+<section class="ricca-section" id="ricca">
+  <div class="container">
+    <div class="section-heading">
+      <div class="section-tag">PROFILE</div>
+      <h2 class="section-title-lg">大食いタレント<br><span class="text-pink">りっか</span> とは？</h2>
+    </div>
+
+    <div class="profile-card">
+      <div class="profile-left">
+        <div class="profile-chara-wrap">
+          <img src="./images/ricca_photo.jpg" alt="りっか" />
+        </div>
+        <img class="profile-logo" src="./images/ricca_logo.png" alt="りっかロゴ" />
+      </div>
+
+      <div class="profile-right">
+        <div class="profile-name-en">RICCA / MUKBANG TALENT</div>
+        <div class="profile-name-ja">りっか</div>
+        <div class="profile-catch">7kg大食いタレント / テレビ出演多数</div>
+
+        <div class="follower-row">
+          <div class="follower-badge">
+            <span class="num">62万人</span>
+            <span class="lbl">SNS総フォロワー</span>
+          </div>
+          <div class="follower-badge alt">
+            <span class="num">715杯</span>
+            <span class="lbl">わんこ蕎麦記録</span>
+          </div>
+          <div class="follower-badge alt">
+            <span class="num">7kg</span>
+            <span class="lbl">お茶漬け45分</span>
+          </div>
+        </div>
+
+        <div class="hashtag-row">
+          <span class="hashtag">#デカ盛りハンター</span>
+          <span class="hashtag">#モニタリング</span>
+          <span class="hashtag">#ウワサのお客さま</span>
+          <span class="hashtag">茨城県ひたちなか市出身</span>
+        </div>
+
+        <p class="profile-desc">
+          わんこ蕎麦715杯・お茶漬け45分7kgなど、常識外れの記録を次々と樹立する大食いタレント。
+          モニタリング・ウワサのお客さまなどテレビ出演多数。
+          SNS総フォロワー62万人を誇る、今最も勢いのある食のインフルエンサー。
+        </p>
+
+        <div class="sns-row">
+          <a href="https://www.tiktok.com/@ricca_ogui" target="_blank" class="sns-pill sns-tt">TikTok</a>
+          <a href="https://www.youtube.com/channel/UCG_i1Wmzlel_G_amL8B72cg" target="_blank" class="sns-pill sns-yt">YouTube</a>
+          <a href="https://x.com/ricca_ogui" target="_blank" class="sns-pill sns-x">X (Twitter)</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,28 C360,0 720,56 1080,28 C1260,14 1380,42 1440,28 L1440,56 L0,56 Z" fill="#FFF5F8"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ===== りっかの活動 ===== -->
+<section class="activity-section" id="activity">
+  <div class="container">
+    <div class="section-heading">
+      <div class="section-tag">ACTIVITY</div>
+      <h2 class="section-title-lg">りっかの<br><span class="text-pink">大食いシーン</span></h2>
+    </div>
+
+    <div class="activity-grid">
+      <a class="activity-card" href="https://www.youtube.com/watch?v=9UK_7ChaGh4" target="_blank">
+        <img src="./images/yt_udon4kg.jpg" alt="うどん4kg45分チャレンジ" />
+        <div class="act-label">うどん4kg 45分チャレンジ</div>
+        <div class="act-play">▶</div>
+      </a>
+      <a class="activity-card" href="https://www.youtube.com/watch?v=HqDIv2cOPhQ" target="_blank">
+        <img src="./images/yt_ramen5kg.jpg" alt="生姜ラーメン5kg" />
+        <div class="act-label">生姜ラーメン5kg 体温まりまくり</div>
+        <div class="act-play">▶</div>
+      </a>
+      <a class="activity-card" href="https://www.youtube.com/watch?v=G2yYFVRnER0" target="_blank">
+        <img src="./images/yt_7kg.jpg" alt="7kgメガ盛りチャレンジ" />
+        <div class="act-label">7kgメガ盛り 限界チャレンジ</div>
+        <div class="act-play">▶</div>
+      </a>
+      <a class="activity-card" href="https://www.youtube.com/watch?v=B2k0t-GoSPM" target="_blank">
+        <img src="./images/yt_chicken2kg.jpg" alt="背徳唐揚げ2kg 30分チャレンジ" />
+        <div class="act-label">背徳唐揚げタワー2kg 30分チャレンジ</div>
+        <div class="act-play">▶</div>
+      </a>
+      <a class="activity-card" href="https://www.youtube.com/watch?v=H9rZ_thmJxk" target="_blank">
+        <img src="./images/yt_pasta37kg.jpg" alt="宇宙人パスタ3.7kg" />
+        <div class="act-label">宇宙人サイズの特大パスタ3.7kg</div>
+        <div class="act-play">▶</div>
+      </a>
+      <a class="activity-card" href="https://www.youtube.com/watch?v=eZ7q6fT4PNE" target="_blank">
+        <img src="./images/yt_roastbeef4kg.jpg" alt="ローストビーフ丼4kg" />
+        <div class="act-label">背徳ローストビーフ丼4kg 飯テロ</div>
+        <div class="act-play">▶</div>
+      </a>
+    </div>
+
+    <p class="activity-note">
+      ▶ もっと見る → <a href="https://www.youtube.com/channel/UCG_i1Wmzlel_G_amL8B72cg" target="_blank">YouTube「食いしん坊女子りっかちゃん」</a>
+    </p>
+  </div>
+
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,28 C360,56 720,0 1080,28 C1260,42 1380,14 1440,28 L1440,56 L0,56 Z" fill="#ffffff"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ===== コラボストーリー ===== -->
+<section class="story-section">
+  <div class="container">
+    <div class="section-heading">
+      <div class="section-tag">STORY</div>
+      <h2 class="section-title-lg">なぜりっかが<br><span class="text-pink">HUNTER</span>を選んだのか</h2>
+    </div>
+
+    <div class="manga-bubble-wrap">
+      <div class="manga-bubble">
+        <span class="quote-mark">"</span>食べることが大好きだからこそ、体のことも真剣に考えてきました。大食いの後、翌日も全力で動けるかどうかは私にとってすごく大事なこと。HUNTERに出会ってから食後のコンディションが変わった気がします。だから自信を持っておすすめできる！
+      </div>
+      <div class="manga-speaker">
+        <img src="./images/ricca_photo.jpg" alt="りっか" />
+        <div>
+          <div class="name">りっか</div>
+          <div class="role">7kg大食いタレント</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,14 C480,56 960,0 1440,28 L1440,56 L0,56 Z" fill="#ffffff"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ===== 成分 ===== -->
+<section class="ingredients-section" id="ingredients">
+  <div class="container">
+    <div class="section-heading">
+      <div class="section-tag">INGREDIENTS</div>
+      <h2 class="section-title-lg">りっかが信頼した<span class="text-pink">4つの成分</span></h2>
+    </div>
+
+    <div class="ingredient-grid">
+      <div class="ingredient-card">
+        <div class="ing-icon">🔥</div>
+        <div class="ing-body">
+          <div class="ing-name">L-カルニチン</div>
+          <div class="ing-amount">1,000mg</div>
+          <div class="ing-desc">脂質代謝をサポート。思いっきり食べるのを助ける成分。</div>
+        </div>
+      </div>
+      <div class="ingredient-card">
+        <div class="ing-icon">🌿</div>
+        <div class="ing-body">
+          <div class="ing-name">イヌリン / 食物繊維</div>
+          <div class="ing-amount">600mg / 500mg</div>
+          <div class="ing-desc">腸内環境を整え、翌日もすっきりとしたコンディションに。</div>
+        </div>
+      </div>
+      <div class="ingredient-card">
+        <div class="ing-icon">🌾</div>
+        <div class="ing-body">
+          <div class="ing-name">米糠・大豆エキス発酵物</div>
+          <div class="ing-amount">500mg</div>
+          <div class="ing-desc">飲食シーンを強力サポートする、発酵由来の成分。</div>
+        </div>
+      </div>
+      <div class="ingredient-card">
+        <div class="ing-icon">💊</div>
+        <div class="ing-body">
+          <div class="ing-name">ビタミン複合配合</div>
+          <div class="ing-amount">配合</div>
+          <div class="ing-desc">体の内側から毎日のコンディション管理をサポート。</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reaction-strip">
+      <img src="./images/ricca_face3.png" alt="りっかちゃん" />
+      <p>「これ全部入ってるの、すごくない？！」</p>
+    </div>
+  </div>
+
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,42 C360,10 720,56 1080,20 C1260,0 1380,46 1440,28 L1440,56 L0,56 Z" fill="#FFF5F8"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ===== HOW TO ===== -->
+<section class="howto-section" id="howto">
+  <div class="container text-center">
+    <div class="section-tag">HOW TO USE</div>
+    <h2 class="section-title-lg" style="margin-bottom:44px;">
+      飲み方はかんたん <span class="text-pink">3ステップ</span>
+    </h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-circle">1</div>
+        <h4>食事の前に</h4>
+        <p>食べ始める前に<br>HUNTERを1本まるごと飲む</p>
+      </div>
+      <div class="step">
+        <div class="step-circle">2</div>
+        <h4>思いっきり食べる</h4>
+        <p>好きなものを好きなだけ。<br>全力で楽しむ！</p>
+      </div>
+      <div class="step">
+        <div class="step-circle">3</div>
+        <h4>翌日も全力</h4>
+        <p>すっきりコンディションで<br>また食べに行こう</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,18 C480,56 960,0 1440,36 L1440,56 L0,56 Z" fill="#FF2D6F"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ===== こんな人に ===== -->
+<section class="target-section">
+  <div class="container text-center">
+    <div class="section-tag">FOR YOU</div>
+    <h2 class="section-title-lg" style="margin-bottom:20px;">こんな人に飲んでほしい</h2>
+    <div class="target-grid">
+      <div class="target-item"><span class="emoji">🍖</span>大食い・食べ放題が大好き</div>
+      <div class="target-item"><span class="emoji">❤️</span>りっかのファン</div>
+      <div class="target-item"><span class="emoji">🌙</span>翌日のコンディションが気になる</div>
+      <div class="target-item"><span class="emoji">🍣</span>外食・グルメを全力で楽しみたい</div>
+    </div>
+    <div class="charas-row">
+      <img src="./images/ricca_rice.png" alt="りっかちゃん" />
+      <img src="./images/ricca_full.png" alt="りっかちゃん満腹" />
+      <img src="./images/ricca_face2.png" alt="りっかちゃん" />
+    </div>
+  </div>
+
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,28 C360,56 720,0 1080,36 C1260,52 1380,10 1440,28 L1440,56 L0,56 Z" fill="#ffffff"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ===== どこで買えるの ===== -->
+<section class="where-section" id="where">
+  <div class="container">
+    <div class="section-heading">
+      <div class="section-tag">WHERE TO BUY</div>
+      <h2 class="section-title-lg">どこで買えるの？</h2>
+    </div>
+
+    <div class="where-grid">
+      <div class="where-card">
+        <div class="where-num">1</div>
+        <span class="where-icon">🍴</span>
+        <div class="where-tag">飲食店</div>
+        <h3>お店で見つけたら</h3>
+        <p>取扱い飲食店でご注文の際に購入できます。<br>
+        りっかの動画を見て気になったら、お店でチェックしてみて！</p>
+        <img src="./images/ricca_face2.png" alt="りっかちゃん" />
+      </div>
+      <div class="where-card">
+        <div class="where-num">2</div>
+        <span class="where-icon">🎉</span>
+        <div class="where-tag">ファン会・イベント</div>
+        <h3>ファン会で直接GET</h3>
+        <p>りっかのオフ会・ファン会でも購入できます。<br>
+        本人と一緒にHUNTERで乾杯しよう！</p>
+        <img src="./images/ricca_jump.png" alt="りっかちゃん" />
+      </div>
+    </div>
+
+    <div class="coming-soon">
+      <div class="cs-badge">COMING SOON</div>
+      <p>取扱い飲食店情報は近日公開予定！</p>
+      <small>SNSをフォローして最新情報をチェックしてね ✦</small>
+    </div>
+  </div>
+
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,18 C480,52 960,4 1440,32 L1440,56 L0,56 Z" fill="#FFF5F8"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ===== 購入 ===== -->
+<section class="purchase-section" id="purchase">
+  <div class="container">
+    <div class="section-heading">
+      <div class="section-tag">PURCHASE</div>
+      <h2 class="section-title-lg">HUNTER × りっかを<br>手に入れる</h2>
+    </div>
+
+    <div class="purchase-grid">
+      <div class="purchase-card featured">
+        <span class="p-icon">🛒</span>
+        <h3>個人購入</h3>
+        <p>オンラインショップから購入できます。自宅に届くのでいつでもどこでも飲める。</p>
+        <div class="price-tag">
+          <div class="price">¥1,800<small style="font-size:16px;font-weight:400">（税抜）</small></div>
+          <div class="price-note">100ml / 1本</div>
+        </div>
+        <a href="https://hunterdrink.base.shop/" target="_blank" class="btn-buy">オンラインで購入する ♡</a>
+      </div>
+      <div class="purchase-card">
+        <span class="p-icon">🏪</span>
+        <h3>飲食店・法人向け</h3>
+        <p>飲食店への設置・業者様向けのご相談はこちらから。まとめ発注も対応しています。</p>
+        <div class="price-tag" style="background:#f5f5f5;">
+          <div class="price" style="font-size:21px;color:#888;">お見積もり対応</div>
+          <div class="price-note">ロット・条件はお問い合わせください</div>
+        </div>
+        <a href="#" class="btn-inquiry">業者様お問い合わせ</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,38 C360,10 720,52 1080,18 C1260,4 1380,46 1440,28 L1440,56 L0,56 Z" fill="#ffffff"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ===== スペック ===== -->
+<section class="spec-section">
+  <div class="container">
+    <div class="section-heading">
+      <div class="section-tag">SPEC</div>
+      <h2 class="section-title-lg">商品詳細</h2>
+    </div>
+    <table class="spec-table">
+      <tr><th>商品名</th><td>HUNTER（りっかコラボ限定ラベル）</td></tr>
+      <tr><th>内容量</th><td>100ml</td></tr>
+      <tr><th>価格</th><td>¥1,800（税抜）</td></tr>
+      <tr><th>主要成分</th><td>L-カルニチン1,000mg / イヌリン600mg / 食物繊維500mg /<br>米糠・大豆エキス発酵物500mg / ビタミン複合</td></tr>
+      <tr><th>使用上の注意</th><td>食品アレルギーのある方はご注意ください。<br>乳幼児・妊婦の方はご使用をお控えください。</td></tr>
+      <tr><th>販売元</th><td>pH株式会社</td></tr>
+    </table>
+  </div>
+
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,18 C480,56 960,8 1440,36 L1440,56 L0,56 Z" fill="#FFF5F8"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ===== SNSフォロー ===== -->
+<section class="follow-section">
+  <img class="follow-chara" src="./images/ricca_jump.png" alt="りっか" />
+  <h2 class="follow-title">りっかをフォローして<br>最新情報をチェック！</h2>
+  <p class="follow-sub">コラボ情報・ファン会のお知らせはSNSで発信中 ✦</p>
+  <div class="follow-btns">
+    <a href="https://www.tiktok.com/@ricca_ogui" target="_blank" class="sns-pill-lg sns-tt">TikTok</a>
+    <a href="https://www.youtube.com/channel/UCG_i1Wmzlel_G_amL8B72cg" target="_blank" class="sns-pill-lg sns-yt">YouTube</a>
+    <a href="https://x.com/ricca_ogui" target="_blank" class="sns-pill-lg sns-x">X (Twitter)</a>
+  </div>
+</section>
+
+
+
+
+<!-- ===== フッター ===== -->
+<footer>
+  <div class="foot-logo">HUNTER × りっか</div>
+  <div class="foot-links">
+    <a href="https://pivotholdings.co.jp/hunter/" target="_blank">HUNTER 公式サイト</a>
+    <a href="mailto:info@pivotholdings.co.jp">飲食店様お問い合わせ</a>
+    <a href="mailto:info@pivotholdings.co.jp">代理店お問い合わせ</a>
+    <a href="tokushoho.html" target="_blank">特定商取引法に基づく表記</a>
+    <a href="privacy.html" target="_blank">プライバシーポリシー</a>
+  </div>
+  <div class="foot-copy">© 2026 Pivot Holdings Inc. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
