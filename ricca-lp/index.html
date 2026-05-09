@@ -163,6 +163,7 @@
       position: relative; height: 440px;
       display: flex; align-items: flex-end;
       justify-content: center; gap: 12px;
+      overflow: hidden;
     }
     .hero-bottle {
       width: 148px; flex-shrink: 0; align-self: flex-end;
@@ -660,10 +661,11 @@
         width: 100%; flex: none;
         height: 260px;
         gap: 6px;
+        overflow: clip;
       }
-      .hero-bottle { width: 96px; }
-      .hero-chara-main { width: 228px; }
-      .hero-logo-stamp { width: 76px; right: 2px; top: 4px; }
+      .hero-bottle { width: min(96px, 25vw); flex-shrink: 1; }
+      .hero-chara-main { width: min(228px, 63vw); flex-shrink: 1; }
+      .hero-logo-stamp { width: min(76px, 20vw); right: 2px; top: 4px; }
       .hero-deco-star1, .hero-deco-star2, .hero-deco-heart { display: none; }
       .hero-text {
         padding-bottom: 20px;
