@@ -21,13 +21,14 @@
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
     body {
       font-family: 'M PLUS Rounded 1c', sans-serif;
       color: var(--dark);
       background: var(--cream);
       overflow-x: hidden;
     }
+    img { max-width: 100%; height: auto; }
 
     /* ===== ユーティリティ ===== */
     .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
