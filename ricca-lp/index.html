@@ -315,6 +315,7 @@
     .sns-tt  { background: #000; color: #fff; }
     .sns-yt  { background: #ff0000; color: #fff; }
     .sns-x   { background: #1a1a1a; color: #fff; }
+    .sns-ig  { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: #fff; }
 
     /* ===== りっかの活動 ===== */
     .activity-section { background: var(--pink-bg); padding: 48px 0 0; }
@@ -511,7 +512,7 @@
 
     /* ===== どこで買えるの ===== */
     .where-section { background: #fff; padding: 48px 0 0; }
-    .where-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+    .where-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 280px)); gap: 22px; justify-content: center; }
     .where-card {
       background: var(--pink-bg);
       border: 3px solid var(--pink-soft);
@@ -532,10 +533,10 @@
       font-size: 14px; font-weight: 900; padding: 4px 14px;
       border-radius: 20px; margin-bottom: 12px; white-space: nowrap;
     }
-    .where-card h3 { font-size: 26px; font-weight: 900; margin-bottom: 12px; }
+    .where-card h3 { font-size: 22px; font-weight: 900; margin-bottom: 12px; }
     .where-card p {
       font-size: 19px; color: #666; line-height: 1.8;
-      word-break: keep-all; text-align: left;
+      word-break: normal; overflow-wrap: break-word; text-align: left;
     }
     .where-card img {
       width: 165px; height: 165px; margin-top: 12px;
@@ -570,7 +571,7 @@
     .purchase-card h3 { font-size: 26px; font-weight: 900; margin-bottom: 10px; }
     .purchase-card p {
       font-size: 19px; color: #666; line-height: 1.8;
-      margin-bottom: 18px; word-break: keep-all; text-align: left;
+      margin-bottom: 18px; word-break: normal; overflow-wrap: break-word; text-align: left;
     }
     .price-tag {
       background: var(--pink-bg); border-radius: 16px; padding: 16px; margin: 16px 0;
@@ -896,6 +897,7 @@
           <a href="https://www.tiktok.com/@ricca_ogui" target="_blank" class="sns-pill sns-tt">TikTok</a>
           <a href="https://www.youtube.com/channel/UCG_i1Wmzlel_G_amL8B72cg" target="_blank" class="sns-pill sns-yt">YouTube</a>
           <a href="https://x.com/ricca_ogui" target="_blank" class="sns-pill sns-x">X (Twitter)</a>
+          <a href="https://www.instagram.com/kuishinbo_joshi/" target="_blank" class="sns-pill sns-ig">Instagram</a>
         </div>
       </div>
     </div>
@@ -1137,6 +1139,15 @@
         本人と一緒にHUNTERで乾杯しよう！</p>
         <img src="./images/ricca_jump.png" alt="りっかちゃん" />
       </div>
+      <div class="where-card">
+        <div class="where-num">3</div>
+        <span class="where-icon">🛒</span>
+        <div class="where-tag">オンライン</div>
+        <h3>ネットでも買えますよ</h3>
+        <p>自宅にいながらオンラインショップで購入できます。<br>
+        <a href="https://hunterdrink.base.shop/" target="_blank" style="color:var(--pink);font-weight:700;">オンラインショップはこちら →</a></p>
+        <img src="./images/ricca_rice.png" alt="りっかちゃん" />
+      </div>
     </div>
 
     <div class="coming-soon">
@@ -1229,6 +1240,7 @@
     <a href="https://www.tiktok.com/@ricca_ogui" target="_blank" class="sns-pill-lg sns-tt">TikTok</a>
     <a href="https://www.youtube.com/channel/UCG_i1Wmzlel_G_amL8B72cg" target="_blank" class="sns-pill-lg sns-yt">YouTube</a>
     <a href="https://x.com/ricca_ogui" target="_blank" class="sns-pill-lg sns-x">X (Twitter)</a>
+    <a href="https://www.instagram.com/kuishinbo_joshi/" target="_blank" class="sns-pill-lg sns-ig">Instagram</a>
   </div>
 </section>
 
