@@ -305,7 +305,7 @@ body {
   z-index: 2;
   flex: 1 1 auto;
   padding: 60px 24px 60px 8%;
-  max-width: 560px;
+  max-width: 760px;
   min-width: 0;
 }
 
@@ -1595,7 +1595,7 @@ body {
   .hero-headline    { white-space: normal; font-size: clamp(1.2rem, 4vw, 1.8rem); }
   .hero-sub { white-space: normal; }
   .hero-cta-group { justify-content: center; flex-wrap: wrap; }
-  .hero-bottle { padding: 16px 24px 0; flex: 0 0 auto; order: -1; display: flex; justify-content: center; width: 100%; }
+  .hero-bottle { padding: 16px 24px 0; flex: 0 0 auto; order: -1; display: flex; justify-content: center; width: 100%; transform: none; }
   .hero-bottle img { width: clamp(90px, 26vw, 150px); height: auto; object-fit: contain; }
   .hero-scroll-hint { display: none; }
 
@@ -2031,6 +2031,8 @@ body {
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
 }
 .event-card-photo .event-card-body {
   padding: 14px 16px 16px;
